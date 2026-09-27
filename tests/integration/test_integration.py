@@ -119,7 +119,7 @@ async def loaded(
     mqtt_entry = hass.config_entries.async_entries("mqtt")[0]
     device_registry = dr.async_get(hass)
     # Two Z2M devices known to HA via MQTT discovery.
-    for ieee in ("0x00158d00000002", "0x00158d000272ed5f"):
+    for ieee in ("0x00158d0000000002", "0x00158d000272ed5f"):
         device_registry.async_get_or_create(
             config_entry_id=mqtt_entry.entry_id,
             identifiers={("mqtt", f"zigbee2mqtt_{ieee}")},
@@ -186,7 +186,7 @@ async def test_entities_by_unique_id(hass: HomeAssistant, loaded: MockConfigEntr
     # Steckdose Kinderzimmer TV, Deko Flur oben (40-43 days, not answering the network map).
     # Device entity attached to the existing Z2M device (Bewegung Bad is dead).
     state_entity = registry.async_get_entity_id(
-        "sensor", DOMAIN, f"{loaded.entry_id}_0x00158d00000002_zigbee_state"
+        "sensor", DOMAIN, f"{loaded.entry_id}_0x00158d0000000002_zigbee_state"
     )
     assert state_entity is not None
     assert _state(hass, state_entity) == "dead"
@@ -194,7 +194,7 @@ async def test_entities_by_unique_id(hass: HomeAssistant, loaded: MockConfigEntr
     assert entry is not None
     device = dr.async_get(hass).async_get(entry.device_id or "")
     assert device is not None
-    assert ("mqtt", "zigbee2mqtt_0x00158d00000002") in device.identifiers
+    assert ("mqtt", "zigbee2mqtt_0x00158d0000000002") in device.identifiers
 
 
 async def test_repairs_bundled_and_prerequisite(
@@ -227,10 +227,12 @@ async def test_get_report_service(hass: HomeAssistant, loaded: MockConfigEntry) 
 
 
 async def test_ignore_service(hass: HomeAssistant, loaded: MockConfigEntry) -> None:
-    await hass.services.async_call(DOMAIN, "ignore", {"device": "0x00158d00000002"}, blocking=True)
+    await hass.services.async_call(
+        DOMAIN, "ignore", {"device": "0x00158d0000000002"}, blocking=True
+    )
     report = loaded.runtime_data.data
     assert report is not None
-    assert report.devices["0x00158d00000002"].state.value == "ignored"
+    assert report.devices["0x00158d0000000002"].state.value == "ignored"
     assert report.counts["dead"] == 15
 
 
@@ -345,7 +347,7 @@ async def test_check_and_plan_websocket(
 
     # Give two kitchen devices an area: the planner works per area.
     area = ar.async_get(hass).async_create("Küche")
-    for ieee in ("0x00158d00000002", "0x00158d000272ed5f"):
+    for ieee in ("0x00158d0000000002", "0x00158d000272ed5f"):
         device = dr.async_get(hass).async_get_device(identifiers={("mqtt", f"zigbee2mqtt_{ieee}")})
         assert device is not None
         dr.async_get(hass).async_update_device(device.id, area_id=area.id)
@@ -380,11 +382,11 @@ async def test_floorplan_websocket(
         {
             "type": "zigbee_health/floorplan/save",
             "plan_id": "eg",
-            "positions": {"0x00158d00000002": [0.25, 1.4], "coordinator": [0.5, 0.5]},
+            "positions": {"0x00158d0000000002": [0.25, 1.4], "coordinator": [0.5, 0.5]},
         }
     )
     plan = (await client.receive_json())["result"]["plan"]
-    assert plan["positions"]["0x00158d00000002"] == [0.25, 1.0]  # clamped to the image
+    assert plan["positions"]["0x00158d0000000002"] == [0.25, 1.0]  # clamped to the image
     assert plan["image"] == image
 
     # Link the plan to a Home Assistant floor (storey order for the building view).
@@ -556,7 +558,7 @@ async def test_device_update_websocket(
 ) -> None:
     client = await hass_ws_client(hass)
     coordinator = loaded.runtime_data
-    ieee = "0x00158d00000002"
+    ieee = "0x00158d0000000002"
     assert ieee in coordinator.source.devices
 
     await client.send_json_auto_id(
@@ -596,8 +598,20 @@ async def test_device_update_requires_admin(
     await client.send_json_auto_id(
         {
             "type": "zigbee_health/device/update",
-            "ieee": "0x00158d00000002",
+            "ieee": "0x00158d0000000002",
             "action": "remove",
         }
     )
     assert (await client.receive_json())["error"]["code"] == "unauthorized"
+
+
+async def test_remove_entry_deletes_stored_data(
+    hass: HomeAssistant, loaded: MockConfigEntry, hass_storage: dict[str, Any]
+) -> None:
+    coordinator = loaded.runtime_data
+    await coordinator.floorplans.async_save_building({"floors": [], "positions": {}})
+    await coordinator.async_ignore("0x00158d0000000002")
+    await hass.async_block_till_done()
+    await hass.config_entries.async_remove(loaded.entry_id)
+    await hass.async_block_till_done()
+    assert not [key for key in hass_storage if key.startswith(f"{DOMAIN}.{loaded.entry_id}")]

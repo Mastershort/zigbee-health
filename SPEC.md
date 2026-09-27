@@ -103,7 +103,7 @@ Lauf: alle 5 Minuten (konfigurierbar) + entprellt nach relevanten Ereignissen (A
 
 ### 5.2 Befunde (Findings)
 
-Jeder Befund hat: `id` (stabil, z. B. `dead_device:0x00158d00000002`), `type`, `severity` (`critical` / `warning` / `info`), betroffenes Gerät/Raum, Messwerte, Übersetzungs-Schlüssel, Handlungsempfehlung, optional Fix-Flow, `learn_more_url`.
+Jeder Befund hat: `id` (stabil, z. B. `dead_device:0x00158d0000000002`), `type`, `severity` (`critical` / `warning` / `info`), betroffenes Gerät/Raum, Messwerte, Übersetzungs-Schlüssel, Handlungsempfehlung, optional Fix-Flow, `learn_more_url`.
 
 **Hysterese:** Ein Befund wird erst gemeldet, wenn er in **N aufeinanderfolgenden Läufen** bzw. über eine **Mindestdauer** besteht (Standard 30 min, bei Scan-basierten Befunden in 2 von 3 Scans), und erst als gelöst markiert, wenn er **M Läufe** lang nicht mehr zutrifft. Kein Flattern im Reparaturen-Center.
 

@@ -138,7 +138,7 @@
             }
         },
         "friendly_name": "Coordinator",
-        "ieee_address": "0x00124b00000001",
+        "ieee_address": "0x00124b0000000001",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -262,7 +262,7 @@
             }
         },
         "friendly_name": "Bewegung Bad",
-        "ieee_address": "0x00158d00000002",
+        "ieee_address": "0x00158d0000000002",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -376,7 +376,7 @@
             }
         },
         "friendly_name": "Bewegung Terrasse",
-        "ieee_address": "0x00158d00000003",
+        "ieee_address": "0x00158d0000000003",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -506,7 +506,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -514,7 +514,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -549,7 +549,7 @@
             }
         },
         "friendly_name": "Fernbedienung Wohnzimmer",
-        "ieee_address": "0x84ba2000000004",
+        "ieee_address": "0x84ba200000000004",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -605,7 +605,7 @@
                         "cluster": "genBasic",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -643,7 +643,7 @@
             }
         },
         "friendly_name": "Router Flur",
-        "ieee_address": "0x00124b00000005",
+        "ieee_address": "0x00124b0000000005",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -797,7 +797,7 @@
             }
         },
         "friendly_name": "Fenster Hauswirtschaft",
-        "ieee_address": "0x00158d00000006",
+        "ieee_address": "0x00158d0000000006",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -869,7 +869,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -902,7 +902,7 @@
             }
         },
         "friendly_name": "Steckdose Wohnzimmer TV",
-        "ieee_address": "0x7cb03e00000007",
+        "ieee_address": "0x7cb03e0000000007",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1042,7 +1042,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1050,7 +1050,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -1087,7 +1087,7 @@
             }
         },
         "friendly_name": "Bewegung Hauswirtschaft",
-        "ieee_address": "0x0c431400000008",
+        "ieee_address": "0x0c43140000000008",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1192,7 +1192,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1207,7 +1207,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -1243,7 +1243,7 @@
             }
         },
         "friendly_name": "Fernbedienung Wohnzimmer 2",
-        "ieee_address": "0x680ae200000009",
+        "ieee_address": "0x680ae20000000009",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1315,7 +1315,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -1348,7 +1348,7 @@
             }
         },
         "friendly_name": "Steckdose Kinderzimmer TV",
-        "ieee_address": "0x7cb03e0000000a",
+        "ieee_address": "0x7cb03e000000000a",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1502,7 +1502,7 @@
             }
         },
         "friendly_name": "Haustür Flur",
-        "ieee_address": "0x00158d0000000b",
+        "ieee_address": "0x00158d000000000b",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1656,7 +1656,7 @@
             }
         },
         "friendly_name": "Tür Hauswirtschaft",
-        "ieee_address": "0x00158d0000000c",
+        "ieee_address": "0x00158d000000000c",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1781,7 +1781,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1789,7 +1789,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1797,7 +1797,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -1835,7 +1835,7 @@
             }
         },
         "friendly_name": "Schalter Küche",
-        "ieee_address": "0xbc33ac0000000d",
+        "ieee_address": "0xbc33ac000000000d",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -1959,7 +1959,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1967,7 +1967,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -1975,7 +1975,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -2026,7 +2026,7 @@
             }
         },
         "friendly_name": "Klima Gäste-WC",
-        "ieee_address": "0x00124b0000000e",
+        "ieee_address": "0x00124b000000000e",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2130,7 +2130,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -2138,7 +2138,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -2146,7 +2146,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -2183,7 +2183,7 @@
             }
         },
         "friendly_name": "Fernbedienung Wohnzimmer 3",
-        "ieee_address": "0x842e140000000f",
+        "ieee_address": "0x842e14000000000f",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2276,7 +2276,7 @@
             }
         },
         "friendly_name": "Fenster Dachboden",
-        "ieee_address": "0x00158d00000010",
+        "ieee_address": "0x00158d0000000010",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2429,7 +2429,7 @@
             }
         },
         "friendly_name": "Fenster Kinderzimmer",
-        "ieee_address": "0x00158d00000011",
+        "ieee_address": "0x00158d0000000011",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2522,7 +2522,7 @@
             }
         },
         "friendly_name": "Fenster Küche",
-        "ieee_address": "0x00158d00000012",
+        "ieee_address": "0x00158d0000000012",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2614,7 +2614,7 @@
             }
         },
         "friendly_name": "Fenster Ankleide",
-        "ieee_address": "0x00158d00000013",
+        "ieee_address": "0x00158d0000000013",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2706,7 +2706,7 @@
             }
         },
         "friendly_name": "Tür Ankleide",
-        "ieee_address": "0x00158d00000014",
+        "ieee_address": "0x00158d0000000014",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2798,7 +2798,7 @@
             }
         },
         "friendly_name": "Fenster Büro Seite",
-        "ieee_address": "0x00158d00000015",
+        "ieee_address": "0x00158d0000000015",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2890,7 +2890,7 @@
             }
         },
         "friendly_name": "Fenster Büro Vorne",
-        "ieee_address": "0x00158d00000016",
+        "ieee_address": "0x00158d0000000016",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -2961,7 +2961,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -2994,7 +2994,7 @@
             }
         },
         "friendly_name": "Steckdose Flur",
-        "ieee_address": "0x7cb03e00000017",
+        "ieee_address": "0x7cb03e0000000017",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -3208,7 +3208,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -3216,7 +3216,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -3224,7 +3224,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -3277,7 +3277,7 @@
             }
         },
         "friendly_name": "Klima Küche",
-        "ieee_address": "0xa4c13800000018",
+        "ieee_address": "0xa4c1380000000018",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -3502,7 +3502,7 @@
             }
         },
         "friendly_name": "Lampe Wohnzimmer",
-        "ieee_address": "0x00178800000019",
+        "ieee_address": "0x0017880000000019",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -3866,7 +3866,7 @@
             }
         },
         "friendly_name": "Stehlampe Wohnzimmer",
-        "ieee_address": "0x94deb80000001a",
+        "ieee_address": "0x94deb8000000001a",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -4091,7 +4091,7 @@
             }
         },
         "friendly_name": "Licht Bad",
-        "ieee_address": "0x0017880000001b",
+        "ieee_address": "0x001788000000001b",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -4459,7 +4459,7 @@
             }
         },
         "friendly_name": "Licht Kinderzimmer",
-        "ieee_address": "0x0017880000001c",
+        "ieee_address": "0x001788000000001c",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -4827,7 +4827,7 @@
             }
         },
         "friendly_name": "Licht Schlafzimmer",
-        "ieee_address": "0x0017880000001d",
+        "ieee_address": "0x001788000000001d",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -4951,7 +4951,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -4959,7 +4959,7 @@
                         "cluster": "genLevelCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -4987,7 +4987,7 @@
                         "cluster": "manuSpecificPhilips",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -4995,7 +4995,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -5026,7 +5026,7 @@
             }
         },
         "friendly_name": "Dimmer Büro",
-        "ieee_address": "0x0017880000001e",
+        "ieee_address": "0x001788000000001e",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -5150,7 +5150,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5158,7 +5158,7 @@
                         "cluster": "genLevelCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -5186,7 +5186,7 @@
                         "cluster": "manuSpecificPhilips",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5194,7 +5194,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -5225,7 +5225,7 @@
             }
         },
         "friendly_name": "Dimmer Garage",
-        "ieee_address": "0x0017880000001f",
+        "ieee_address": "0x001788000000001f",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -5439,7 +5439,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5447,7 +5447,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5455,7 +5455,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5463,7 +5463,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -5517,7 +5517,7 @@
             }
         },
         "friendly_name": "Klima Büro",
-        "ieee_address": "0xa4c13800000020",
+        "ieee_address": "0xa4c1380000000020",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -5731,7 +5731,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5739,7 +5739,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5747,7 +5747,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -5755,7 +5755,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -5809,7 +5809,7 @@
             }
         },
         "friendly_name": "Klima Flur",
-        "ieee_address": "0xa4c13800000021",
+        "ieee_address": "0xa4c1380000000021",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -6023,7 +6023,7 @@
                         "cluster": "genPollCtrl",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -6031,7 +6031,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -6039,7 +6039,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -6047,7 +6047,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -6101,7 +6101,7 @@
             }
         },
         "friendly_name": "Klima Kinderzimmer",
-        "ieee_address": "0xa4c13800000022",
+        "ieee_address": "0xa4c1380000000022",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -6337,7 +6337,7 @@
             }
         },
         "friendly_name": "Stimmungslicht Wohnzimmer",
-        "ieee_address": "0x9035ea00000023",
+        "ieee_address": "0x9035ea0000000023",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -6429,7 +6429,7 @@
             }
         },
         "friendly_name": "Sensor Schlafzimmer",
-        "ieee_address": "0x00158d00000024",
+        "ieee_address": "0x00158d0000000024",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -6653,7 +6653,7 @@
             }
         },
         "friendly_name": "Deko Flur unten",
-        "ieee_address": "0x00178800000025",
+        "ieee_address": "0x0017880000000025",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -6878,7 +6878,7 @@
             }
         },
         "friendly_name": "Deko Flur oben",
-        "ieee_address": "0x00178800000026",
+        "ieee_address": "0x0017880000000026",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -7243,7 +7243,7 @@
             }
         },
         "friendly_name": "Deckenlicht Küche",
-        "ieee_address": "0x94b21600000027",
+        "ieee_address": "0x94b2160000000027",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -7468,7 +7468,7 @@
             }
         },
         "friendly_name": "Licht Ankleide",
-        "ieee_address": "0x00178800000028",
+        "ieee_address": "0x0017880000000028",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -7857,7 +7857,7 @@
             }
         },
         "friendly_name": "Licht Bad RGB",
-        "ieee_address": "0xd4486700000029",
+        "ieee_address": "0xd448670000000029",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -8039,7 +8039,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -8067,7 +8067,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -8093,7 +8093,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -8119,7 +8119,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -8145,7 +8145,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -8167,7 +8167,7 @@
             }
         },
         "friendly_name": "Steckdosenleiste Büro",
-        "ieee_address": "0xa4c1380000002a",
+        "ieee_address": "0xa4c138000000002a",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -8384,7 +8384,7 @@
             }
         },
         "friendly_name": "Schranklicht Wohnzimmer",
-        "ieee_address": "0xec1bbd0000002b",
+        "ieee_address": "0xec1bbd000000002b",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -8749,7 +8749,7 @@
             }
         },
         "friendly_name": "Deckenlicht Esszimmer",
-        "ieee_address": "0x7cc6b60000002c",
+        "ieee_address": "0x7cc6b6000000002c",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -8963,7 +8963,7 @@
                         "cluster": "msTemperatureMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -8971,7 +8971,7 @@
                         "cluster": "msRelativeHumidity",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -8979,7 +8979,7 @@
                         "cluster": "genPowerCfg",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -9024,7 +9024,7 @@
             }
         },
         "friendly_name": "Klima Wohnzimmer",
-        "ieee_address": "0xa4c1380000002d",
+        "ieee_address": "0xa4c138000000002d",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -9117,7 +9117,7 @@
             }
         },
         "friendly_name": "Tor Garage",
-        "ieee_address": "0x00158d0000002e",
+        "ieee_address": "0x00158d000000002e",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -9362,7 +9362,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -9370,7 +9370,7 @@
                         "cluster": "haElectricalMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -9378,7 +9378,7 @@
                         "cluster": "seMetering",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -9462,7 +9462,7 @@
             }
         },
         "friendly_name": "Steckdose Küche",
-        "ieee_address": "0xf0fd450000002f",
+        "ieee_address": "0xf0fd45000000002f",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -9708,7 +9708,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -9716,7 +9716,7 @@
                         "cluster": "haElectricalMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -9724,7 +9724,7 @@
                         "cluster": "seMetering",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -9808,7 +9808,7 @@
             }
         },
         "friendly_name": "Steckdose Hauswirtschaft",
-        "ieee_address": "0xf0fd4500000030",
+        "ieee_address": "0xf0fd450000000030",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,
@@ -10054,7 +10054,7 @@
                         "cluster": "genOnOff",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -10062,7 +10062,7 @@
                         "cluster": "haElectricalMeasurement",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     },
@@ -10070,7 +10070,7 @@
                         "cluster": "seMetering",
                         "target": {
                             "endpoint": 1,
-                            "ieee_address": "0x00124b00000001",
+                            "ieee_address": "0x00124b0000000001",
                             "type": "endpoint"
                         }
                     }
@@ -10154,7 +10154,7 @@
             }
         },
         "friendly_name": "Steckdose Wohnzimmer Fernseher",
-        "ieee_address": "0x348d1300000031",
+        "ieee_address": "0x348d130000000031",
         "interview_completed": true,
         "interview_state": "SUCCESSFUL",
         "interviewing": false,

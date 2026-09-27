@@ -20,7 +20,7 @@ from analyzer.timeutil import parse_last_seen
 from analyzer.z2m_payloads import parse_bridge_devices, parse_networkmap
 from builders import NOW, load_fixture
 
-COORDINATOR = "0x00124b00000001"
+COORDINATOR = "0x00124b0000000001"
 
 
 def _real_report() -> tuple[NetworkReport, list[NetworkScan], dict[str, ZigbeeDevice]]:
@@ -48,7 +48,7 @@ def test_full_export_is_json_and_has_topology() -> None:
         names=lambda ieee: devices[ieee].friendly_name if ieee in devices else ieee,
         scans=scans,
         coordinator_ieee=COORDINATOR,
-        ha_device_ids={"0x00158d00000002": "abc"},
+        ha_device_ids={"0x00158d0000000002": "abc"},
         last_scan=scans[-1].timestamp,
     )
     json.dumps(data)  # serialisable

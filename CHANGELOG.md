@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.10.1
+
+- Removing the integration now also deletes its stored history and ignore list (previously a file stayed in `.storage`)
+- Test data: synthetic IEEE addresses use the usual 16 hex digits
+
 ## 0.10.0 – first public beta
 
 - Network health analysis for Zigbee2MQTT with 18 finding types, network / room / device scores and top-3 measures

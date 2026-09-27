@@ -17,7 +17,7 @@ from analyzer.z2m_payloads import (
 )
 from builders import NOW, load_fixture
 
-STECKDOSE = "0xa4c1380000002a"
+STECKDOSE = "0xa4c138000000002a"
 
 
 def _names() -> dict[str, str]:

@@ -10,7 +10,7 @@ import pytest
 
 FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
 BASE = "zigbee2mqtt"
-COORDINATOR_IEEE = "0x00124b00000001"
+COORDINATOR_IEEE = "0x00124b0000000001"
 # Newest lastSeen of networkmap_raw_2.json is 2026-09-23 12:04 UTC.
 FROZEN_TIME = "2026-09-23T12:10:00+00:00"
 

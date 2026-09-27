@@ -14,16 +14,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0xbc33ac0000000d",
+                        "ieeeAddr": "0xbc33ac000000000d",
                         "networkAddress": 65412
                     },
-                    "sourceIeeeAddr": "0xbc33ac0000000d",
+                    "sourceIeeeAddr": "0xbc33ac000000000d",
                     "sourceNwkAddr": 65412,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 1,
@@ -35,16 +35,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x0c431400000008",
+                        "ieeeAddr": "0x0c43140000000008",
                         "networkAddress": 11645
                     },
-                    "sourceIeeeAddr": "0x0c431400000008",
+                    "sourceIeeeAddr": "0x0c43140000000008",
                     "sourceNwkAddr": 11645,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 1,
@@ -56,16 +56,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000006",
+                        "ieeeAddr": "0x00158d0000000006",
                         "networkAddress": 51531
                     },
-                    "sourceIeeeAddr": "0x00158d00000006",
+                    "sourceIeeeAddr": "0x00158d0000000006",
                     "sourceNwkAddr": 51531,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 1,
@@ -77,16 +77,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0xa4c13800000018",
+                        "ieeeAddr": "0xa4c1380000000018",
                         "networkAddress": 23908
                     },
-                    "sourceIeeeAddr": "0xa4c13800000018",
+                    "sourceIeeeAddr": "0xa4c1380000000018",
                     "sourceNwkAddr": 23908,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 1,
@@ -98,16 +98,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x680ae200000009",
+                        "ieeeAddr": "0x680ae20000000009",
                         "networkAddress": 51509
                     },
-                    "sourceIeeeAddr": "0x680ae200000009",
+                    "sourceIeeeAddr": "0x680ae20000000009",
                     "sourceNwkAddr": 51509,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -119,16 +119,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -140,16 +140,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -161,16 +161,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceIeeeAddr": "0x00124b0000000005",
                     "sourceNwkAddr": 40713,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -182,16 +182,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -203,16 +203,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00178800000028",
+                        "ieeeAddr": "0x0017880000000028",
                         "networkAddress": 49628
                     },
-                    "sourceIeeeAddr": "0x00178800000028",
+                    "sourceIeeeAddr": "0x0017880000000028",
                     "sourceNwkAddr": 49628,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -224,16 +224,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -245,16 +245,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -266,16 +266,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -287,16 +287,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xd4486700000029",
+                        "ieeeAddr": "0xd448670000000029",
                         "networkAddress": 29506
                     },
-                    "sourceIeeeAddr": "0xd4486700000029",
+                    "sourceIeeeAddr": "0xd448670000000029",
                     "sourceNwkAddr": 29506,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -308,16 +308,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x7cc6b60000002c",
+                        "ieeeAddr": "0x7cc6b6000000002c",
                         "networkAddress": 21439
                     },
-                    "sourceIeeeAddr": "0x7cc6b60000002c",
+                    "sourceIeeeAddr": "0x7cc6b6000000002c",
                     "sourceNwkAddr": 21439,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -335,10 +335,10 @@
                     "sourceIeeeAddr": "0x001788010b25b9f6",
                     "sourceNwkAddr": 55270,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -350,16 +350,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x94b21600000027",
+                        "ieeeAddr": "0x94b2160000000027",
                         "networkAddress": 27531
                     },
-                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceIeeeAddr": "0x94b2160000000027",
                     "sourceNwkAddr": 27531,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -371,16 +371,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x0017880000001d",
+                        "ieeeAddr": "0x001788000000001d",
                         "networkAddress": 19454
                     },
-                    "sourceIeeeAddr": "0x0017880000001d",
+                    "sourceIeeeAddr": "0x001788000000001d",
                     "sourceNwkAddr": 19454,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 255,
@@ -392,16 +392,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00158d0000000c",
+                        "ieeeAddr": "0x00158d000000000c",
                         "networkAddress": 61153
                     },
-                    "sourceIeeeAddr": "0x00158d0000000c",
+                    "sourceIeeeAddr": "0x00158d000000000c",
                     "sourceNwkAddr": 61153,
                     "target": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "targetIeeeAddr": "0x00124b00000001"
+                    "targetIeeeAddr": "0x00124b0000000001"
                 },
                 {
                     "depth": 2,
@@ -413,16 +413,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000013",
+                        "ieeeAddr": "0x00158d0000000013",
                         "networkAddress": 24966
                     },
-                    "sourceIeeeAddr": "0x00158d00000013",
+                    "sourceIeeeAddr": "0x00158d0000000013",
                     "sourceNwkAddr": 24966,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -434,16 +434,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -455,16 +455,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -476,16 +476,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00178800000028",
+                        "ieeeAddr": "0x0017880000000028",
                         "networkAddress": 49628
                     },
-                    "sourceIeeeAddr": "0x00178800000028",
+                    "sourceIeeeAddr": "0x0017880000000028",
                     "sourceNwkAddr": 49628,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -497,16 +497,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -518,16 +518,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xd4486700000029",
+                        "ieeeAddr": "0xd448670000000029",
                         "networkAddress": 29506
                     },
-                    "sourceIeeeAddr": "0xd4486700000029",
+                    "sourceIeeeAddr": "0xd448670000000029",
                     "sourceNwkAddr": 29506,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -539,16 +539,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00178800000026",
+                        "ieeeAddr": "0x0017880000000026",
                         "networkAddress": 42482
                     },
-                    "sourceIeeeAddr": "0x00178800000026",
+                    "sourceIeeeAddr": "0x0017880000000026",
                     "sourceNwkAddr": 42482,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -560,16 +560,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -581,16 +581,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x7cb03e00000007",
+                        "ieeeAddr": "0x7cb03e0000000007",
                         "networkAddress": 56432
                     },
-                    "sourceIeeeAddr": "0x7cb03e00000007",
+                    "sourceIeeeAddr": "0x7cb03e0000000007",
                     "sourceNwkAddr": 56432,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -602,16 +602,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -623,16 +623,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -644,16 +644,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x7cb03e0000000a",
+                        "ieeeAddr": "0x7cb03e000000000a",
                         "networkAddress": 25013
                     },
-                    "sourceIeeeAddr": "0x7cb03e0000000a",
+                    "sourceIeeeAddr": "0x7cb03e000000000a",
                     "sourceNwkAddr": 25013,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -665,16 +665,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -686,16 +686,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x7cc6b60000002c",
+                        "ieeeAddr": "0x7cc6b6000000002c",
                         "networkAddress": 21439
                     },
-                    "sourceIeeeAddr": "0x7cc6b60000002c",
+                    "sourceIeeeAddr": "0x7cc6b6000000002c",
                     "sourceNwkAddr": 21439,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -713,10 +713,10 @@
                     "sourceIeeeAddr": "0x001788010b25b9f6",
                     "sourceNwkAddr": 55270,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -728,16 +728,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x94b21600000027",
+                        "ieeeAddr": "0x94b2160000000027",
                         "networkAddress": 27531
                     },
-                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceIeeeAddr": "0x94b2160000000027",
                     "sourceNwkAddr": 27531,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 255,
@@ -749,16 +749,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 2,
                     "source": {
-                        "ieeeAddr": "0x0017880000001d",
+                        "ieeeAddr": "0x001788000000001d",
                         "networkAddress": 19454
                     },
-                    "sourceIeeeAddr": "0x0017880000001d",
+                    "sourceIeeeAddr": "0x001788000000001d",
                     "sourceNwkAddr": 19454,
                     "target": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "targetIeeeAddr": "0x00124b00000005"
+                    "targetIeeeAddr": "0x00124b0000000005"
                 },
                 {
                     "depth": 0,
@@ -770,16 +770,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -791,16 +791,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -812,16 +812,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -833,16 +833,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -854,16 +854,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -875,16 +875,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceIeeeAddr": "0x00124b0000000005",
                     "sourceNwkAddr": 40713,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 15,
@@ -896,16 +896,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 2,
@@ -917,16 +917,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x842e140000000f",
+                        "ieeeAddr": "0x842e14000000000f",
                         "networkAddress": 48527
                     },
-                    "sourceIeeeAddr": "0x842e140000000f",
+                    "sourceIeeeAddr": "0x842e14000000000f",
                     "sourceNwkAddr": 48527,
                     "target": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "targetIeeeAddr": "0x00178800000019"
+                    "targetIeeeAddr": "0x0017880000000019"
                 },
                 {
                     "depth": 0,
@@ -938,16 +938,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -959,16 +959,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -980,16 +980,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -1001,16 +1001,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -1022,16 +1022,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceIeeeAddr": "0x00124b0000000005",
                     "sourceNwkAddr": 40713,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -1043,16 +1043,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 15,
@@ -1064,16 +1064,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 2,
@@ -1085,16 +1085,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000011",
+                        "ieeeAddr": "0x00158d0000000011",
                         "networkAddress": 13772
                     },
-                    "sourceIeeeAddr": "0x00158d00000011",
+                    "sourceIeeeAddr": "0x00158d0000000011",
                     "sourceNwkAddr": 13772,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 2,
@@ -1106,16 +1106,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000014",
+                        "ieeeAddr": "0x00158d0000000014",
                         "networkAddress": 15484
                     },
-                    "sourceIeeeAddr": "0x00158d00000014",
+                    "sourceIeeeAddr": "0x00158d0000000014",
                     "sourceNwkAddr": 15484,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 2,
@@ -1127,16 +1127,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0xa4c13800000022",
+                        "ieeeAddr": "0xa4c1380000000022",
                         "networkAddress": 29472
                     },
-                    "sourceIeeeAddr": "0xa4c13800000022",
+                    "sourceIeeeAddr": "0xa4c1380000000022",
                     "sourceNwkAddr": 29472,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 2,
@@ -1148,16 +1148,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x0017880000001f",
+                        "ieeeAddr": "0x001788000000001f",
                         "networkAddress": 11251
                     },
-                    "sourceIeeeAddr": "0x0017880000001f",
+                    "sourceIeeeAddr": "0x001788000000001f",
                     "sourceNwkAddr": 11251,
                     "target": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "targetIeeeAddr": "0x0017880000001c"
+                    "targetIeeeAddr": "0x001788000000001c"
                 },
                 {
                     "depth": 1,
@@ -1169,16 +1169,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00178800000025",
+                        "ieeeAddr": "0x0017880000000025",
                         "networkAddress": 32455
                     },
-                    "sourceIeeeAddr": "0x00178800000025",
+                    "sourceIeeeAddr": "0x0017880000000025",
                     "sourceNwkAddr": 32455,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 3,
@@ -1190,16 +1190,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000015",
+                        "ieeeAddr": "0x00158d0000000015",
                         "networkAddress": 21464
                     },
-                    "sourceIeeeAddr": "0x00158d00000015",
+                    "sourceIeeeAddr": "0x00158d0000000015",
                     "sourceNwkAddr": 21464,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 1,
@@ -1211,16 +1211,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 0,
@@ -1232,16 +1232,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 1,
@@ -1253,16 +1253,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x94b21600000027",
+                        "ieeeAddr": "0x94b2160000000027",
                         "networkAddress": 27531
                     },
-                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceIeeeAddr": "0x94b2160000000027",
                     "sourceNwkAddr": 27531,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 3,
@@ -1274,16 +1274,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x0017880000001e",
+                        "ieeeAddr": "0x001788000000001e",
                         "networkAddress": 34220
                     },
-                    "sourceIeeeAddr": "0x0017880000001e",
+                    "sourceIeeeAddr": "0x001788000000001e",
                     "sourceNwkAddr": 34220,
                     "target": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "targetIeeeAddr": "0xa4c1380000002a"
+                    "targetIeeeAddr": "0xa4c138000000002a"
                 },
                 {
                     "depth": 0,
@@ -1295,16 +1295,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 15,
@@ -1316,16 +1316,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 15,
@@ -1337,16 +1337,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 15,
@@ -1358,16 +1358,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 15,
@@ -1379,16 +1379,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 15,
@@ -1400,16 +1400,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 2,
@@ -1421,16 +1421,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 0,
                     "source": {
-                        "ieeeAddr": "0x00158d00000003",
+                        "ieeeAddr": "0x00158d0000000003",
                         "networkAddress": 56581
                     },
-                    "sourceIeeeAddr": "0x00158d00000003",
+                    "sourceIeeeAddr": "0x00158d0000000003",
                     "sourceNwkAddr": 56581,
                     "target": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "targetIeeeAddr": "0xec1bbd0000002b"
+                    "targetIeeeAddr": "0xec1bbd000000002b"
                 },
                 {
                     "depth": 0,
@@ -1442,16 +1442,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1463,16 +1463,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceIeeeAddr": "0x348d130000000031",
                     "sourceNwkAddr": 1219,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1484,16 +1484,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1505,16 +1505,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1526,16 +1526,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceIeeeAddr": "0x00124b0000000005",
                     "sourceNwkAddr": 40713,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1547,16 +1547,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 15,
@@ -1568,16 +1568,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "targetIeeeAddr": "0xf0fd450000002f"
+                    "targetIeeeAddr": "0xf0fd45000000002f"
                 },
                 {
                     "depth": 0,
@@ -1589,16 +1589,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000001",
+                        "ieeeAddr": "0x00124b0000000001",
                         "networkAddress": 0
                     },
-                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceIeeeAddr": "0x00124b0000000001",
                     "sourceNwkAddr": 0,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1610,16 +1610,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xa4c1380000002a",
+                        "ieeeAddr": "0xa4c138000000002a",
                         "networkAddress": 12194
                     },
-                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceIeeeAddr": "0xa4c138000000002a",
                     "sourceNwkAddr": 12194,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1631,16 +1631,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xf0fd450000002f",
+                        "ieeeAddr": "0xf0fd45000000002f",
                         "networkAddress": 14814
                     },
-                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceIeeeAddr": "0xf0fd45000000002f",
                     "sourceNwkAddr": 14814,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1652,16 +1652,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x0017880000001c",
+                        "ieeeAddr": "0x001788000000001c",
                         "networkAddress": 25026
                     },
-                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceIeeeAddr": "0x001788000000001c",
                     "sourceNwkAddr": 25026,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1673,16 +1673,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00124b00000005",
+                        "ieeeAddr": "0x00124b0000000005",
                         "networkAddress": 40713
                     },
-                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceIeeeAddr": "0x00124b0000000005",
                     "sourceNwkAddr": 40713,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1694,16 +1694,16 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0xec1bbd0000002b",
+                        "ieeeAddr": "0xec1bbd000000002b",
                         "networkAddress": 46963
                     },
-                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceIeeeAddr": "0xec1bbd000000002b",
                     "sourceNwkAddr": 46963,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 },
                 {
                     "depth": 15,
@@ -1715,23 +1715,23 @@
                     "routes": [],
                     "rxOnWhenIdle": 1,
                     "source": {
-                        "ieeeAddr": "0x00178800000019",
+                        "ieeeAddr": "0x0017880000000019",
                         "networkAddress": 51870
                     },
-                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceIeeeAddr": "0x0017880000000019",
                     "sourceNwkAddr": 51870,
                     "target": {
-                        "ieeeAddr": "0x348d1300000031",
+                        "ieeeAddr": "0x348d130000000031",
                         "networkAddress": 1219
                     },
-                    "targetIeeeAddr": "0x348d1300000031"
+                    "targetIeeeAddr": "0x348d130000000031"
                 }
             ],
             "nodes": [
                 {
                     "failed": [],
                     "friendlyName": "Coordinator",
-                    "ieeeAddr": "0x00124b00000001",
+                    "ieeeAddr": "0x00124b0000000001",
                     "lastSeen": 1752459825323,
                     "networkAddress": 0,
                     "type": "Coordinator"
@@ -1744,7 +1744,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Bewegung Bad",
-                    "ieeeAddr": "0x00158d00000002",
+                    "ieeeAddr": "0x00158d0000000002",
                     "lastSeen": 1751194132721,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_motion",
@@ -1759,7 +1759,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Bewegung Terrasse",
-                    "ieeeAddr": "0x00158d00000003",
+                    "ieeeAddr": "0x00158d0000000003",
                     "lastSeen": 1790162241815,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_motion",
@@ -1774,7 +1774,7 @@
                         "vendor": "IKEA"
                     },
                     "friendlyName": "Fernbedienung Wohnzimmer",
-                    "ieeeAddr": "0x84ba2000000004",
+                    "ieeeAddr": "0x84ba200000000004",
                     "lastSeen": 1788606998856,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "Remote Control N2",
@@ -1790,7 +1790,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Router Flur",
-                    "ieeeAddr": "0x00124b00000005",
+                    "ieeeAddr": "0x00124b0000000005",
                     "lastSeen": 1768844437950,
                     "manufacturerName": "TexasInstruments",
                     "modelID": "ti.router",
@@ -1805,7 +1805,7 @@
                         "vendor": "Aqara"
                     },
                     "friendlyName": "Fenster Hauswirtschaft",
-                    "ieeeAddr": "0x00158d00000006",
+                    "ieeeAddr": "0x00158d0000000006",
                     "lastSeen": 1790162244977,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet.aq2",
@@ -1823,7 +1823,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Steckdose Wohnzimmer TV",
-                    "ieeeAddr": "0x7cb03e00000007",
+                    "ieeeAddr": "0x7cb03e0000000007",
                     "lastSeen": 1786638910742,
                     "manufacturerName": "OSRAM",
                     "modelID": "Plug 01",
@@ -1838,7 +1838,7 @@
                         "vendor": "IKEA"
                     },
                     "friendlyName": "Bewegung Hauswirtschaft",
-                    "ieeeAddr": "0x0c431400000008",
+                    "ieeeAddr": "0x0c43140000000008",
                     "lastSeen": 1790163801411,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI motion sensor",
@@ -1853,7 +1853,7 @@
                         "vendor": "IKEA"
                     },
                     "friendlyName": "Fernbedienung Wohnzimmer 2",
-                    "ieeeAddr": "0x680ae200000009",
+                    "ieeeAddr": "0x680ae20000000009",
                     "lastSeen": 1790159438790,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI remote control",
@@ -1871,7 +1871,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Steckdose Kinderzimmer TV",
-                    "ieeeAddr": "0x7cb03e0000000a",
+                    "ieeeAddr": "0x7cb03e000000000a",
                     "lastSeen": 1786638911894,
                     "manufacturerName": "OSRAM",
                     "modelID": "Plug 01",
@@ -1886,7 +1886,7 @@
                         "vendor": "Aqara"
                     },
                     "friendlyName": "Haustür Flur",
-                    "ieeeAddr": "0x00158d0000000b",
+                    "ieeeAddr": "0x00158d000000000b",
                     "lastSeen": 1782616978753,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet.aq2",
@@ -1901,7 +1901,7 @@
                         "vendor": "Aqara"
                     },
                     "friendlyName": "Tür Hauswirtschaft",
-                    "ieeeAddr": "0x00158d0000000c",
+                    "ieeeAddr": "0x00158d000000000c",
                     "lastSeen": 1790163803938,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet.aq2",
@@ -1916,7 +1916,7 @@
                         "vendor": "IKEA"
                     },
                     "friendlyName": "Schalter Küche",
-                    "ieeeAddr": "0xbc33ac0000000d",
+                    "ieeeAddr": "0xbc33ac000000000d",
                     "lastSeen": 1790162266231,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI on/off switch",
@@ -1931,7 +1931,7 @@
                         "vendor": "SONOFF"
                     },
                     "friendlyName": "Klima Gäste-WC",
-                    "ieeeAddr": "0x00124b0000000e",
+                    "ieeeAddr": "0x00124b000000000e",
                     "lastSeen": 1743744484529,
                     "manufacturerName": "eWeLink",
                     "modelID": "TH01",
@@ -1946,7 +1946,7 @@
                         "vendor": "IKEA"
                     },
                     "friendlyName": "Fernbedienung Wohnzimmer 3",
-                    "ieeeAddr": "0x842e140000000f",
+                    "ieeeAddr": "0x842e14000000000f",
                     "lastSeen": 1790139378641,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI remote control",
@@ -1961,7 +1961,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Fenster Dachboden",
-                    "ieeeAddr": "0x00158d00000010",
+                    "ieeeAddr": "0x00158d0000000010",
                     "lastSeen": 1790159659361,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -1976,7 +1976,7 @@
                         "vendor": "Aqara"
                     },
                     "friendlyName": "Fenster Kinderzimmer",
-                    "ieeeAddr": "0x00158d00000011",
+                    "ieeeAddr": "0x00158d0000000011",
                     "lastSeen": 1790162522210,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet.aq2",
@@ -1991,7 +1991,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Fenster Küche",
-                    "ieeeAddr": "0x00158d00000012",
+                    "ieeeAddr": "0x00158d0000000012",
                     "lastSeen": 1790158893950,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2006,7 +2006,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Fenster Ankleide",
-                    "ieeeAddr": "0x00158d00000013",
+                    "ieeeAddr": "0x00158d0000000013",
                     "lastSeen": 1790159225906,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2021,7 +2021,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Tür Ankleide",
-                    "ieeeAddr": "0x00158d00000014",
+                    "ieeeAddr": "0x00158d0000000014",
                     "lastSeen": 1790163386601,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2036,7 +2036,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Fenster Büro Seite",
-                    "ieeeAddr": "0x00158d00000015",
+                    "ieeeAddr": "0x00158d0000000015",
                     "lastSeen": 1790164780173,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2051,7 +2051,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Fenster Büro Vorne",
-                    "ieeeAddr": "0x00158d00000016",
+                    "ieeeAddr": "0x00158d0000000016",
                     "lastSeen": 1777104441740,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2069,7 +2069,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Steckdose Flur",
-                    "ieeeAddr": "0x7cb03e00000017",
+                    "ieeeAddr": "0x7cb03e0000000017",
                     "lastSeen": 1781710437272,
                     "manufacturerName": "OSRAM",
                     "modelID": "Plug 01",
@@ -2084,7 +2084,7 @@
                         "vendor": "Custom devices (DiY)"
                     },
                     "friendlyName": "Klima Küche",
-                    "ieeeAddr": "0xa4c13800000018",
+                    "ieeeAddr": "0xa4c1380000000018",
                     "lastSeen": 1790164955700,
                     "manufacturerName": "Xiaomi",
                     "modelID": "LYWSD03MMC",
@@ -2100,7 +2100,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Lampe Wohnzimmer",
-                    "ieeeAddr": "0x00178800000019",
+                    "ieeeAddr": "0x0017880000000019",
                     "lastSeen": 1790161690457,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LWA001",
@@ -2118,7 +2118,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Stehlampe Wohnzimmer",
-                    "ieeeAddr": "0x94deb80000001a",
+                    "ieeeAddr": "0x94deb8000000001a",
                     "lastSeen": 1764430114220,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI bulb E27 CWS 806lm",
@@ -2136,7 +2136,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Licht Bad",
-                    "ieeeAddr": "0x0017880000001b",
+                    "ieeeAddr": "0x001788000000001b",
                     "lastSeen": 1741494467428,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LWA001",
@@ -2152,7 +2152,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Licht Kinderzimmer",
-                    "ieeeAddr": "0x0017880000001c",
+                    "ieeeAddr": "0x001788000000001c",
                     "lastSeen": 1790160526520,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LCA001",
@@ -2170,7 +2170,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Licht Schlafzimmer",
-                    "ieeeAddr": "0x0017880000001d",
+                    "ieeeAddr": "0x001788000000001d",
                     "lastSeen": 1784227429173,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LCA001",
@@ -2185,7 +2185,7 @@
                         "vendor": "Philips"
                     },
                     "friendlyName": "Dimmer Büro",
-                    "ieeeAddr": "0x0017880000001e",
+                    "ieeeAddr": "0x001788000000001e",
                     "lastSeen": 1790161805481,
                     "manufacturerName": "Philips",
                     "modelID": "RWL021",
@@ -2200,7 +2200,7 @@
                         "vendor": "Philips"
                     },
                     "friendlyName": "Dimmer Garage",
-                    "ieeeAddr": "0x0017880000001f",
+                    "ieeeAddr": "0x001788000000001f",
                     "lastSeen": 1790161878479,
                     "manufacturerName": "Philips",
                     "modelID": "RWL021",
@@ -2215,7 +2215,7 @@
                         "vendor": "Custom devices (DiY)"
                     },
                     "friendlyName": "Klima Büro",
-                    "ieeeAddr": "0xa4c13800000020",
+                    "ieeeAddr": "0xa4c1380000000020",
                     "lastSeen": 1790164983469,
                     "manufacturerName": "Xiaomi",
                     "modelID": "LYWSD03MMC",
@@ -2230,7 +2230,7 @@
                         "vendor": "Custom devices (DiY)"
                     },
                     "friendlyName": "Klima Flur",
-                    "ieeeAddr": "0xa4c13800000021",
+                    "ieeeAddr": "0xa4c1380000000021",
                     "lastSeen": 1741390840068,
                     "manufacturerName": "Xiaomi",
                     "modelID": "LYWSD03MMC",
@@ -2245,7 +2245,7 @@
                         "vendor": "Custom devices (DiY)"
                     },
                     "friendlyName": "Klima Kinderzimmer",
-                    "ieeeAddr": "0xa4c13800000022",
+                    "ieeeAddr": "0xa4c1380000000022",
                     "lastSeen": 1790165000901,
                     "manufacturerName": "Xiaomi",
                     "modelID": "LYWSD03MMC",
@@ -2263,7 +2263,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Stimmungslicht Wohnzimmer",
-                    "ieeeAddr": "0x9035ea00000023",
+                    "ieeeAddr": "0x9035ea0000000023",
                     "lastSeen": 1754731589898,
                     "manufacturerName": "_TZ3210_r0xgkft5",
                     "modelID": "TS0505B",
@@ -2278,7 +2278,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Sensor Schlafzimmer",
-                    "ieeeAddr": "0x00158d00000024",
+                    "ieeeAddr": "0x00158d0000000024",
                     "lastSeen": 1753114844790,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2296,7 +2296,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Deko Flur unten",
-                    "ieeeAddr": "0x00178800000025",
+                    "ieeeAddr": "0x0017880000000025",
                     "lastSeen": 1782614681885,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LWA001",
@@ -2314,7 +2314,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Deko Flur oben",
-                    "ieeeAddr": "0x00178800000026",
+                    "ieeeAddr": "0x0017880000000026",
                     "lastSeen": 1786390230199,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LWA001",
@@ -2332,7 +2332,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Deckenlicht Küche",
-                    "ieeeAddr": "0x94b21600000027",
+                    "ieeeAddr": "0x94b2160000000027",
                     "lastSeen": 1790140256243,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "JETSTROM 3030 ceiling",
@@ -2350,7 +2350,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Licht Ankleide",
-                    "ieeeAddr": "0x00178800000028",
+                    "ieeeAddr": "0x0017880000000028",
                     "lastSeen": 1790140980649,
                     "manufacturerName": "Signify Netherlands B.V.",
                     "modelID": "LWA001",
@@ -2368,7 +2368,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Licht Bad RGB",
-                    "ieeeAddr": "0xd4486700000029",
+                    "ieeeAddr": "0xd448670000000029",
                     "lastSeen": 1790138719541,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI bulb E27 CWS globe 806lm",
@@ -2384,7 +2384,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Steckdosenleiste Büro",
-                    "ieeeAddr": "0xa4c1380000002a",
+                    "ieeeAddr": "0xa4c138000000002a",
                     "lastSeen": 1790165040284,
                     "manufacturerName": "_TZ3000_cfnprab5",
                     "modelID": "TS011F",
@@ -2400,7 +2400,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Schranklicht Wohnzimmer",
-                    "ieeeAddr": "0xec1bbd0000002b",
+                    "ieeeAddr": "0xec1bbd000000002b",
                     "lastSeen": 1790140057114,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "TRADFRI Driver 30W",
@@ -2418,7 +2418,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Deckenlicht Esszimmer",
-                    "ieeeAddr": "0x7cc6b60000002c",
+                    "ieeeAddr": "0x7cc6b6000000002c",
                     "lastSeen": 1790137543629,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "JETSTROM 3030 ceiling",
@@ -2433,7 +2433,7 @@
                         "vendor": "Custom devices (DiY)"
                     },
                     "friendlyName": "Klima Wohnzimmer",
-                    "ieeeAddr": "0xa4c1380000002d",
+                    "ieeeAddr": "0xa4c138000000002d",
                     "lastSeen": 1789525340937,
                     "manufacturerName": "Xiaomi",
                     "modelID": "LYWSD03MMC",
@@ -2448,7 +2448,7 @@
                         "vendor": "Xiaomi"
                     },
                     "friendlyName": "Tor Garage",
-                    "ieeeAddr": "0x00158d0000002e",
+                    "ieeeAddr": "0x00158d000000002e",
                     "lastSeen": 1790164900289,
                     "manufacturerName": "LUMI",
                     "modelID": "lumi.sensor_magnet",
@@ -2464,7 +2464,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Steckdose Küche",
-                    "ieeeAddr": "0xf0fd450000002f",
+                    "ieeeAddr": "0xf0fd45000000002f",
                     "lastSeen": 1790164982715,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "INSPELNING Smart plug",
@@ -2482,7 +2482,7 @@
                         "lqi"
                     ],
                     "friendlyName": "Steckdose Hauswirtschaft",
-                    "ieeeAddr": "0xf0fd4500000030",
+                    "ieeeAddr": "0xf0fd450000000030",
                     "lastSeen": 1781915341128,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "INSPELNING Smart plug",
@@ -2498,7 +2498,7 @@
                     },
                     "failed": [],
                     "friendlyName": "Steckdose Wohnzimmer Fernseher",
-                    "ieeeAddr": "0x348d1300000031",
+                    "ieeeAddr": "0x348d130000000031",
                     "lastSeen": 1790163189221,
                     "manufacturerName": "IKEA of Sweden",
                     "modelID": "INSPELNING Smart plug",

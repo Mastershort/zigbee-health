@@ -89,9 +89,9 @@ def test_parse_networkmap_fixture() -> None:
     failed = {n.friendly_name for n in scan.nodes.values() if n.failed}
     assert len(failed) == 14
     assert "Deckenlicht Küche" in failed
-    coordinator = scan.nodes["0x00124b00000001"]
+    coordinator = scan.nodes["0x00124b0000000001"]
     assert coordinator.type is DeviceType.COORDINATOR
-    assert scan.responded("0x00124b00000001")
+    assert scan.responded("0x00124b0000000001")
     assert not scan.responded("0xunknown")
     assert not scan.failed("0xunknown")
 
@@ -131,7 +131,7 @@ def test_parse_networkmap_nested_link_format_and_errors() -> None:
 def test_parse_bridge_info_fixture() -> None:
     info = parse_bridge_info(load_fixture("bridge_info.json"))
     assert info.version == "2.14.1"
-    assert info.coordinator_ieee == "0x00124b00000001"
+    assert info.coordinator_ieee == "0x00124b0000000001"
     assert info.coordinator_type == "ZStack3x0"
     assert info.coordinator_revision == "20260310"
     assert info.last_seen_format == "ISO_8601"
@@ -155,7 +155,7 @@ def test_parse_bridge_info_variants() -> None:
 
 
 def test_apply_device_state() -> None:
-    device = parse_bridge_devices(load_fixture("bridge_devices.json"))["0x00158d00000002"]
+    device = parse_bridge_devices(load_fixture("bridge_devices.json"))["0x00158d0000000002"]
     updated = apply_device_state(
         device,
         {"linkquality": 120, "battery": 87, "voltage": 2995,

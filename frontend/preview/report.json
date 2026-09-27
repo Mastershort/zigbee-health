@@ -43,22 +43,22 @@
    ],
    "finding_type": "dead_device",
    "ieees": [
-    "0x00124b0000000e",
-    "0x00158d00000002",
-    "0x00158d0000000b",
-    "0x00158d00000016",
-    "0x00158d00000024",
-    "0x0017880000001b",
-    "0x0017880000001d",
-    "0x00178800000025",
-    "0x00178800000026",
-    "0x7cb03e00000007",
-    "0x7cb03e0000000a",
-    "0x7cb03e00000017",
-    "0x9035ea00000023",
-    "0x94deb80000001a",
-    "0xa4c13800000021",
-    "0xf0fd4500000030"
+    "0x00124b000000000e",
+    "0x00158d0000000002",
+    "0x00158d000000000b",
+    "0x00158d0000000016",
+    "0x00158d0000000024",
+    "0x001788000000001b",
+    "0x001788000000001d",
+    "0x0017880000000025",
+    "0x0017880000000026",
+    "0x7cb03e0000000007",
+    "0x7cb03e000000000a",
+    "0x7cb03e0000000017",
+    "0x9035ea0000000023",
+    "0x94deb8000000001a",
+    "0xa4c1380000000021",
+    "0xf0fd450000000030"
    ],
    "area_ids": []
   },
@@ -89,20 +89,20 @@
    ],
    "finding_type": "part_time_router",
    "ieees": [
-    "0x00178800000028",
-    "0x7cc6b60000002c",
-    "0x94b21600000027",
-    "0xd4486700000029"
+    "0x0017880000000028",
+    "0x7cc6b6000000002c",
+    "0x94b2160000000027",
+    "0xd448670000000029"
    ],
    "area_ids": []
   }
  ],
  "findings": [
   {
-   "id": "dead_device:0x00124b0000000e",
+   "id": "dead_device:0x00124b000000000e",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00124b0000000e",
+   "ieee": "0x00124b000000000e",
    "device": "Klima Gäste-WC",
    "area_id": "gäste-wc",
    "placeholders": {
@@ -116,10 +116,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00158d00000002",
+   "id": "dead_device:0x00158d0000000002",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00158d00000002",
+   "ieee": "0x00158d0000000002",
    "device": "Bewegung Bad",
    "area_id": "bad",
    "placeholders": {
@@ -133,10 +133,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00158d0000000b",
+   "id": "dead_device:0x00158d000000000b",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00158d0000000b",
+   "ieee": "0x00158d000000000b",
    "device": "Haustür Flur",
    "area_id": "flur",
    "placeholders": {
@@ -150,10 +150,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00158d00000016",
+   "id": "dead_device:0x00158d0000000016",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00158d00000016",
+   "ieee": "0x00158d0000000016",
    "device": "Fenster Büro Vorne",
    "area_id": "büro",
    "placeholders": {
@@ -167,10 +167,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00158d00000024",
+   "id": "dead_device:0x00158d0000000024",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00158d00000024",
+   "ieee": "0x00158d0000000024",
    "device": "Sensor Schlafzimmer",
    "area_id": "schlafzimmer",
    "placeholders": {
@@ -184,10 +184,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x0017880000001b",
+   "id": "dead_device:0x001788000000001b",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x0017880000001b",
+   "ieee": "0x001788000000001b",
    "device": "Licht Bad",
    "area_id": "bad",
    "placeholders": {
@@ -201,10 +201,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x0017880000001d",
+   "id": "dead_device:0x001788000000001d",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x0017880000001d",
+   "ieee": "0x001788000000001d",
    "device": "Licht Schlafzimmer",
    "area_id": "schlafzimmer",
    "placeholders": {
@@ -218,10 +218,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00178800000025",
+   "id": "dead_device:0x0017880000000025",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00178800000025",
+   "ieee": "0x0017880000000025",
    "device": "Deko Flur unten",
    "area_id": "flur",
    "placeholders": {
@@ -235,10 +235,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x00178800000026",
+   "id": "dead_device:0x0017880000000026",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x00178800000026",
+   "ieee": "0x0017880000000026",
    "device": "Deko Flur oben",
    "area_id": "flur",
    "placeholders": {
@@ -252,10 +252,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x7cb03e00000007",
+   "id": "dead_device:0x7cb03e0000000007",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x7cb03e00000007",
+   "ieee": "0x7cb03e0000000007",
    "device": "Steckdose Wohnzimmer TV",
    "area_id": "wohnzimmer",
    "placeholders": {
@@ -269,10 +269,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x7cb03e0000000a",
+   "id": "dead_device:0x7cb03e000000000a",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x7cb03e0000000a",
+   "ieee": "0x7cb03e000000000a",
    "device": "Steckdose Kinderzimmer TV",
    "area_id": "kinderzimmer",
    "placeholders": {
@@ -286,10 +286,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x7cb03e00000017",
+   "id": "dead_device:0x7cb03e0000000017",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x7cb03e00000017",
+   "ieee": "0x7cb03e0000000017",
    "device": "Steckdose Flur",
    "area_id": "flur",
    "placeholders": {
@@ -303,10 +303,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x9035ea00000023",
+   "id": "dead_device:0x9035ea0000000023",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x9035ea00000023",
+   "ieee": "0x9035ea0000000023",
    "device": "Stimmungslicht Wohnzimmer",
    "area_id": "wohnzimmer",
    "placeholders": {
@@ -320,10 +320,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0x94deb80000001a",
+   "id": "dead_device:0x94deb8000000001a",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0x94deb80000001a",
+   "ieee": "0x94deb8000000001a",
    "device": "Stehlampe Wohnzimmer",
    "area_id": "wohnzimmer",
    "placeholders": {
@@ -337,10 +337,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0xa4c13800000021",
+   "id": "dead_device:0xa4c1380000000021",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0xa4c13800000021",
+   "ieee": "0xa4c1380000000021",
    "device": "Klima Flur",
    "area_id": "flur",
    "placeholders": {
@@ -354,10 +354,10 @@
    "related": []
   },
   {
-   "id": "dead_device:0xf0fd4500000030",
+   "id": "dead_device:0xf0fd450000000030",
    "type": "dead_device",
    "severity": "critical",
-   "ieee": "0xf0fd4500000030",
+   "ieee": "0xf0fd450000000030",
    "device": "Steckdose Hauswirtschaft",
    "area_id": "hauswirtschaft",
    "placeholders": {
@@ -371,10 +371,10 @@
    "related": []
   },
   {
-   "id": "disappeared:0x84ba2000000004",
+   "id": "disappeared:0x84ba200000000004",
    "type": "disappeared",
    "severity": "warning",
-   "ieee": "0x84ba2000000004",
+   "ieee": "0x84ba200000000004",
    "device": "Fernbedienung Wohnzimmer",
    "area_id": "wohnzimmer",
    "placeholders": {
@@ -388,10 +388,10 @@
    "related": []
   },
   {
-   "id": "disappeared:0xa4c1380000002d",
+   "id": "disappeared:0xa4c138000000002d",
    "type": "disappeared",
    "severity": "warning",
-   "ieee": "0xa4c1380000002d",
+   "ieee": "0xa4c138000000002d",
    "device": "Klima Wohnzimmer",
    "area_id": "wohnzimmer",
    "placeholders": {
@@ -405,10 +405,10 @@
    "related": []
   },
   {
-   "id": "part_time_router:0x00178800000028",
+   "id": "part_time_router:0x0017880000000028",
    "type": "part_time_router",
    "severity": "warning",
-   "ieee": "0x00178800000028",
+   "ieee": "0x0017880000000028",
    "device": "Licht Ankleide",
    "area_id": "ankleide",
    "placeholders": {
@@ -422,10 +422,10 @@
    "related": []
   },
   {
-   "id": "part_time_router:0x7cc6b60000002c",
+   "id": "part_time_router:0x7cc6b6000000002c",
    "type": "part_time_router",
    "severity": "warning",
-   "ieee": "0x7cc6b60000002c",
+   "ieee": "0x7cc6b6000000002c",
    "device": "Deckenlicht Esszimmer",
    "area_id": "esszimmer",
    "placeholders": {
@@ -439,10 +439,10 @@
    "related": []
   },
   {
-   "id": "part_time_router:0x94b21600000027",
+   "id": "part_time_router:0x94b2160000000027",
    "type": "part_time_router",
    "severity": "warning",
-   "ieee": "0x94b21600000027",
+   "ieee": "0x94b2160000000027",
    "device": "Deckenlicht Küche",
    "area_id": "küche",
    "placeholders": {
@@ -456,10 +456,10 @@
    "related": []
   },
   {
-   "id": "part_time_router:0xd4486700000029",
+   "id": "part_time_router:0xd448670000000029",
    "type": "part_time_router",
    "severity": "warning",
-   "ieee": "0xd4486700000029",
+   "ieee": "0xd448670000000029",
    "device": "Licht Bad RGB",
    "area_id": "bad",
    "placeholders": {
@@ -503,8 +503,8 @@
     "count": "2"
    },
    "related": [
-    "0x00158d00000013",
-    "0x00158d00000014"
+    "0x00158d0000000013",
+    "0x00158d0000000014"
    ]
   },
   {
@@ -522,8 +522,8 @@
     "count": "2"
    },
    "related": [
-    "0x00158d0000002e",
-    "0x0017880000001f"
+    "0x00158d000000002e",
+    "0x001788000000001f"
    ]
   },
   {
@@ -541,16 +541,16 @@
     "count": "3"
    },
    "related": [
-    "0x00158d00000006",
-    "0x00158d0000000c",
-    "0x0c431400000008"
+    "0x00158d0000000006",
+    "0x00158d000000000c",
+    "0x0c43140000000008"
    ]
   },
   {
-   "id": "weak_link:0xa4c13800000018",
+   "id": "weak_link:0xa4c1380000000018",
    "type": "weak_link",
    "severity": "warning",
-   "ieee": "0xa4c13800000018",
+   "ieee": "0xa4c1380000000018",
    "device": "Klima Küche",
    "area_id": "küche",
    "placeholders": {
@@ -562,10 +562,10 @@
     "hours": "0",
     "lqi": "60",
     "parent": "Coordinator",
-    "parent_ieee": "0x00124b00000001"
+    "parent_ieee": "0x00124b0000000001"
    },
    "related": [
-    "0x00124b00000001"
+    "0x00124b0000000001"
    ]
   }
  ],
@@ -1113,12 +1113,12 @@
  },
  "topology": {
   "coordinator": {
-   "ieee": "0x00124b00000001",
+   "ieee": "0x00124b0000000001",
    "name": "Coordinator"
   },
   "nodes": [
    {
-    "ieee": "0x00124b00000005",
+    "ieee": "0x00124b0000000005",
     "name": "Router Flur",
     "type": "router",
     "kind": "always_on",
@@ -1127,7 +1127,7 @@
     "parent": null,
     "parent_lqi": null,
     "children": [
-     "0x00158d00000013"
+     "0x00158d0000000013"
     ],
     "area": "Flur",
     "area_id": "flur",
@@ -1138,7 +1138,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00124b0000000e",
+    "ieee": "0x00124b000000000e",
     "name": "Klima Gäste-WC",
     "type": "end_device",
     "kind": null,
@@ -1156,7 +1156,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000002",
+    "ieee": "0x00158d0000000002",
     "name": "Bewegung Bad",
     "type": "end_device",
     "kind": null,
@@ -1174,13 +1174,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000003",
+    "ieee": "0x00158d0000000003",
     "name": "Bewegung Terrasse",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0xec1bbd0000002b",
+    "parent": "0xec1bbd000000002b",
     "parent_lqi": 233,
     "children": [],
     "area": "Terrasse",
@@ -1192,13 +1192,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000006",
+    "ieee": "0x00158d0000000006",
     "name": "Fenster Hauswirtschaft",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00124b00000001",
+    "parent": "0x00124b0000000001",
     "parent_lqi": 208,
     "children": [],
     "area": "Hauswirtschaft",
@@ -1210,7 +1210,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d0000000b",
+    "ieee": "0x00158d000000000b",
     "name": "Haustür Flur",
     "type": "end_device",
     "kind": null,
@@ -1228,7 +1228,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d0000000c",
+    "ieee": "0x00158d000000000c",
     "name": "Tür Hauswirtschaft",
     "type": "end_device",
     "kind": null,
@@ -1246,7 +1246,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000010",
+    "ieee": "0x00158d0000000010",
     "name": "Fenster Dachboden",
     "type": "end_device",
     "kind": null,
@@ -1264,13 +1264,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000011",
+    "ieee": "0x00158d0000000011",
     "name": "Fenster Kinderzimmer",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x0017880000001c",
+    "parent": "0x001788000000001c",
     "parent_lqi": 253,
     "children": [],
     "area": "Kinderzimmer",
@@ -1282,7 +1282,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000012",
+    "ieee": "0x00158d0000000012",
     "name": "Fenster Küche",
     "type": "end_device",
     "kind": null,
@@ -1300,13 +1300,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000013",
+    "ieee": "0x00158d0000000013",
     "name": "Fenster Ankleide",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00124b00000005",
+    "parent": "0x00124b0000000005",
     "parent_lqi": 170,
     "children": [],
     "area": "Ankleide",
@@ -1318,13 +1318,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000014",
+    "ieee": "0x00158d0000000014",
     "name": "Tür Ankleide",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x0017880000001c",
+    "parent": "0x001788000000001c",
     "parent_lqi": 227,
     "children": [],
     "area": "Ankleide",
@@ -1336,13 +1336,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000015",
+    "ieee": "0x00158d0000000015",
     "name": "Fenster Büro Seite",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0xa4c1380000002a",
+    "parent": "0xa4c138000000002a",
     "parent_lqi": 127,
     "children": [],
     "area": "Büro",
@@ -1354,7 +1354,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000016",
+    "ieee": "0x00158d0000000016",
     "name": "Fenster Büro Vorne",
     "type": "end_device",
     "kind": null,
@@ -1372,7 +1372,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d00000024",
+    "ieee": "0x00158d0000000024",
     "name": "Sensor Schlafzimmer",
     "type": "end_device",
     "kind": null,
@@ -1390,7 +1390,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00158d0000002e",
+    "ieee": "0x00158d000000002e",
     "name": "Tor Garage",
     "type": "end_device",
     "kind": null,
@@ -1408,7 +1408,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00178800000019",
+    "ieee": "0x0017880000000019",
     "name": "Lampe Wohnzimmer",
     "type": "router",
     "kind": "always_on",
@@ -1417,7 +1417,7 @@
     "parent": null,
     "parent_lqi": null,
     "children": [
-     "0x842e140000000f"
+     "0x842e14000000000f"
     ],
     "area": "Wohnzimmer",
     "area_id": "wohnzimmer",
@@ -1428,7 +1428,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x0017880000001b",
+    "ieee": "0x001788000000001b",
     "name": "Licht Bad",
     "type": "router",
     "kind": "part_time",
@@ -1446,7 +1446,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x0017880000001c",
+    "ieee": "0x001788000000001c",
     "name": "Licht Kinderzimmer",
     "type": "router",
     "kind": "always_on",
@@ -1455,10 +1455,10 @@
     "parent": null,
     "parent_lqi": null,
     "children": [
-     "0x00158d00000011",
-     "0x00158d00000014",
-     "0x0017880000001f",
-     "0xa4c13800000022"
+     "0x00158d0000000011",
+     "0x00158d0000000014",
+     "0x001788000000001f",
+     "0xa4c1380000000022"
     ],
     "area": "Kinderzimmer",
     "area_id": "kinderzimmer",
@@ -1469,7 +1469,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x0017880000001d",
+    "ieee": "0x001788000000001d",
     "name": "Licht Schlafzimmer",
     "type": "router",
     "kind": "part_time",
@@ -1487,13 +1487,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x0017880000001e",
+    "ieee": "0x001788000000001e",
     "name": "Dimmer Büro",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0xa4c1380000002a",
+    "parent": "0xa4c138000000002a",
     "parent_lqi": 121,
     "children": [],
     "area": "Büro",
@@ -1505,13 +1505,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x0017880000001f",
+    "ieee": "0x001788000000001f",
     "name": "Dimmer Garage",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x0017880000001c",
+    "parent": "0x001788000000001c",
     "parent_lqi": 111,
     "children": [],
     "area": "Garage",
@@ -1523,7 +1523,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00178800000025",
+    "ieee": "0x0017880000000025",
     "name": "Deko Flur unten",
     "type": "router",
     "kind": "part_time",
@@ -1541,7 +1541,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00178800000026",
+    "ieee": "0x0017880000000026",
     "name": "Deko Flur oben",
     "type": "router",
     "kind": "part_time",
@@ -1559,7 +1559,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x00178800000028",
+    "ieee": "0x0017880000000028",
     "name": "Licht Ankleide",
     "type": "router",
     "kind": "part_time",
@@ -1577,13 +1577,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x0c431400000008",
+    "ieee": "0x0c43140000000008",
     "name": "Bewegung Hauswirtschaft",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00124b00000001",
+    "parent": "0x00124b0000000001",
     "parent_lqi": 168,
     "children": [],
     "area": "Hauswirtschaft",
@@ -1595,7 +1595,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x348d1300000031",
+    "ieee": "0x348d130000000031",
     "name": "Steckdose Wohnzimmer Fernseher",
     "type": "router",
     "kind": "always_on",
@@ -1613,13 +1613,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x680ae200000009",
+    "ieee": "0x680ae20000000009",
     "name": "Fernbedienung Wohnzimmer 2",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00124b00000001",
+    "parent": "0x00124b0000000001",
     "parent_lqi": 146,
     "children": [],
     "area": "Wohnzimmer",
@@ -1631,7 +1631,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x7cb03e00000007",
+    "ieee": "0x7cb03e0000000007",
     "name": "Steckdose Wohnzimmer TV",
     "type": "router",
     "kind": "part_time",
@@ -1649,7 +1649,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x7cb03e0000000a",
+    "ieee": "0x7cb03e000000000a",
     "name": "Steckdose Kinderzimmer TV",
     "type": "router",
     "kind": "part_time",
@@ -1667,7 +1667,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x7cb03e00000017",
+    "ieee": "0x7cb03e0000000017",
     "name": "Steckdose Flur",
     "type": "router",
     "kind": "part_time",
@@ -1685,7 +1685,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x7cc6b60000002c",
+    "ieee": "0x7cc6b6000000002c",
     "name": "Deckenlicht Esszimmer",
     "type": "router",
     "kind": "part_time",
@@ -1703,13 +1703,13 @@
     "device_id": null
    },
    {
-    "ieee": "0x842e140000000f",
+    "ieee": "0x842e14000000000f",
     "name": "Fernbedienung Wohnzimmer 3",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00178800000019",
+    "parent": "0x0017880000000019",
     "parent_lqi": 181,
     "children": [],
     "area": "Wohnzimmer",
@@ -1721,7 +1721,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x84ba2000000004",
+    "ieee": "0x84ba200000000004",
     "name": "Fernbedienung Wohnzimmer",
     "type": "end_device",
     "kind": null,
@@ -1739,7 +1739,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x9035ea00000023",
+    "ieee": "0x9035ea0000000023",
     "name": "Stimmungslicht Wohnzimmer",
     "type": "router",
     "kind": "part_time",
@@ -1757,7 +1757,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x94b21600000027",
+    "ieee": "0x94b2160000000027",
     "name": "Deckenlicht Küche",
     "type": "router",
     "kind": "part_time",
@@ -1775,7 +1775,7 @@
     "device_id": null
    },
    {
-    "ieee": "0x94deb80000001a",
+    "ieee": "0x94deb8000000001a",
     "name": "Stehlampe Wohnzimmer",
     "type": "router",
     "kind": "part_time",
@@ -1793,13 +1793,13 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c13800000018",
+    "ieee": "0xa4c1380000000018",
     "name": "Klima Küche",
     "type": "end_device",
     "kind": null,
     "state": "weak",
     "score": 80,
-    "parent": "0x00124b00000001",
+    "parent": "0x00124b0000000001",
     "parent_lqi": 62,
     "children": [],
     "area": "Küche",
@@ -1811,7 +1811,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c13800000020",
+    "ieee": "0xa4c1380000000020",
     "name": "Klima Büro",
     "type": "end_device",
     "kind": null,
@@ -1829,7 +1829,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c13800000021",
+    "ieee": "0xa4c1380000000021",
     "name": "Klima Flur",
     "type": "end_device",
     "kind": null,
@@ -1847,13 +1847,13 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c13800000022",
+    "ieee": "0xa4c1380000000022",
     "name": "Klima Kinderzimmer",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x0017880000001c",
+    "parent": "0x001788000000001c",
     "parent_lqi": 206,
     "children": [],
     "area": "Kinderzimmer",
@@ -1865,7 +1865,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c1380000002a",
+    "ieee": "0xa4c138000000002a",
     "name": "Steckdosenleiste Büro",
     "type": "router",
     "kind": "always_on",
@@ -1874,8 +1874,8 @@
     "parent": null,
     "parent_lqi": null,
     "children": [
-     "0x00158d00000015",
-     "0x0017880000001e"
+     "0x00158d0000000015",
+     "0x001788000000001e"
     ],
     "area": "Büro",
     "area_id": "büro",
@@ -1886,7 +1886,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xa4c1380000002d",
+    "ieee": "0xa4c138000000002d",
     "name": "Klima Wohnzimmer",
     "type": "end_device",
     "kind": null,
@@ -1904,13 +1904,13 @@
     "device_id": null
    },
    {
-    "ieee": "0xbc33ac0000000d",
+    "ieee": "0xbc33ac000000000d",
     "name": "Schalter Küche",
     "type": "end_device",
     "kind": null,
     "state": "ok",
     "score": 100,
-    "parent": "0x00124b00000001",
+    "parent": "0x00124b0000000001",
     "parent_lqi": 172,
     "children": [],
     "area": "Küche",
@@ -1922,7 +1922,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xd4486700000029",
+    "ieee": "0xd448670000000029",
     "name": "Licht Bad RGB",
     "type": "router",
     "kind": "part_time",
@@ -1940,7 +1940,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xec1bbd0000002b",
+    "ieee": "0xec1bbd000000002b",
     "name": "Schranklicht Wohnzimmer",
     "type": "router",
     "kind": "always_on",
@@ -1949,7 +1949,7 @@
     "parent": null,
     "parent_lqi": null,
     "children": [
-     "0x00158d00000003"
+     "0x00158d0000000003"
     ],
     "area": "Wohnzimmer",
     "area_id": "wohnzimmer",
@@ -1960,7 +1960,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xf0fd450000002f",
+    "ieee": "0xf0fd45000000002f",
     "name": "Steckdose Küche",
     "type": "router",
     "kind": "always_on",
@@ -1978,7 +1978,7 @@
     "device_id": null
    },
    {
-    "ieee": "0xf0fd4500000030",
+    "ieee": "0xf0fd450000000030",
     "name": "Steckdose Hauswirtschaft",
     "type": "router",
     "kind": "part_time",
@@ -1998,147 +1998,147 @@
   ],
   "links": [
    {
-    "a": "0x00124b00000001",
-    "b": "0x00124b00000005",
+    "a": "0x00124b0000000001",
+    "b": "0x00124b0000000005",
     "lqi": 101
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0x00178800000019",
+    "a": "0x00124b0000000001",
+    "b": "0x0017880000000019",
     "lqi": 200
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0x0017880000001c",
+    "a": "0x00124b0000000001",
+    "b": "0x001788000000001c",
     "lqi": 97
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0x348d1300000031",
+    "a": "0x00124b0000000001",
+    "b": "0x348d130000000031",
     "lqi": 255
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0xa4c1380000002a",
+    "a": "0x00124b0000000001",
+    "b": "0xa4c138000000002a",
     "lqi": 63
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0xec1bbd0000002b",
+    "a": "0x00124b0000000001",
+    "b": "0xec1bbd000000002b",
     "lqi": 255
    },
    {
-    "a": "0x00124b00000001",
-    "b": "0xf0fd450000002f",
+    "a": "0x00124b0000000001",
+    "b": "0xf0fd45000000002f",
     "lqi": 159
    },
    {
-    "a": "0x00124b00000005",
-    "b": "0x00178800000019",
+    "a": "0x00124b0000000005",
+    "b": "0x0017880000000019",
     "lqi": 49
    },
    {
-    "a": "0x00124b00000005",
-    "b": "0x0017880000001c",
+    "a": "0x00124b0000000005",
+    "b": "0x001788000000001c",
     "lqi": 156
    },
    {
-    "a": "0x00124b00000005",
-    "b": "0x348d1300000031",
+    "a": "0x00124b0000000005",
+    "b": "0x348d130000000031",
     "lqi": 81
    },
    {
-    "a": "0x00124b00000005",
-    "b": "0xa4c1380000002a",
+    "a": "0x00124b0000000005",
+    "b": "0xa4c138000000002a",
     "lqi": 33
    },
    {
-    "a": "0x00124b00000005",
-    "b": "0xf0fd450000002f",
+    "a": "0x00124b0000000005",
+    "b": "0xf0fd45000000002f",
     "lqi": 42
    },
    {
-    "a": "0x00178800000019",
-    "b": "0x0017880000001c",
+    "a": "0x0017880000000019",
+    "b": "0x001788000000001c",
     "lqi": 89
    },
    {
-    "a": "0x00178800000019",
-    "b": "0x348d1300000031",
+    "a": "0x0017880000000019",
+    "b": "0x348d130000000031",
     "lqi": 192
    },
    {
-    "a": "0x00178800000019",
-    "b": "0xa4c1380000002a",
+    "a": "0x0017880000000019",
+    "b": "0xa4c138000000002a",
     "lqi": 82
    },
    {
-    "a": "0x00178800000019",
-    "b": "0xec1bbd0000002b",
+    "a": "0x0017880000000019",
+    "b": "0xec1bbd000000002b",
     "lqi": 196
    },
    {
-    "a": "0x00178800000019",
-    "b": "0xf0fd450000002f",
+    "a": "0x0017880000000019",
+    "b": "0xf0fd45000000002f",
     "lqi": 175
    },
    {
-    "a": "0x0017880000001c",
-    "b": "0x348d1300000031",
+    "a": "0x001788000000001c",
+    "b": "0x348d130000000031",
     "lqi": 48
    },
    {
-    "a": "0x0017880000001c",
-    "b": "0xa4c1380000002a",
+    "a": "0x001788000000001c",
+    "b": "0xa4c138000000002a",
     "lqi": 68
    },
    {
-    "a": "0x0017880000001c",
-    "b": "0xec1bbd0000002b",
+    "a": "0x001788000000001c",
+    "b": "0xec1bbd000000002b",
     "lqi": 90
    },
    {
-    "a": "0x0017880000001c",
-    "b": "0xf0fd450000002f",
+    "a": "0x001788000000001c",
+    "b": "0xf0fd45000000002f",
     "lqi": 133
    },
    {
-    "a": "0x348d1300000031",
-    "b": "0xa4c1380000002a",
+    "a": "0x348d130000000031",
+    "b": "0xa4c138000000002a",
     "lqi": 80
    },
    {
-    "a": "0x348d1300000031",
-    "b": "0xec1bbd0000002b",
+    "a": "0x348d130000000031",
+    "b": "0xec1bbd000000002b",
     "lqi": 239
    },
    {
-    "a": "0x348d1300000031",
-    "b": "0xf0fd450000002f",
+    "a": "0x348d130000000031",
+    "b": "0xf0fd45000000002f",
     "lqi": 105
    },
    {
-    "a": "0xa4c1380000002a",
-    "b": "0xec1bbd0000002b",
+    "a": "0xa4c138000000002a",
+    "b": "0xec1bbd000000002b",
     "lqi": 91
    },
    {
-    "a": "0xa4c1380000002a",
-    "b": "0xf0fd450000002f",
+    "a": "0xa4c138000000002a",
+    "b": "0xf0fd45000000002f",
     "lqi": 135
    },
    {
-    "a": "0xec1bbd0000002b",
-    "b": "0xf0fd450000002f",
+    "a": "0xec1bbd000000002b",
+    "b": "0xf0fd45000000002f",
     "lqi": 120
    }
   ],
   "unknown_parent": [
-   "0x00158d0000000c",
-   "0x00158d00000010",
-   "0x00158d00000012",
-   "0x00158d0000002e",
-   "0xa4c13800000020"
+   "0x00158d000000000c",
+   "0x00158d0000000010",
+   "0x00158d0000000012",
+   "0x00158d000000002e",
+   "0xa4c1380000000020"
   ],
   "unknown_neighbors": [
    "0x001788010b25b9f6"
@@ -2230,37 +2230,37 @@
  },
  "_demo": {
   "rates": {
-   "0xa4c1380000002a": 0.07833346388910647,
-   "0x0017880000001c": 0.0,
-   "0xa4c13800000018": 0.010000016666694445,
-   "0xa4c13800000022": 0.01666669444449074,
-   "0x00158d00000003": 0.0,
-   "0x00158d00000013": 0.0,
-   "0xa4c13800000020": 0.00833334722224537,
-   "0x00158d00000006": 0.001666669444449074,
-   "0x00158d0000000c": 0.0,
-   "0x0c431400000008": 0.0,
-   "0x0017880000001f": 0.0,
-   "0x0017880000001e": 0.0,
-   "0x00178800000019": 0.0,
-   "0x348d1300000031": 0.0,
-   "0xbc33ac0000000d": 0.0,
-   "0x00158d00000014": 0.0,
-   "0x00158d0000002e": 0.001666669444449074,
-   "0xf0fd450000002f": 0.003333338888898148,
-   "0x00158d00000011": 0.0,
-   "0x00158d00000015": 0.001666669444449074,
-   "0x00158d00000010": 0.0,
-   "0x680ae200000009": 0.0,
-   "0x00158d00000012": 0.0,
-   "0x842e140000000f": 0.0,
-   "0xd4486700000029": 0.0,
-   "0xec1bbd0000002b": 0.0,
-   "0x94b21600000027": 0.0,
-   "0x7cc6b60000002c": 0.0,
-   "0x00178800000028": 0.0
+   "0xa4c138000000002a": 0.07833346388910647,
+   "0x001788000000001c": 0.0,
+   "0xa4c1380000000018": 0.010000016666694445,
+   "0xa4c1380000000022": 0.01666669444449074,
+   "0x00158d0000000003": 0.0,
+   "0x00158d0000000013": 0.0,
+   "0xa4c1380000000020": 0.00833334722224537,
+   "0x00158d0000000006": 0.001666669444449074,
+   "0x00158d000000000c": 0.0,
+   "0x0c43140000000008": 0.0,
+   "0x001788000000001f": 0.0,
+   "0x001788000000001e": 0.0,
+   "0x0017880000000019": 0.0,
+   "0x348d130000000031": 0.0,
+   "0xbc33ac000000000d": 0.0,
+   "0x00158d0000000014": 0.0,
+   "0x00158d000000002e": 0.001666669444449074,
+   "0xf0fd45000000002f": 0.003333338888898148,
+   "0x00158d0000000011": 0.0,
+   "0x00158d0000000015": 0.001666669444449074,
+   "0x00158d0000000010": 0.0,
+   "0x680ae20000000009": 0.0,
+   "0x00158d0000000012": 0.0,
+   "0x842e14000000000f": 0.0,
+   "0xd448670000000029": 0.0,
+   "0xec1bbd000000002b": 0.0,
+   "0x94b2160000000027": 0.0,
+   "0x7cc6b6000000002c": 0.0,
+   "0x0017880000000028": 0.0
   },
-  "alert_router": "0x00178800000019",
+  "alert_router": "0x0017880000000019",
   "floorplans": [
    {
     "plan_id": "eg",
@@ -2273,119 +2273,119 @@
       0.5,
       0.13157894736842105
      ],
-     "0x00158d00000003": [
+     "0x00158d0000000003": [
       0.6121,
       0.8592
      ],
-     "0x84ba2000000004": [
+     "0x84ba200000000004": [
       0.576,
       0.4263
      ],
-     "0x00124b00000005": [
+     "0x00124b0000000005": [
       0.7789,
       0.174
      ],
-     "0x00158d00000006": [
+     "0x00158d0000000006": [
       0.8584,
       0.3961
      ],
-     "0x7cb03e00000007": [
+     "0x7cb03e0000000007": [
       0.7234,
       0.6976
      ],
-     "0x0c431400000008": [
+     "0x0c43140000000008": [
       0.8677,
       0.4179
      ],
-     "0x680ae200000009": [
+     "0x680ae20000000009": [
       0.623,
       0.5462
      ],
-     "0x00158d0000000b": [
+     "0x00158d000000000b": [
       0.6174,
       0.1043
      ],
-     "0x00158d0000000c": [
+     "0x00158d000000000c": [
       0.9299,
       0.4528
      ],
-     "0xbc33ac0000000d": [
+     "0xbc33ac000000000d": [
       0.2165,
       0.4817
      ],
-     "0x00124b0000000e": [
+     "0x00124b000000000e": [
       0.0522,
       0.1718
      ],
-     "0x842e140000000f": [
+     "0x842e14000000000f": [
       0.5979,
       0.6133
      ],
-     "0x00158d00000012": [
+     "0x00158d0000000012": [
       0.2043,
       0.4619
      ],
-     "0xa4c13800000018": [
+     "0xa4c1380000000018": [
       0.0776,
       0.4764
      ],
-     "0x00178800000019": [
+     "0x0017880000000019": [
       0.6764,
       0.7121
      ],
-     "0x94deb80000001a": [
+     "0x94deb8000000001a": [
       0.5642,
       0.4659
      ],
-     "0x0017880000001f": [
+     "0x001788000000001f": [
       0.8356,
       0.6395
      ],
-     "0xa4c13800000021": [
+     "0xa4c1380000000021": [
       0.4704,
       0.1474
      ],
-     "0x9035ea00000023": [
+     "0x9035ea0000000023": [
       0.5893,
       0.5607
      ],
-     "0x00178800000025": [
+     "0x0017880000000025": [
       0.6857,
       0.1198
      ],
-     "0x00178800000026": [
+     "0x0017880000000026": [
       0.6753,
       0.1564
      ],
-     "0x94b21600000027": [
+     "0x94b2160000000027": [
       0.1071,
       0.6239
      ],
-     "0xec1bbd0000002b": [
+     "0xec1bbd000000002b": [
       0.5658,
       0.4369
      ],
-     "0x7cc6b60000002c": [
+     "0x7cc6b6000000002c": [
       0.3291,
       0.4487
      ],
-     "0xa4c1380000002d": [
+     "0xa4c138000000002d": [
       0.5964,
       0.5067
      ],
-     "0x00158d0000002e": [
+     "0x00158d000000002e": [
       0.9348,
       0.6013
      ],
-     "0xf0fd450000002f": [
+     "0xf0fd45000000002f": [
       0.1206,
       0.591
      ],
-     "0xf0fd4500000030": [
+     "0xf0fd450000000030": [
       0.819,
       0.3652
      ],
-     "0x348d1300000031": [
+     "0x348d130000000031": [
       0.5681,
       0.5225
      ]
@@ -2398,67 +2398,67 @@
     "level": 1,
     "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjU2MCIgdmlld0JveD0iMCAwIDE2MDAgNTYwIj48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI1NjAiIGZpbGw9IiNmYmZhZjciLz48cmVjdCB4PSI0MCIgeT0iNDAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMzQwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM1NTU4NWMiIHN0cm9rZS13aWR0aD0iNyIvPjx0ZXh0IHg9IjU2IiB5PSI3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5TY2hsYWZ6aW1tZXI8L3RleHQ+PHJlY3QgeD0iNDAwIiB5PSI0MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIzNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDE2IiB5PSI3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5BbmtsZWlkZTwvdGV4dD48cmVjdCB4PSI2MDAiIHk9IjQwIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI2MTYiIHk9Ijc0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPkJhZDwvdGV4dD48cmVjdCB4PSI4NTAiIHk9IjQwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI4NjYiIHk9Ijc0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPktpbmRlcnppbW1lcjwvdGV4dD48cmVjdCB4PSIxMjAwIiB5PSI0MCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIzNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iMTIxNiIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+QsO8cm88L3RleHQ+PHJlY3QgeD0iNDAiIHk9IjQwMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTAiIHN0cm9rZS13aWR0aD0iNCIvPjx0ZXh0IHg9IjU2IiB5PSI0MzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+RGFjaGJvZGVuPC90ZXh0Pjwvc3ZnPg==",
     "positions": {
-     "0x00158d00000002": [
+     "0x00158d0000000002": [
       0.4059,
       0.4013
      ],
-     "0x7cb03e0000000a": [
+     "0x7cb03e000000000a": [
       0.7018,
       0.3696
      ],
-     "0x00158d00000011": [
+     "0x00158d0000000011": [
       0.7068,
       0.3958
      ],
-     "0x00158d00000013": [
+     "0x00158d0000000013": [
       0.286,
       0.3157
      ],
-     "0x00158d00000014": [
+     "0x00158d0000000014": [
       0.3287,
       0.5781
      ],
-     "0x00158d00000015": [
+     "0x00158d0000000015": [
       0.8645,
       0.4621
      ],
-     "0x00158d00000016": [
+     "0x00158d0000000016": [
       0.9029,
       0.5229
      ],
-     "0x0017880000001b": [
+     "0x001788000000001b": [
       0.4816,
       0.4096
      ],
-     "0x0017880000001c": [
+     "0x001788000000001c": [
       0.5811,
       0.4234
      ],
-     "0x0017880000001d": [
+     "0x001788000000001d": [
       0.0926,
       0.5408
      ],
-     "0x0017880000001e": [
+     "0x001788000000001e": [
       0.8504,
       0.2757
      ],
-     "0xa4c13800000022": [
+     "0xa4c1380000000022": [
       0.6607,
       0.3447
      ],
-     "0x00158d00000024": [
+     "0x00158d0000000024": [
       0.1519,
       0.255
      ],
-     "0x00178800000028": [
+     "0x0017880000000028": [
       0.3506,
       0.3323
      ],
-     "0xd4486700000029": [
+     "0xd448670000000029": [
       0.5004,
       0.2922
      ],
-     "0xa4c1380000002a": [
+     "0xa4c138000000002a": [
       0.8255,
       0.4303
      ]
@@ -2830,21 +2830,21 @@
     "impact": 11,
     "improved": [
      {
-      "ieee": "0x0c431400000008",
+      "ieee": "0x0c43140000000008",
       "name": "Bewegung Hauswirtschaft",
       "reason": "far_parent",
       "before_parent": "Coordinator",
       "before_lqi": 168
      },
      {
-      "ieee": "0x00158d00000006",
+      "ieee": "0x00158d0000000006",
       "name": "Fenster Hauswirtschaft",
       "reason": "far_parent",
       "before_parent": "Coordinator",
       "before_lqi": 208
      },
      {
-      "ieee": "0x00158d0000000c",
+      "ieee": "0x00158d000000000c",
       "name": "Tür Hauswirtschaft",
       "reason": "no_parent",
       "before_parent": null,
@@ -2866,21 +2866,21 @@
     "impact": 11,
     "improved": [
      {
-      "ieee": "0x00158d00000012",
+      "ieee": "0x00158d0000000012",
       "name": "Fenster Küche",
       "reason": "no_parent",
       "before_parent": null,
       "before_lqi": null
      },
      {
-      "ieee": "0xa4c13800000018",
+      "ieee": "0xa4c1380000000018",
       "name": "Klima Küche",
       "reason": "weak_link",
       "before_parent": "Coordinator",
       "before_lqi": 62
      },
      {
-      "ieee": "0xbc33ac0000000d",
+      "ieee": "0xbc33ac000000000d",
       "name": "Schalter Küche",
       "reason": "far_parent",
       "before_parent": "Coordinator",
@@ -2902,21 +2902,21 @@
     "impact": 9,
     "improved": [
      {
-      "ieee": "0x84ba2000000004",
+      "ieee": "0x84ba200000000004",
       "name": "Fernbedienung Wohnzimmer",
       "reason": "no_parent",
       "before_parent": null,
       "before_lqi": null
      },
      {
-      "ieee": "0x680ae200000009",
+      "ieee": "0x680ae20000000009",
       "name": "Fernbedienung Wohnzimmer 2",
       "reason": "far_parent",
       "before_parent": "Coordinator",
       "before_lqi": 146
      },
      {
-      "ieee": "0xa4c1380000002d",
+      "ieee": "0xa4c138000000002d",
       "name": "Klima Wohnzimmer",
       "reason": "no_parent",
       "before_parent": null,
@@ -2936,14 +2936,14 @@
     "impact": 8,
     "improved": [
      {
-      "ieee": "0x00158d00000013",
+      "ieee": "0x00158d0000000013",
       "name": "Fenster Ankleide",
       "reason": "far_parent",
       "before_parent": "Router Flur",
       "before_lqi": 170
      },
      {
-      "ieee": "0x00158d00000014",
+      "ieee": "0x00158d0000000014",
       "name": "Tür Ankleide",
       "reason": "far_parent",
       "before_parent": "Licht Kinderzimmer",
@@ -2965,14 +2965,14 @@
     "impact": 8,
     "improved": [
      {
-      "ieee": "0x0017880000001f",
+      "ieee": "0x001788000000001f",
       "name": "Dimmer Garage",
       "reason": "far_parent",
       "before_parent": "Licht Kinderzimmer",
       "before_lqi": 111
      },
      {
-      "ieee": "0x00158d0000002e",
+      "ieee": "0x00158d000000002e",
       "name": "Tor Garage",
       "reason": "no_parent",
       "before_parent": null,
@@ -2994,7 +2994,7 @@
     "impact": 3,
     "improved": [
      {
-      "ieee": "0xa4c13800000020",
+      "ieee": "0xa4c1380000000020",
       "name": "Klima Büro",
       "reason": "no_parent",
       "before_parent": null,
@@ -3014,7 +3014,7 @@
     "impact": 3,
     "improved": [
      {
-      "ieee": "0x00158d00000010",
+      "ieee": "0x00158d0000000010",
       "name": "Fenster Dachboden",
       "reason": "no_parent",
       "before_parent": null,
@@ -3034,7 +3034,7 @@
     "impact": 3,
     "improved": [
      {
-      "ieee": "0x00158d00000003",
+      "ieee": "0x00158d0000000003",
       "name": "Bewegung Terrasse",
       "reason": "far_parent",
       "before_parent": "Schranklicht Wohnzimmer",

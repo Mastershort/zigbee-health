@@ -3,15 +3,16 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from homeassistant.components import mqtt
 from homeassistant.const import Platform
 from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers import config_validation as cv
+from homeassistant.helpers.storage import Store
 from homeassistant.loader import async_get_integration
 
-from .const import DOMAIN
+from .const import DOMAIN, STORAGE_VERSION
 from .coordinator import ZigbeeHealthConfigEntry, ZigbeeHealthCoordinator
 from .floorplan import FloorplanStore
 from .issues import async_delete_all_issues
@@ -116,4 +117,6 @@ async def async_unload_entry(hass: HomeAssistant, entry: ZigbeeHealthConfigEntry
 
 async def async_remove_entry(hass: HomeAssistant, entry: ZigbeeHealthConfigEntry) -> None:
     async_delete_all_issues(hass, entry)
+    # Remove everything the entry stored: history and ignores, floor plans, building.
+    await Store[dict[str, Any]](hass, STORAGE_VERSION, f"{DOMAIN}.{entry.entry_id}").async_remove()
     await FloorplanStore(hass, entry.entry_id).async_remove()

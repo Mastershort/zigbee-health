@@ -67,148 +67,148 @@
         ],
         "device_options": {},
         "devices": {
-            "0x00124b0000000e": {
+            "0x00124b000000000e": {
                 "friendly_name": "Klima Gäste-WC"
             },
-            "0x00124b00000005": {
+            "0x00124b0000000005": {
                 "friendly_name": "Router Flur"
             },
-            "0x00158d00000003": {
+            "0x00158d0000000003": {
                 "friendly_name": "Bewegung Terrasse"
             },
-            "0x00158d00000002": {
+            "0x00158d0000000002": {
                 "friendly_name": "Bewegung Bad"
             },
-            "0x00158d00000015": {
+            "0x00158d0000000015": {
                 "friendly_name": "Fenster Büro Seite"
             },
-            "0x00158d0000002e": {
+            "0x00158d000000002e": {
                 "friendly_name": "Tor Garage"
             },
-            "0x00158d00000012": {
+            "0x00158d0000000012": {
                 "friendly_name": "Fenster Küche"
             },
-            "0x00158d00000014": {
+            "0x00158d0000000014": {
                 "friendly_name": "Tür Ankleide"
             },
-            "0x00158d00000010": {
+            "0x00158d0000000010": {
                 "friendly_name": "Fenster Dachboden"
             },
-            "0x00158d00000016": {
+            "0x00158d0000000016": {
                 "friendly_name": "Fenster Büro Vorne"
             },
-            "0x00158d00000024": {
+            "0x00158d0000000024": {
                 "friendly_name": "Sensor Schlafzimmer"
             },
-            "0x00158d00000013": {
+            "0x00158d0000000013": {
                 "friendly_name": "Fenster Ankleide"
             },
-            "0x00158d00000006": {
+            "0x00158d0000000006": {
                 "friendly_name": "Fenster Hauswirtschaft"
             },
-            "0x00158d0000000c": {
+            "0x00158d000000000c": {
                 "friendly_name": "Tür Hauswirtschaft"
             },
-            "0x00158d00000011": {
+            "0x00158d0000000011": {
                 "friendly_name": "Fenster Kinderzimmer"
             },
-            "0x00158d0000000b": {
+            "0x00158d000000000b": {
                 "friendly_name": "Haustür Flur"
             },
-            "0x0017880000001c": {
+            "0x001788000000001c": {
                 "friendly_name": "Licht Kinderzimmer"
             },
-            "0x0017880000001d": {
+            "0x001788000000001d": {
                 "friendly_name": "Licht Schlafzimmer"
             },
-            "0x00178800000026": {
+            "0x0017880000000026": {
                 "friendly_name": "Deko Flur oben"
             },
-            "0x00178800000028": {
+            "0x0017880000000028": {
                 "friendly_name": "Licht Ankleide"
             },
-            "0x0017880000001e": {
+            "0x001788000000001e": {
                 "friendly_name": "Dimmer Büro"
             },
-            "0x00178800000025": {
+            "0x0017880000000025": {
                 "friendly_name": "Deko Flur unten"
             },
-            "0x0017880000001f": {
+            "0x001788000000001f": {
                 "friendly_name": "Dimmer Garage"
             },
-            "0x0017880000001b": {
+            "0x001788000000001b": {
                 "friendly_name": "Licht Bad"
             },
-            "0x00178800000019": {
+            "0x0017880000000019": {
                 "friendly_name": "Lampe Wohnzimmer"
             },
-            "0x0c431400000008": {
+            "0x0c43140000000008": {
                 "friendly_name": "Bewegung Hauswirtschaft"
             },
-            "0x348d1300000031": {
+            "0x348d130000000031": {
                 "friendly_name": "Steckdose Wohnzimmer Fernseher"
             },
-            "0x680ae200000009": {
+            "0x680ae20000000009": {
                 "friendly_name": "Fernbedienung Wohnzimmer 2"
             },
-            "0x7cb03e0000000a": {
+            "0x7cb03e000000000a": {
                 "friendly_name": "Steckdose Kinderzimmer TV"
             },
-            "0x7cb03e00000017": {
+            "0x7cb03e0000000017": {
                 "friendly_name": "Steckdose Flur"
             },
-            "0x7cb03e00000007": {
+            "0x7cb03e0000000007": {
                 "friendly_name": "Steckdose Wohnzimmer TV"
             },
-            "0x7cc6b60000002c": {
+            "0x7cc6b6000000002c": {
                 "friendly_name": "Deckenlicht Esszimmer"
             },
-            "0x842e140000000f": {
+            "0x842e14000000000f": {
                 "friendly_name": "Fernbedienung Wohnzimmer 3"
             },
-            "0x84ba2000000004": {
+            "0x84ba200000000004": {
                 "friendly_name": "Fernbedienung Wohnzimmer"
             },
-            "0x9035ea00000023": {
+            "0x9035ea0000000023": {
                 "friendly_name": "Stimmungslicht Wohnzimmer"
             },
-            "0x94b21600000027": {
+            "0x94b2160000000027": {
                 "friendly_name": "Deckenlicht Küche"
             },
-            "0x94deb80000001a": {
+            "0x94deb8000000001a": {
                 "friendly_name": "Stehlampe Wohnzimmer"
             },
-            "0xa4c13800000018": {
+            "0xa4c1380000000018": {
                 "friendly_name": "Klima Küche"
             },
-            "0xa4c13800000021": {
+            "0xa4c1380000000021": {
                 "friendly_name": "Klima Flur"
             },
-            "0xa4c1380000002d": {
+            "0xa4c138000000002d": {
                 "friendly_name": "Klima Wohnzimmer"
             },
-            "0xa4c13800000022": {
+            "0xa4c1380000000022": {
                 "friendly_name": "Klima Kinderzimmer"
             },
-            "0xa4c1380000002a": {
+            "0xa4c138000000002a": {
                 "friendly_name": "Steckdosenleiste Büro"
             },
-            "0xa4c13800000020": {
+            "0xa4c1380000000020": {
                 "friendly_name": "Klima Büro"
             },
-            "0xbc33ac0000000d": {
+            "0xbc33ac000000000d": {
                 "friendly_name": "Schalter Küche"
             },
-            "0xd4486700000029": {
+            "0xd448670000000029": {
                 "friendly_name": "Licht Bad RGB"
             },
-            "0xec1bbd0000002b": {
+            "0xec1bbd000000002b": {
                 "friendly_name": "Schranklicht Wohnzimmer"
             },
-            "0xf0fd450000002f": {
+            "0xf0fd45000000002f": {
                 "friendly_name": "Steckdose Küche"
             },
-            "0xf0fd4500000030": {
+            "0xf0fd450000000030": {
                 "friendly_name": "Steckdose Hauswirtschaft"
             }
         },
@@ -219,7 +219,7 @@
             "port": 8099
         },
         "groups": {
-            "0x00158d00000003": {
+            "0x00158d0000000003": {
                 "friendly_name": "Sensor_Buero"
             },
             "6066005678298434": {
@@ -1515,7 +1515,7 @@
         "type": "object"
     },
     "coordinator": {
-        "ieee_address": "0x00124b00000001",
+        "ieee_address": "0x00124b0000000001",
         "meta": {
             "maintrel": 1,
             "majorrel": 2,
@@ -1533,7 +1533,7 @@
     },
     "network": {
         "channel": 11,
-        "extended_pan_id": "0x00124b00000001",
+        "extended_pan_id": "0x00124b0000000001",
         "pan_id": 6754
     },
     "os": {
