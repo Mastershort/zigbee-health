@@ -1,0 +1,22 @@
+{
+  "name": "zigbee-health-card",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Lovelace card for the Zigbee Health integration",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && esbuild src/zigbee-health-card.ts --bundle --minify --format=esm --target=es2021 --outfile=../custom_components/zigbee_health/frontend/zigbee-health-card.js && esbuild src/scene3d.ts --bundle --minify --format=esm --target=es2021 --outfile=../custom_components/zigbee_health/frontend/zigbee-health-3d.js",
+    "watch": "esbuild src/zigbee-health-card.ts --bundle --format=esm --target=es2021 --watch --outfile=../custom_components/zigbee_health/frontend/zigbee-health-card.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "esbuild": "^0.25.0",
+    "three": "^0.170.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,289 @@
+<meta charset="utf-8">
+<title>Zigbee Health Karte</title>
+<meta name="description" content="Vorschau der Zigbee-Health-Karte mit einem Beispielnetz">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ground: #eef1f4;
+    --ink: #1c2227;
+    --ink-soft: #5d6873;
+    --edge: rgba(28, 34, 39, 0.12);
+    --panel: #ffffff;
+    /* Home Assistant theme variables used by the card */
+    --primary-color: #03a9f4;
+    --text-primary-color: #ffffff;
+    --primary-text-color: var(--ink);
+    --secondary-text-color: var(--ink-soft);
+    --divider-color: var(--edge);
+    --card-background-color: var(--panel);
+    --ha-card-background: var(--panel);
+    --secondary-background-color: rgba(28, 34, 39, 0.05);
+    --success-color: #43a047;
+    --warning-color: #ffa000;
+    --error-color: #db4437;
+    --info-color: #039be5;
+    --ha-card-border-radius: 12px;
+    --ha-card-box-shadow: 0 1px 2px rgba(28, 34, 39, 0.08), 0 4px 16px rgba(28, 34, 39, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #101418;
+      --ink: #e3e7ea;
+      --ink-soft: #97a2ac;
+      --edge: rgba(227, 231, 234, 0.13);
+      --panel: #1b2126;
+      --secondary-background-color: rgba(227, 231, 234, 0.06);
+      --ha-card-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #101418;
+    --ink: #e3e7ea;
+    --ink-soft: #97a2ac;
+    --edge: rgba(227, 231, 234, 0.13);
+    --panel: #1b2126;
+    --secondary-background-color: rgba(227, 231, 234, 0.06);
+    --ha-card-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  html, body { background: var(--ground); }
+  body {
+    margin: 0;
+    font-family: Roboto, "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    padding: 20px 16px 40px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 1360px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+  header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; }
+  header h1 { margin: 0; font-size: 20px; font-weight: 500; text-wrap: balance; }
+  header p { margin: 4px 0 0; color: var(--ink-soft); font-size: 13.5px; max-width: 62ch; line-height: 1.45; }
+  .seg { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--secondary-background-color); border: 1px solid var(--edge); }
+  .seg button {
+    border: 0; background: none; color: var(--ink-soft); font: inherit; font-size: 13px; font-weight: 500;
+    padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+  .seg button:focus-visible, .yaml:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+  .stage { margin: 0 auto; width: 100%; transition: max-width .35s ease; }
+  .stage.phone { max-width: 400px; }
+  .stage.card { max-width: 940px; }
+  .frame {
+    height: 860px; border-radius: 14px; overflow: hidden; border: 1px solid var(--edge);
+    box-shadow: 0 10px 40px rgba(28, 34, 39, 0.12);
+    --primary-background-color: var(--ground);
+    --app-header-background-color: var(--panel);
+    --app-header-text-color: var(--ink);
+    --app-header-border-bottom: 1px solid var(--edge);
+  }
+  .stage.phone .frame { height: 820px; }
+  .yaml {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 12.5px; color: var(--ink-soft);
+    background: var(--secondary-background-color); border: 1px solid var(--edge); border-radius: 10px;
+    padding: 10px 12px; overflow-x: auto; white-space: pre;
+  }
+  .note { color: var(--ink-soft); font-size: 12.5px; }
+  .toast {
+    position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+    background: var(--ink); color: var(--ground); padding: 10px 16px; border-radius: 10px; font-size: 13.5px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.25); max-width: calc(100% - 32px);
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<div class="page">
+  <header>
+    <div>
+      <h1>Zigbee Health</h1>
+      <p>Demo mit einem anonymisierten Beispielnetz (48 Geräte, zwei Etagen). Fahre über ein Gerät, um seinen Weg zum Koordinator zu sehen; ein Klick öffnet das Geräte-Panel.</p>
+      <p><b>Grundriss:</b> per „Bearbeiten“ selbst zeichnen – Rechteck aufziehen, Maße exakt eintippen, freie Formen, Ecken ziehen, Strg+Z. <b>3D:</b> ziehen zum Drehen, rechte Maustaste zum Verschieben, Mausrad zum Zoomen. <b>Maßnahmen → Zeigen</b> markiert betroffene Geräte und Räume. <b>Live-Verkehr</b> ist simuliert (12× beschleunigt), der <b>Wandschalter-Alarm</b> kommt alle 40 s. Änderungen werden in der Vorschau nicht gespeichert.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Breite">
+      <button id="w-panel" aria-pressed="true">Seitenleiste</button>
+      <button id="w-card" aria-pressed="false">Dashboard-Karte</button>
+      <button id="w-phone" aria-pressed="false">Handy</button>
+    </div>
+  </header>
+
+  <div class="stage" id="stage">
+    <div class="frame" id="frame-panel"><zigbee-health-panel id="panel"></zigbee-health-panel></div>
+    <div id="frame-card" hidden><zigbee-health-card id="card"></zigbee-health-card></div>
+  </div>
+
+  <div class="note" id="note-panel">Nach der Installation steht „Zigbee Health“ automatisch in der Seitenleiste von Home Assistant.</div>
+  <div id="note-card" hidden>
+    <div class="yaml" tabindex="0">type: custom:zigbee-health-card</div>
+    <div class="note">Zusätzlich gibt es die Karte für eigene Dashboards – die Integration lädt sie selbst.</div>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+  // Stand-in for Home Assistant's ha-card element.
+  customElements.define("ha-card", class extends HTMLElement {
+    constructor() {
+      super();
+      this.attachShadow({ mode: "open" }).innerHTML =
+        "<style>:host{display:block;background:var(--ha-card-background);border-radius:var(--ha-card-border-radius);" +
+        "box-shadow:var(--ha-card-box-shadow);border:1px solid var(--divider-color);color:var(--primary-text-color)}</style><slot></slot>";
+    }
+  });
+
+  const toast = document.getElementById("toast");
+  let toastTimer;
+  function showToast(text) {
+    toast.textContent = text;
+    toast.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => (toast.hidden = true), 2800);
+  }
+
+  // Keep the preview in place: navigation inside HA becomes a hint here.
+  history.pushState = (_state, _title, url) => {
+    showToast(String(url).includes("/repairs")
+      ? "In Home Assistant öffnet sich jetzt das Reparaturen-Center."
+      : "In Home Assistant öffnet sich jetzt die Geräteseite.");
+  };
+  window.addEventListener("hass-notification", (ev) => showToast(ev.detail.message));
+
+  // Stand-in for Home Assistant's sidebar menu button (only shown on narrow screens).
+  customElements.define("ha-menu-button", class extends HTMLElement {
+    set narrow(value) { this.style.display = value ? "inline-flex" : "none"; }
+    connectedCallback() {
+      this.style.padding = "8px";
+      this.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>';
+    }
+  });
+
+  const stage = document.getElementById("stage");
+  const modes = { "w-panel": "panel", "w-card": "card", "w-phone": "phone" };
+  for (const [id, mode] of Object.entries(modes)) {
+    document.getElementById(id).addEventListener("click", () => {
+      stage.classList.toggle("phone", mode === "phone");
+      stage.classList.toggle("card", mode === "card");
+      document.getElementById("frame-panel").hidden = mode === "card";
+      document.getElementById("frame-card").hidden = mode !== "card";
+      document.getElementById("note-panel").hidden = mode === "card";
+      document.getElementById("note-card").hidden = mode !== "card";
+      document.getElementById("panel").narrow = mode === "phone";
+      for (const other of Object.keys(modes)) {
+        document.getElementById(other).setAttribute("aria-pressed", String(other === id));
+      }
+    });
+  }
+</script>
+
+<script type="application/json" id="report">/*REPORT*/</script>
+
+<script type="module">
+/*SCENE_JS*/
+</script>
+<script type="module">
+/*CARD_JS*/
+</script>
+
+<script type="module">
+  const report = JSON.parse(document.getElementById("report").textContent);
+  const card = document.getElementById("card");
+  card.setConfig({ type: "custom:zigbee-health-card" });
+  const demo = report._demo;
+  let floorplans = demo.floorplans;
+  let building = demo.building;
+  const images = {};
+  const SPEEDUP = 12;
+  const retro = report.topology.nodes.find((n) => n.ieee === demo.alert_router);
+  const childNames = retro.children.map((c) => report.topology.nodes.find((n) => n.ieee === c)?.name ?? c);
+  const connection = {
+    subscribeMessage: async (callback) => {
+      let tick = 0;
+      const timer = setInterval(() => {
+        tick++;
+        const counts = {};
+        for (const [ieee, rate] of Object.entries(demo.rates)) {
+          let expected = rate * SPEEDUP;
+          while (expected > 0) {
+            if (Math.random() < Math.min(1, expected)) counts[ieee] = (counts[ieee] ?? 0) + 1;
+            expected -= 1;
+          }
+        }
+        const msg = { counts };
+        const phase = tick % 40;
+        if (phase === 8) {
+          msg.alerts = [{ ieee: retro.ieee, name: retro.name, children: childNames, since: new Date().toISOString() }];
+        } else if (phase === 24) {
+          msg.alerts = [];
+        }
+        callback(msg);
+      }, 1000);
+      callback({ counts: {}, alerts: [] });
+      return () => clearInterval(timer);
+    },
+  };
+  const hass = {
+    connection,
+    language: "de",
+    locale: { language: "de" },
+    user: { is_admin: true },
+    localize: (key) => key,
+    callWS: async (msg) => {
+      if (msg.service === "get_report") return { response: structuredClone(report) };
+      if (msg.type === "zigbee_health/device/update") {
+        await new Promise((r) => setTimeout(r, 500));
+        const nodes = report.topology.nodes;
+        const node = nodes.find((n) => n.ieee === msg.ieee);
+        if (!node) throw new Error("Unknown device");
+        if (msg.action === "area") {
+          const area = report.topology.areas.find((x) => x.area_id === msg.area_id);
+          node.area_id = area?.area_id ?? null;
+          node.area = area?.name ?? null;
+        } else if (msg.action === "rename") node.name = msg.name;
+        else if (msg.action === "ignore") { node._state = node.state; node.state = "ignored"; }
+        else if (msg.action === "unignore") node.state = node._state ?? "ok";
+        else if (msg.action === "remove") {
+          report.topology.nodes = nodes.filter((n) => n.ieee !== msg.ieee);
+          report.findings = report.findings.filter((f) => f.ieee !== msg.ieee);
+        }
+        return null;
+      }
+      if (msg.type === "zigbee_health/check") return { ...report, scan_started: false };
+      if (msg.type === "zigbee_health/building/get") return { building: JSON.parse(JSON.stringify(building)), images: { ...images } };
+      if (msg.type === "zigbee_health/building/image") {
+        if (msg.image) images[msg.floor] = msg.image;
+        else delete images[msg.floor];
+        return null;
+      }
+      if (msg.type === "zigbee_health/building/save") {
+        building = JSON.parse(JSON.stringify(msg.building));
+        return null;
+      }
+      if (msg.type === "zigbee_health/floorplan/list") return { plans: floorplans };
+      if (msg.type === "zigbee_health/floorplan/save") {
+        let plan = floorplans.find((p) => p.plan_id === msg.plan_id);
+        if (!plan) {
+          plan = { plan_id: msg.plan_id, name: msg.name ?? "Etage", image: msg.image, positions: {} };
+          floorplans.push(plan);
+        }
+        if (msg.name) plan.name = msg.name;
+        if (msg.image) plan.image = msg.image;
+        if (msg.positions) plan.positions = msg.positions;
+        return { plan: { ...plan } };
+      }
+      if (msg.type === "zigbee_health/floorplan/delete") {
+        floorplans = floorplans.filter((p) => p.plan_id !== msg.plan_id);
+        return null;
+      }
+      if (msg.type === "zigbee_health/plan") {
+        await new Promise((r) => setTimeout(r, 600));
+        return { plans: demo.plans };
+      }
+      return {};
+    },
+  };
+  card.hass = hass;
+  const panel = document.getElementById("panel");
+  panel.panel = { config: {} };
+  panel.hass = hass;
+</script>

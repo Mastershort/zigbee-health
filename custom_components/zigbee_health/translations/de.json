@@ -1,0 +1,1315 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zigbee2MQTT verbinden",
+        "description": "Zigbee Health liest die Daten mit, die Zigbee2MQTT ohnehin über MQTT veröffentlicht, und wertet sie aus. An deinem Zigbee-Netz wird nichts verändert.",
+        "data": {
+          "base_topic": "MQTT-Basis-Topic",
+          "name": "Name"
+        },
+        "data_description": {
+          "base_topic": "Basis-Topic deiner Zigbee2MQTT-Instanz (Standard: zigbee2mqtt).",
+          "name": "Erscheint im Gerätenamen, z. B. „Zigbee Health (Zigbee2MQTT)“."
+        }
+      },
+      "prerequisites": {
+        "title": "Empfohlene Zigbee2MQTT-Einstellungen",
+        "description": "Diese Zigbee2MQTT-Optionen sind ausgeschaltet: **{missing}**.\n\nOhne `last_seen` kennt Zigbee Health nur den Zeitpunkt der letzten empfangenen Nachricht. Ohne `availability` werden ausgeschaltete Router nur beim nächtlichen Netzwerk-Scan erkannt.\n\nDu kannst jetzt fortfahren; Zigbee Health bietet dir danach im Reparaturen-Center an, die Optionen einzuschalten."
+      },
+      "reconfigure": {
+        "title": "MQTT-Basis-Topic ändern",
+        "data": {
+          "base_topic": "MQTT-Basis-Topic"
+        }
+      }
+    },
+    "error": {
+      "no_response": "Unter diesem Basis-Topic antwortet keine Zigbee2MQTT-Instanz. Bitte Topic prüfen.",
+      "z2m_offline": "Zigbee2MQTT ist offline. Bitte starten und erneut versuchen.",
+      "version_too_old": "Zigbee2MQTT 2.0 oder neuer wird benötigt."
+    },
+    "abort": {
+      "already_configured": "Dieses Zigbee-Netz ist bereits eingerichtet.",
+      "mqtt_not_connected": "Die MQTT-Integration ist nicht eingerichtet oder nicht verbunden.",
+      "reconfigure_successful": "Das Basis-Topic wurde geändert.",
+      "wrong_network": "Dieses Basis-Topic gehört zu einem anderen Zigbee-Netz."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zigbee Health Optionen",
+        "menu_options": {
+          "scan": "Netzwerk-Scan",
+          "thresholds": "Schwellwerte",
+          "notifications": "Meldungen",
+          "entities": "Entitäten",
+          "ignore": "Ignorierliste",
+          "help": "Hilfe-Links"
+        }
+      },
+      "scan": {
+        "title": "Netzwerk-Scan",
+        "description": "Die Netzwerkkarte belastet das Netz einige Minuten. Deshalb standardmäßig einmal nachts.",
+        "data": {
+          "scan_auto": "Automatisch scannen",
+          "scan_time": "Uhrzeit",
+          "scan_timeout": "Timeout (Minuten)",
+          "scan_only_away": "Nur scannen, wenn diese Personen nicht zu Hause sind"
+        }
+      },
+      "thresholds": {
+        "title": "Schwellwerte",
+        "data": {
+          "dead_days": "Tot ab (Tage ohne Meldung)",
+          "disappeared_chatty_hours": "Verschwunden ab – Messgeräte (Stunden)",
+          "disappeared_silent_days": "Verschwunden ab – Tür-/Fenstersensoren, Taster (Tage)",
+          "weak_lqi": "Schwache Verbindung unter (LQI)",
+          "battery_percent": "Batterie-Warnschwelle (%)",
+          "forecast_days": "Batterie-Prognose: warnen wenn leer in (Tagen)",
+          "flood_per_minute": "Nachrichten-Flut ab (pro Minute)",
+          "max_children": "Max. Batteriegeräte pro Router"
+        }
+      },
+      "notifications": {
+        "title": "Meldungen",
+        "data": {
+          "wall_switch_alert": "Sofort benachrichtigen, wenn ein Router mit abhängigen Geräten ausgeht",
+          "repairs_include_info": "Auch Info-Hinweise im Reparaturen-Center zeigen",
+          "bundle_threshold": "Gleichartige Hinweise bündeln ab",
+          "hysteresis_minutes": "Hinweis erst melden nach (Minuten)"
+        }
+      },
+      "entities": {
+        "title": "Entitäten",
+        "data": {
+          "device_entities": "Sensoren an den Zigbee-Geräten anlegen",
+          "room_sensors": "Sensor „Zigbee-Gesundheit“ pro Raum anlegen",
+          "sidebar_panel": "„Zigbee Health“ in der Seitenleiste anzeigen"
+        }
+      },
+      "ignore": {
+        "title": "Ignorierliste",
+        "description": "Für diese Geräte werden keine Hinweise erzeugt.",
+        "data": {
+          "ignored_devices": "Ignorierte Geräte"
+        }
+      },
+      "help": {
+        "title": "Hilfe-Links",
+        "data": {
+          "learn_more_url": "Basis-URL für „Mehr erfahren“ (leer = kein Link)"
+        }
+      }
+    },
+    "abort": {
+      "not_loaded": "Die Integration muss geladen sein."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "problems": {
+        "name": "Probleme"
+      }
+    },
+    "button": {
+      "scan_network": {
+        "name": "Netzwerk jetzt scannen"
+      },
+      "analyze": {
+        "name": "Neu auswerten"
+      }
+    },
+    "sensor": {
+      "network_health": {
+        "name": "Netz-Gesundheit"
+      },
+      "status": {
+        "name": "Status",
+        "state": {
+          "stable": "Stabil",
+          "degraded": "Mit Aussetzern zu rechnen",
+          "fragile": "Fragil",
+          "paused": "Pausiert"
+        }
+      },
+      "devices": {
+        "name": "Geräte gesamt",
+        "unit_of_measurement": "Geräte"
+      },
+      "routers": {
+        "name": "Router",
+        "unit_of_measurement": "Geräte"
+      },
+      "end_devices": {
+        "name": "Endgeräte",
+        "unit_of_measurement": "Geräte"
+      },
+      "routers_always_on": {
+        "name": "Router dauerhaft aktiv",
+        "unit_of_measurement": "Geräte"
+      },
+      "routers_part_time": {
+        "name": "Teilzeit-Router",
+        "unit_of_measurement": "Geräte"
+      },
+      "offline": {
+        "name": "Offline",
+        "unit_of_measurement": "Geräte"
+      },
+      "dead": {
+        "name": "Tot",
+        "unit_of_measurement": "Geräte"
+      },
+      "battery_critical": {
+        "name": "Batterie kritisch",
+        "unit_of_measurement": "Geräte"
+      },
+      "weak_links": {
+        "name": "Schwache Verbindungen",
+        "unit_of_measurement": "Geräte"
+      },
+      "open_findings": {
+        "name": "Offene Befunde",
+        "state_attributes": {
+          "critical": {
+            "name": "Kritisch"
+          },
+          "warning": {
+            "name": "Warnung"
+          },
+          "info": {
+            "name": "Info"
+          }
+        }
+      },
+      "messages_per_second": {
+        "name": "Nachrichten/s gesamt",
+        "unit_of_measurement": "msg/s"
+      },
+      "last_scan": {
+        "name": "Letzter Netzwerk-Scan"
+      },
+      "scan_duration": {
+        "name": "Scan-Dauer"
+      },
+      "zigbee_state": {
+        "name": "Zigbee-Zustand",
+        "state": {
+          "ok": "OK",
+          "weak": "Schwache Verbindung",
+          "battery": "Batterie",
+          "offline": "Offline",
+          "dead": "Tot",
+          "part_time_router": "Teilzeit-Router",
+          "ignored": "Ignoriert"
+        }
+      },
+      "device_health": {
+        "name": "Zigbee-Gesundheit"
+      },
+      "parent": {
+        "name": "Eltern-Router"
+      },
+      "parent_lqi": {
+        "name": "LQI zum Eltern-Router"
+      },
+      "battery_empty": {
+        "name": "Batterie leer voraussichtlich"
+      },
+      "children": {
+        "name": "Kinder",
+        "unit_of_measurement": "Geräte"
+      },
+      "room_health": {
+        "name": "Zigbee-Gesundheit {room}"
+      }
+    }
+  },
+  "issues": {
+    "dead_device": {
+      "title": "Zigbee: {name} seit {days} Tagen nicht erreichbar",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) hat sich zuletzt am {date} gemeldet.\n\nWenn das Gerät noch gebraucht wird: Batterie bzw. Stromversorgung prüfen und einmal auslösen. Sonst in Zigbee2MQTT entfernen – tote Geräte verlangsamen die Netzwerkkarte.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "disappeared": {
+      "title": "Zigbee: {name} meldet sich nicht mehr",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) hat sich zuletzt am {date} gemeldet – länger als für dieses Gerät üblich.\n\nBatterie bzw. Stromversorgung prüfen. Automationen, die dieses Gerät nutzen, funktionieren gerade möglicherweise nicht.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "battery_low": {
+      "title": "Zigbee: Batterie von {name} vermutlich leer",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}): Messwert {value}, Batterietyp {battery_type}. Das Gerät meldet sich bald gar nicht mehr, wenn die Batterie nicht getauscht wird.\n\nBatterie tauschen. Die Prognose wird danach automatisch zurückgesetzt.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "battery_forecast": {
+      "title": "Zigbee: Batterie von {name} bald leer",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Nach dem bisherigen Verlauf ist die Batterie von {name} ({room}) voraussichtlich am {date} leer (Batterietyp {battery_type}).\n\nBatterie in den nächsten Wochen tauschen.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "part_time_router": {
+      "title": "Zigbee: {name} wird regelmäßig ausgeschaltet",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) ist ein Router – ein Gerät mit Netzstrom, das Funk für andere Geräte weiterleitet. Es ist regelmäßig nicht erreichbar, vermutlich weil es am Wandschalter ausgeschaltet wird.\n\nJedes Mal verlieren die Geräte, die darüber verbunden sind, ihre Verbindung. Lampe dauerhaft mit Strom versorgen (Wandschalter z. B. durch einen Zigbee-Taster ersetzen) oder einen immer aktiven Router wie eine Zigbee-Steckdose im selben Raum ergänzen.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "children_on_part_time_router": {
+      "title": "Zigbee: {count} Geräte hängen an {name}",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{children} sind über {name} ({room}) verbunden. {name} wird regelmäßig ausgeschaltet – diese Geräte verlieren dann ihre Verbindung.\n\n{name} dauerhaft mit Strom versorgen oder einen immer aktiven Router (z. B. Zigbee-Steckdose) in der Nähe ergänzen.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "weak_link": {
+      "title": "Zigbee: schwache Verbindung von {name}",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) erreicht {parent} nur mit einer Linkqualität von {lqi} (gut: ab 80). Nachrichten gehen dadurch leichter verloren.\n\nEinen Router näher an das Gerät stellen oder im Raum ergänzen. Danach das Gerät neu anlernen oder warten, bis es den besseren Weg wählt.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "weak_backbone": {
+      "title": "Zigbee: {name} ist schlecht an das Netz angebunden",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Die beste Verbindung des Routers {name} ({room}) zum Koordinator oder einem anderen Router ({peer}) hat nur eine Linkqualität von {lqi}. Alles, was über {name} läuft, ist dadurch unzuverlässig.\n\nEinen weiteren Router dazwischen setzen oder den Koordinator zentraler platzieren (USB-Verlängerung, weg von USB-3-Ports und Metallgehäusen).\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "degradation": {
+      "title": "Zigbee: Verbindung von {name} wird schlechter",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Die Linkqualität von {name} ({room}) ist in den letzten zwei Wochen von {before} auf {after} gefallen (−{percent} %).\n\nUmgebung prüfen: neue Störquelle, umgestellte Möbel, neues WLAN oder ein ausgeschalteter Router in der Nähe?\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "unstable_device": {
+      "title": "Zigbee: {name} ist instabil",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) hat sich in den letzten 24 Stunden mehrfach neu verbunden ({events} Adresswechsel/Abmeldungen, {announces} Neuanmeldungen).\n\nDas Eltern-Gerät ist instabil oder {name} liegt am Rand der Reichweite. Router in der Nähe prüfen und nach einem Firmware-Update für das Gerät schauen.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "message_flood": {
+      "title": "Zigbee: {name} sendet sehr viele Nachrichten",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) sendet dauerhaft etwa {per_minute} Nachrichten pro Minute. Das belastet das ganze Netz.\n\nMeldeintervall bzw. Reporting in Zigbee2MQTT reduzieren (typisch bei manchen Tuya-Geräten und Energiemessern).\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "network_message_flood": {
+      "title": "Zigbee: sehr viel Funkverkehr im Netz",
+      "description": "Im Zigbee-Netz werden gerade etwa {per_second} Nachrichten pro Sekunde gesendet. Dadurch gehen Befehle verloren oder kommen verspätet an.\n\nGeräte mit sehr häufigen Meldungen suchen (Sensor „Nachrichten/s“ und Hinweise zu einzelnen Geräten) und deren Reporting reduzieren."
+    },
+    "overloaded_parent": {
+      "title": "Zigbee: {name} versorgt viele Geräte",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{count} Batteriegeräte hängen direkt an {name} ({room}); empfohlen sind höchstens {limit}.\n\nEinen zweiten Router in der Nähe ergänzen, damit sich die Geräte verteilen.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "room_without_router": {
+      "title": "Zigbee: kein dauerhaft aktiver Router in {room}",
+      "description": "Im Raum {room} gibt es {count} Batteriegeräte, aber keinen Router, der dauerhaft eingeschaltet ist. Ihre Funksignale müssen weite Wege gehen.\n\nEine Zigbee-Steckdose oder ein anderer immer aktiver Router in diesem Raum macht die Verbindung deutlich stabiler."
+    },
+    "too_few_routers": {
+      "title": "Zigbee: zu wenige Router im Netz",
+      "description": "{end_devices} Batteriegeräte teilen sich {routers} dauerhaft aktive Router. Empfohlen sind höchstens 8 Geräte pro Router und mindestens ein Router pro Etage.\n\nEtwa {recommended} weitere dauerhaft aktive Router (z. B. Zigbee-Steckdosen) ergänzen, verteilt auf die Räume mit den meisten Batteriegeräten."
+    },
+    "prerequisite_missing": {
+      "title": "Zigbee2MQTT: Option „{option}“ ist ausgeschaltet",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Option „{option}“ in Zigbee2MQTT einschalten",
+            "description": "Zigbee Health kann das Netz genauer auswerten, wenn in Zigbee2MQTT die Option **{option}** eingeschaltet ist.\n\nÜber „Beheben“ kann Zigbee Health die Option nach Bestätigung für dich einschalten.\n\nZigbee Health sendet diese Änderung an Zigbee2MQTT:\n\n{change}\n\nDie Einstellung wird in der Zigbee2MQTT-Konfiguration gespeichert. {error}"
+          }
+        },
+        "error": {
+          "option_failed": "Zigbee2MQTT hat die Änderung abgelehnt."
+        },
+        "abort": {
+          "restart_required": "Gespeichert. Zigbee2MQTT muss neu gestartet werden, damit die Option wirkt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "outdated_firmware": {
+      "title": "Zigbee: Koordinator-Firmware veraltet",
+      "description": "Der Koordinator ({adapter}) läuft mit Firmware {current}. Empfohlen ist mindestens {minimum}; neuere Versionen beheben bekannte Stabilitätsprobleme.\n\nFirmware nach der Anleitung des Adapter-Herstellers aktualisieren."
+    },
+    "interview_incomplete": {
+      "title": "Zigbee: {name} wurde nicht vollständig angelernt",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Das Anlernen von {name} ({room}) wurde nicht abgeschlossen. Einige Funktionen fehlen deshalb.\n\nGerät in Zigbee2MQTT neu anlernen („Interview“ erneut starten).\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "unsupported_device": {
+      "title": "Zigbee: {name} wird nicht unterstützt",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Zigbee2MQTT kennt {name} ({room}) nicht. Werte und Befehle funktionieren deshalb nur eingeschränkt.\n\nNach einem externen Konverter suchen oder Zigbee2MQTT aktualisieren.\n\nWas möchtest du tun?",
+            "menu_options": {
+              "remove": "Aus Zigbee2MQTT entfernen",
+              "ignore_finding": "Diesen Hinweis für {name} ignorieren",
+              "ignore_device": "{name} komplett ignorieren"
+            }
+          },
+          "remove": {
+            "title": "{name} aus Zigbee2MQTT entfernen",
+            "description": "Das Gerät wird aus dem Zigbee-Netz entfernt und muss bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt es auch dann aus der Datenbank, wenn es nicht antwortet – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          },
+          "ignore_device": {
+            "title": "{name} ignorieren",
+            "description": "Für {name} werden keine Hinweise mehr erzeugt. Rückgängig über die Integrations-Optionen → Ignorierliste."
+          },
+          "ignore_finding": {
+            "title": "Hinweis ignorieren",
+            "description": "Dieser Hinweis wird für {name} nicht mehr angezeigt. Andere Hinweise zu {name} bleiben aktiv."
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen fehlgeschlagen."
+        },
+        "abort": {
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "devices_without_area": {
+      "title": "Zigbee: {count} Geräte haben keinen Raum",
+      "description": "{count} Zigbee-Geräte sind in Home Assistant keinem Bereich zugewiesen. Die Raum-Empfehlungen sind dadurch ungenau.\n\nDen Geräten unter Einstellungen → Geräte einen Bereich zuweisen."
+    },
+    "dead_device_bundle": {
+      "title": "Zigbee: {count} Geräte seit langem nicht erreichbar",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Geräte haben sich seit langem nicht gemeldet:\n\n{devices}\n\nWenn sie noch gebraucht werden: Batterie bzw. Stromversorgung prüfen und einmal auslösen. Sonst in Zigbee2MQTT entfernen – tote Geräte verlangsamen die Netzwerkkarte. Über „Beheben“ kannst du sie gesammelt entfernen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "disappeared_bundle": {
+      "title": "Zigbee: {count} Geräte melden sich nicht mehr",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Geräte sind länger still als üblich:\n\n{devices}\n\nBatterien bzw. Stromversorgung prüfen. Automationen, die diese Geräte nutzen, funktionieren gerade möglicherweise nicht.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "battery_low_bundle": {
+      "title": "Zigbee: {count} Batterien vermutlich leer",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Bei diesen Geräten ist die Batterie vermutlich leer:\n\n{devices}\n\nBatterien tauschen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "battery_forecast_bundle": {
+      "title": "Zigbee: {count} Batterien bald leer",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Batterien sind voraussichtlich bald leer:\n\n{devices}\n\nBatterien in den nächsten Wochen tauschen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "part_time_router_bundle": {
+      "title": "Zigbee: {count} Router werden regelmäßig ausgeschaltet",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Router sind Geräte mit Netzstrom, die Funk für andere Geräte weiterleiten. Diese Router sind regelmäßig nicht erreichbar, vermutlich weil sie am Wandschalter ausgeschaltet werden:\n\n{devices}\n\nDauerhaft mit Strom versorgen oder in diesen Räumen immer aktive Router (z. B. Zigbee-Steckdosen) ergänzen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "children_on_part_time_router_bundle": {
+      "title": "Zigbee: Geräte hängen an {count} ausgeschalteten Routern",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Endgeräte sind über Router verbunden, die regelmäßig ausgeschaltet werden:\n\n{devices}\n\nDiese Router dauerhaft mit Strom versorgen oder immer aktive Router in der Nähe ergänzen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "weak_link_bundle": {
+      "title": "Zigbee: {count} schwache Verbindungen",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Geräte haben eine schwache Verbindung (gut: Linkqualität ab 80):\n\n{devices}\n\nRouter näher an diese Geräte stellen oder in diesen Räumen ergänzen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "weak_backbone_bundle": {
+      "title": "Zigbee: {count} Router schlecht angebunden",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Router sind nur schwach mit dem Koordinator oder anderen Routern verbunden:\n\n{devices}\n\nRouter dazwischen setzen oder den Koordinator zentraler platzieren.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "degradation_bundle": {
+      "title": "Zigbee: {count} Verbindungen werden schlechter",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Bei diesen Geräten ist die Linkqualität in zwei Wochen deutlich gefallen:\n\n{devices}\n\nUmgebung prüfen (Störquellen, Möbel, WLAN, ausgeschaltete Router).\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "unstable_device_bundle": {
+      "title": "Zigbee: {count} Geräte sind instabil",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Geräte haben sich in 24 Stunden mehrfach neu verbunden:\n\n{devices}\n\nRouter in der Nähe prüfen und Firmware-Updates suchen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "message_flood_bundle": {
+      "title": "Zigbee: {count} Geräte senden sehr viele Nachrichten",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "Diese Geräte senden dauerhaft sehr viele Nachrichten:\n\n{devices}\n\nMeldeintervall bzw. Reporting in Zigbee2MQTT reduzieren.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "overloaded_parent_bundle": {
+      "title": "Zigbee: {count} Router versorgen viele Geräte",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "An diesen Routern hängen sehr viele Batteriegeräte:\n\n{devices}\n\nZusätzliche Router in der Nähe ergänzen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "room_without_router_bundle": {
+      "title": "Zigbee: {count} Räume ohne dauerhaft aktiven Router",
+      "description": "In diesen Räumen gibt es mehrere Batteriegeräte, aber keinen dauerhaft eingeschalteten Router:\n\n{devices}\n\nEine Zigbee-Steckdose oder ein anderer immer aktiver Router je Raum macht die Verbindung deutlich stabiler."
+    },
+    "interview_incomplete_bundle": {
+      "title": "Zigbee: {count} Geräte nicht vollständig angelernt",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "{devices}\n\nDiese Geräte in Zigbee2MQTT neu anlernen.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    },
+    "unsupported_device_bundle": {
+      "title": "Zigbee: {count} Geräte nicht unterstützt",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Geräte auswählen",
+            "description": "{devices}\n\nNach externen Konvertern suchen oder Zigbee2MQTT aktualisieren.\n\nWähle die Geräte aus ({count} betroffen) und was mit ihnen passieren soll.",
+            "data": {
+              "devices": "Geräte",
+              "action": "Aktion"
+            }
+          },
+          "remove": {
+            "title": "{count} Geräte aus Zigbee2MQTT entfernen",
+            "description": "Die Geräte werden aus dem Zigbee-Netz entfernt und müssen bei Bedarf neu angelernt werden.\n\n„Erzwingen“ entfernt sie auch dann aus der Datenbank, wenn sie nicht antworten – bei toten Geräten meist nötig. {error}",
+            "data": {
+              "force": "Erzwingen"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Entfernen teilweise fehlgeschlagen."
+        },
+        "abort": {
+          "nothing_selected": "Keine Geräte ausgewählt.",
+          "not_available": "Die Integration ist gerade nicht geladen."
+        }
+      }
+    }
+  },
+  "services": {
+    "scan_network": {
+      "name": "Netzwerk scannen",
+      "description": "Fordert die Netzwerkkarte an. Das Ergebnis kommt als Ereignis.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Zigbee-Netz",
+          "description": "Nur diese Instanz (leer = alle)"
+        }
+      }
+    },
+    "get_report": {
+      "name": "Bericht abrufen",
+      "description": "Liefert Score, Top-3-Maßnahmen, Befunde und Räume als Antwort.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Zigbee-Netz",
+          "description": "Nur diese Instanz (leer = alle)"
+        },
+        "format": {
+          "name": "Umfang",
+          "description": "Zusammenfassung oder vollständig"
+        }
+      }
+    },
+    "ignore": {
+      "name": "Ignorieren",
+      "description": "Unterdrückt Hinweise für ein Gerät.",
+      "fields": {
+        "device": {
+          "name": "Gerät",
+          "description": "Zigbee-Gerät (Home-Assistant-Gerät oder IEEE-Adresse)"
+        },
+        "finding_type": {
+          "name": "Hinweis-Typ",
+          "description": "Nur diesen Hinweis (leer = alle Hinweise des Geräts)"
+        },
+        "until": {
+          "name": "Bis",
+          "description": "Leer = dauerhaft"
+        }
+      }
+    },
+    "unignore": {
+      "name": "Nicht mehr ignorieren",
+      "description": "Hebt das Ignorieren wieder auf.",
+      "fields": {
+        "device": {
+          "name": "Gerät",
+          "description": "Zigbee-Gerät (Home-Assistant-Gerät oder IEEE-Adresse)"
+        },
+        "finding_type": {
+          "name": "Hinweis-Typ",
+          "description": "Nur diesen Hinweis (leer = alle Hinweise des Geräts)"
+        }
+      }
+    },
+    "reset_history": {
+      "name": "Historie zurücksetzen",
+      "description": "Löscht die gesammelte Historie, z. B. nach einem Batteriewechsel.",
+      "fields": {
+        "device": {
+          "name": "Gerät",
+          "description": "Leer = alle Geräte"
+        }
+      }
+    }
+  },
+  "selector": {
+    "report_format": {
+      "options": {
+        "summary": "Zusammenfassung",
+        "full": "Vollständig"
+      }
+    },
+    "finding_type": {
+      "options": {
+        "dead_device": "Totes Gerät",
+        "disappeared": "Kürzlich verschwunden",
+        "battery_low": "Batterie leer",
+        "battery_forecast": "Batterie-Prognose",
+        "part_time_router": "Teilzeit-Router",
+        "children_on_part_time_router": "Endgeräte an Teilzeit-Router",
+        "weak_link": "Schwache Verbindung",
+        "weak_backbone": "Schwacher Router-Backbone",
+        "degradation": "Verschlechterung",
+        "unstable_device": "Instabiles Gerät",
+        "message_flood": "Nachrichten-Flut",
+        "overloaded_parent": "Überlasteter Router",
+        "interview_incomplete": "Anlernen unvollständig",
+        "unsupported_device": "Nicht unterstützt"
+      }
+    },
+    "bundle_action": {
+      "options": {
+        "remove": "Aus Zigbee2MQTT entfernen",
+        "ignore_finding": "Nur diesen Hinweis ignorieren",
+        "ignore_device": "Geräte komplett ignorieren"
+      }
+    }
+  },
+  "device_automation": {
+    "trigger_type": {
+      "critical_finding": "Neuer kritischer Befund",
+      "new_finding": "Neuer Befund",
+      "status_changed": "Netz-Status geändert",
+      "router_offline": "Router mit abhängigen Geräten ausgefallen"
+    }
+  },
+  "exceptions": {
+    "no_config_entry": {
+      "message": "Keine geladene Zigbee-Health-Instanz gefunden."
+    },
+    "unknown_device": {
+      "message": "Unbekanntes Zigbee-Gerät: {device}"
+    }
+  }
+}

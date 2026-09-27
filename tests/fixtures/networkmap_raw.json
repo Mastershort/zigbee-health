@@ -1,0 +1,2492 @@
+{
+    "data": {
+        "routes": false,
+        "type": "raw",
+        "value": {
+            "links": [
+                {
+                    "depth": 1,
+                    "deviceType": 2,
+                    "linkquality": 172,
+                    "lqi": 172,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0xbc33ac0000000d",
+                        "networkAddress": 65412
+                    },
+                    "sourceIeeeAddr": "0xbc33ac0000000d",
+                    "sourceNwkAddr": 65412,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 2,
+                    "linkquality": 168,
+                    "lqi": 168,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x0c431400000008",
+                        "networkAddress": 11645
+                    },
+                    "sourceIeeeAddr": "0x0c431400000008",
+                    "sourceNwkAddr": 11645,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 2,
+                    "linkquality": 208,
+                    "lqi": 208,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000006",
+                        "networkAddress": 51531
+                    },
+                    "sourceIeeeAddr": "0x00158d00000006",
+                    "sourceNwkAddr": 51531,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 2,
+                    "linkquality": 57,
+                    "lqi": 57,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0xa4c13800000018",
+                        "networkAddress": 23908
+                    },
+                    "sourceIeeeAddr": "0xa4c13800000018",
+                    "sourceNwkAddr": 23908,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 2,
+                    "linkquality": 146,
+                    "lqi": 146,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x680ae200000009",
+                        "networkAddress": 51509
+                    },
+                    "sourceIeeeAddr": "0x680ae200000009",
+                    "sourceNwkAddr": 51509,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 200,
+                    "lqi": 200,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 66,
+                    "lqi": 66,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 35,
+                    "lqi": 35,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceNwkAddr": 40713,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 214,
+                    "lqi": 214,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00178800000028",
+                        "networkAddress": 49628
+                    },
+                    "sourceIeeeAddr": "0x00178800000028",
+                    "sourceNwkAddr": 49628,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 118,
+                    "lqi": 118,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 1,
+                    "lqi": 1,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 39,
+                    "lqi": 39,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xd4486700000029",
+                        "networkAddress": 29506
+                    },
+                    "sourceIeeeAddr": "0xd4486700000029",
+                    "sourceNwkAddr": 29506,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x7cc6b60000002c",
+                        "networkAddress": 21439
+                    },
+                    "sourceIeeeAddr": "0x7cc6b60000002c",
+                    "sourceNwkAddr": 21439,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x001788010b25b9f6",
+                        "networkAddress": 55270
+                    },
+                    "sourceIeeeAddr": "0x001788010b25b9f6",
+                    "sourceNwkAddr": 55270,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x94b21600000027",
+                        "networkAddress": 27531
+                    },
+                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceNwkAddr": 27531,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001d",
+                        "networkAddress": 19454
+                    },
+                    "sourceIeeeAddr": "0x0017880000001d",
+                    "sourceNwkAddr": 19454,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00158d0000000c",
+                        "networkAddress": 61153
+                    },
+                    "sourceIeeeAddr": "0x00158d0000000c",
+                    "sourceNwkAddr": 61153,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "targetIeeeAddr": "0x00124b00000001"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 170,
+                    "lqi": 170,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000013",
+                        "networkAddress": 24966
+                    },
+                    "sourceIeeeAddr": "0x00158d00000013",
+                    "sourceNwkAddr": 24966,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 54,
+                    "lqi": 54,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 129,
+                    "lqi": 129,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00178800000028",
+                        "networkAddress": 49628
+                    },
+                    "sourceIeeeAddr": "0x00178800000028",
+                    "sourceNwkAddr": 49628,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 1,
+                    "lqi": 1,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xd4486700000029",
+                        "networkAddress": 29506
+                    },
+                    "sourceIeeeAddr": "0xd4486700000029",
+                    "sourceNwkAddr": 29506,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00178800000026",
+                        "networkAddress": 42482
+                    },
+                    "sourceIeeeAddr": "0x00178800000026",
+                    "sourceNwkAddr": 42482,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 29,
+                    "lqi": 29,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x7cb03e00000007",
+                        "networkAddress": 56432
+                    },
+                    "sourceIeeeAddr": "0x7cb03e00000007",
+                    "sourceNwkAddr": 56432,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 27,
+                    "lqi": 27,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 31,
+                    "lqi": 31,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x7cb03e0000000a",
+                        "networkAddress": 25013
+                    },
+                    "sourceIeeeAddr": "0x7cb03e0000000a",
+                    "sourceNwkAddr": 25013,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 0,
+                    "linkquality": 101,
+                    "lqi": 101,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x7cc6b60000002c",
+                        "networkAddress": 21439
+                    },
+                    "sourceIeeeAddr": "0x7cc6b60000002c",
+                    "sourceNwkAddr": 21439,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x001788010b25b9f6",
+                        "networkAddress": 55270
+                    },
+                    "sourceIeeeAddr": "0x001788010b25b9f6",
+                    "sourceNwkAddr": 55270,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x94b21600000027",
+                        "networkAddress": 27531
+                    },
+                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceNwkAddr": 27531,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 255,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 2,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001d",
+                        "networkAddress": 19454
+                    },
+                    "sourceIeeeAddr": "0x0017880000001d",
+                    "sourceNwkAddr": 19454,
+                    "target": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "targetIeeeAddr": "0x00124b00000005"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 200,
+                    "lqi": 200,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 188,
+                    "lqi": 188,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 78,
+                    "lqi": 78,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 171,
+                    "lqi": 171,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 76,
+                    "lqi": 76,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 49,
+                    "lqi": 49,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceNwkAddr": 40713,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 196,
+                    "lqi": 196,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 181,
+                    "lqi": 181,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x842e140000000f",
+                        "networkAddress": 48527
+                    },
+                    "sourceIeeeAddr": "0x842e140000000f",
+                    "sourceNwkAddr": 48527,
+                    "target": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "targetIeeeAddr": "0x00178800000019"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 91,
+                    "lqi": 91,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 67,
+                    "lqi": 67,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 34,
+                    "lqi": 34,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 111,
+                    "lqi": 111,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 156,
+                    "lqi": 156,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceNwkAddr": 40713,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 88,
+                    "lqi": 88,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 83,
+                    "lqi": 83,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 253,
+                    "lqi": 253,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000011",
+                        "networkAddress": 13772
+                    },
+                    "sourceIeeeAddr": "0x00158d00000011",
+                    "sourceNwkAddr": 13772,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 227,
+                    "lqi": 227,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000014",
+                        "networkAddress": 15484
+                    },
+                    "sourceIeeeAddr": "0x00158d00000014",
+                    "sourceNwkAddr": 15484,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 206,
+                    "lqi": 206,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0xa4c13800000022",
+                        "networkAddress": 29472
+                    },
+                    "sourceIeeeAddr": "0xa4c13800000022",
+                    "sourceNwkAddr": 29472,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 111,
+                    "lqi": 111,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001f",
+                        "networkAddress": 11251
+                    },
+                    "sourceIeeeAddr": "0x0017880000001f",
+                    "sourceNwkAddr": 11251,
+                    "target": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "targetIeeeAddr": "0x0017880000001c"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 0,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00178800000025",
+                        "networkAddress": 32455
+                    },
+                    "sourceIeeeAddr": "0x00178800000025",
+                    "sourceNwkAddr": 32455,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 3,
+                    "deviceType": 2,
+                    "linkquality": 130,
+                    "lqi": 130,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000015",
+                        "networkAddress": 21464
+                    },
+                    "sourceIeeeAddr": "0x00158d00000015",
+                    "sourceNwkAddr": 21464,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 1,
+                    "linkquality": 66,
+                    "lqi": 66,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 63,
+                    "lqi": 63,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 1,
+                    "deviceType": 1,
+                    "linkquality": 0,
+                    "lqi": 0,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x94b21600000027",
+                        "networkAddress": 27531
+                    },
+                    "sourceIeeeAddr": "0x94b21600000027",
+                    "sourceNwkAddr": 27531,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 3,
+                    "deviceType": 2,
+                    "linkquality": 121,
+                    "lqi": 121,
+                    "permitJoining": 2,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001e",
+                        "networkAddress": 34220
+                    },
+                    "sourceIeeeAddr": "0x0017880000001e",
+                    "sourceNwkAddr": 34220,
+                    "target": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "targetIeeeAddr": "0xa4c1380000002a"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 255,
+                    "lqi": 255,
+                    "permitJoining": 2,
+                    "relationship": 0,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 232,
+                    "lqi": 232,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 134,
+                    "lqi": 134,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 83,
+                    "lqi": 83,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 194,
+                    "lqi": 194,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 2,
+                    "deviceType": 2,
+                    "linkquality": 233,
+                    "lqi": 233,
+                    "permitJoining": 0,
+                    "relationship": 1,
+                    "routes": [],
+                    "rxOnWhenIdle": 0,
+                    "source": {
+                        "ieeeAddr": "0x00158d00000003",
+                        "networkAddress": 56581
+                    },
+                    "sourceIeeeAddr": "0x00158d00000003",
+                    "sourceNwkAddr": 56581,
+                    "target": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "targetIeeeAddr": "0xec1bbd0000002b"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 161,
+                    "lqi": 161,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 121,
+                    "lqi": 121,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "sourceIeeeAddr": "0x348d1300000031",
+                    "sourceNwkAddr": 1219,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 141,
+                    "lqi": 141,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 115,
+                    "lqi": 115,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 48,
+                    "lqi": 48,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceNwkAddr": 40713,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 143,
+                    "lqi": 143,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 182,
+                    "lqi": 182,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "targetIeeeAddr": "0xf0fd450000002f"
+                },
+                {
+                    "depth": 0,
+                    "deviceType": 0,
+                    "linkquality": 255,
+                    "lqi": 255,
+                    "permitJoining": 2,
+                    "relationship": 0,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000001",
+                        "networkAddress": 0
+                    },
+                    "sourceIeeeAddr": "0x00124b00000001",
+                    "sourceNwkAddr": 0,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 80,
+                    "lqi": 80,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xa4c1380000002a",
+                        "networkAddress": 12194
+                    },
+                    "sourceIeeeAddr": "0xa4c1380000002a",
+                    "sourceNwkAddr": 12194,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 121,
+                    "lqi": 121,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xf0fd450000002f",
+                        "networkAddress": 14814
+                    },
+                    "sourceIeeeAddr": "0xf0fd450000002f",
+                    "sourceNwkAddr": 14814,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 57,
+                    "lqi": 57,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x0017880000001c",
+                        "networkAddress": 25026
+                    },
+                    "sourceIeeeAddr": "0x0017880000001c",
+                    "sourceNwkAddr": 25026,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 81,
+                    "lqi": 81,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00124b00000005",
+                        "networkAddress": 40713
+                    },
+                    "sourceIeeeAddr": "0x00124b00000005",
+                    "sourceNwkAddr": 40713,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 239,
+                    "lqi": 239,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0xec1bbd0000002b",
+                        "networkAddress": 46963
+                    },
+                    "sourceIeeeAddr": "0xec1bbd0000002b",
+                    "sourceNwkAddr": 46963,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                },
+                {
+                    "depth": 15,
+                    "deviceType": 1,
+                    "linkquality": 192,
+                    "lqi": 192,
+                    "permitJoining": 2,
+                    "relationship": 2,
+                    "routes": [],
+                    "rxOnWhenIdle": 1,
+                    "source": {
+                        "ieeeAddr": "0x00178800000019",
+                        "networkAddress": 51870
+                    },
+                    "sourceIeeeAddr": "0x00178800000019",
+                    "sourceNwkAddr": 51870,
+                    "target": {
+                        "ieeeAddr": "0x348d1300000031",
+                        "networkAddress": 1219
+                    },
+                    "targetIeeeAddr": "0x348d1300000031"
+                }
+            ],
+            "nodes": [
+                {
+                    "failed": [],
+                    "friendlyName": "Coordinator",
+                    "ieeeAddr": "0x00124b00000001",
+                    "lastSeen": 1752459825323,
+                    "networkAddress": 0,
+                    "type": "Coordinator"
+                },
+                {
+                    "definition": {
+                        "description": "Mi motion sensor",
+                        "model": "RTCGQ01LM",
+                        "supports": "battery, occupancy, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Bewegung Bad",
+                    "ieeeAddr": "0x00158d00000002",
+                    "lastSeen": 1751194132721,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_motion",
+                    "networkAddress": 54660,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi motion sensor",
+                        "model": "RTCGQ01LM",
+                        "supports": "battery, occupancy, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Bewegung Terrasse",
+                    "ieeeAddr": "0x00158d00000003",
+                    "lastSeen": 1790162241815,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_motion",
+                    "networkAddress": 56581,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "STYRBAR remote control",
+                        "model": "E2001/E2002/E2313",
+                        "supports": "identify, battery, action, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "friendlyName": "Fernbedienung Wohnzimmer",
+                    "ieeeAddr": "0x84ba2000000004",
+                    "lastSeen": 1788606998856,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "Remote Control N2",
+                    "networkAddress": 60888,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Texas Instruments router",
+                        "model": "ti.router",
+                        "supports": "transmit_power, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "failed": [],
+                    "friendlyName": "Router Flur",
+                    "ieeeAddr": "0x00124b00000005",
+                    "lastSeen": 1768844437950,
+                    "manufacturerName": "TexasInstruments",
+                    "modelID": "ti.router",
+                    "networkAddress": 40713,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Door and window sensor",
+                        "model": "MCCGQ11LM",
+                        "supports": "battery, contact, device_temperature, voltage, power_outage_count, trigger_count, identify, linkquality",
+                        "vendor": "Aqara"
+                    },
+                    "friendlyName": "Fenster Hauswirtschaft",
+                    "ieeeAddr": "0x00158d00000006",
+                    "lastSeen": 1790162244977,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet.aq2",
+                    "networkAddress": 51531,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Smart+ plug",
+                        "model": "AB3257001NJ",
+                        "supports": "switch (state), linkquality",
+                        "vendor": "OSRAM"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Steckdose Wohnzimmer TV",
+                    "ieeeAddr": "0x7cb03e00000007",
+                    "lastSeen": 1786638910742,
+                    "manufacturerName": "OSRAM",
+                    "modelID": "Plug 01",
+                    "networkAddress": 56432,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI motion sensor",
+                        "model": "E1525/E1745",
+                        "supports": "occupancy, illuminance_above_threshold, requested_brightness_level, requested_brightness_percent, identify, battery, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "friendlyName": "Bewegung Hauswirtschaft",
+                    "ieeeAddr": "0x0c431400000008",
+                    "lastSeen": 1790163801411,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI motion sensor",
+                    "networkAddress": 11645,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI remote control",
+                        "model": "E1524/E1810",
+                        "supports": "identify, battery, action, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "friendlyName": "Fernbedienung Wohnzimmer 2",
+                    "ieeeAddr": "0x680ae200000009",
+                    "lastSeen": 1790159438790,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI remote control",
+                    "networkAddress": 51509,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Smart+ plug",
+                        "model": "AB3257001NJ",
+                        "supports": "switch (state), linkquality",
+                        "vendor": "OSRAM"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Steckdose Kinderzimmer TV",
+                    "ieeeAddr": "0x7cb03e0000000a",
+                    "lastSeen": 1786638911894,
+                    "manufacturerName": "OSRAM",
+                    "modelID": "Plug 01",
+                    "networkAddress": 25013,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Door and window sensor",
+                        "model": "MCCGQ11LM",
+                        "supports": "battery, contact, device_temperature, voltage, power_outage_count, trigger_count, identify, linkquality",
+                        "vendor": "Aqara"
+                    },
+                    "friendlyName": "Haustür Flur",
+                    "ieeeAddr": "0x00158d0000000b",
+                    "lastSeen": 1782616978753,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet.aq2",
+                    "networkAddress": 57587,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Door and window sensor",
+                        "model": "MCCGQ11LM",
+                        "supports": "battery, contact, device_temperature, voltage, power_outage_count, trigger_count, identify, linkquality",
+                        "vendor": "Aqara"
+                    },
+                    "friendlyName": "Tür Hauswirtschaft",
+                    "ieeeAddr": "0x00158d0000000c",
+                    "lastSeen": 1790163803938,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet.aq2",
+                    "networkAddress": 61153,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI on/off switch",
+                        "model": "E1743",
+                        "supports": "identify, battery, action, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "friendlyName": "Schalter Küche",
+                    "ieeeAddr": "0xbc33ac0000000d",
+                    "lastSeen": 1790162266231,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI on/off switch",
+                    "networkAddress": 65412,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Temperature and humidity sensor",
+                        "model": "SNZB-02",
+                        "supports": "battery, temperature, humidity, voltage, linkquality",
+                        "vendor": "SONOFF"
+                    },
+                    "friendlyName": "Klima Gäste-WC",
+                    "ieeeAddr": "0x00124b0000000e",
+                    "lastSeen": 1743744484529,
+                    "manufacturerName": "eWeLink",
+                    "modelID": "TH01",
+                    "networkAddress": 11314,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI remote control",
+                        "model": "E1524/E1810",
+                        "supports": "identify, battery, action, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "friendlyName": "Fernbedienung Wohnzimmer 3",
+                    "ieeeAddr": "0x842e140000000f",
+                    "lastSeen": 1790139378641,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI remote control",
+                    "networkAddress": 48527,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Fenster Dachboden",
+                    "ieeeAddr": "0x00158d00000010",
+                    "lastSeen": 1790159659361,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 2712,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Door and window sensor",
+                        "model": "MCCGQ11LM",
+                        "supports": "battery, contact, device_temperature, voltage, power_outage_count, trigger_count, identify, linkquality",
+                        "vendor": "Aqara"
+                    },
+                    "friendlyName": "Fenster Kinderzimmer",
+                    "ieeeAddr": "0x00158d00000011",
+                    "lastSeen": 1790162522210,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet.aq2",
+                    "networkAddress": 13772,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Fenster Küche",
+                    "ieeeAddr": "0x00158d00000012",
+                    "lastSeen": 1790158893950,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 1455,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Fenster Ankleide",
+                    "ieeeAddr": "0x00158d00000013",
+                    "lastSeen": 1790159225906,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 24966,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Tür Ankleide",
+                    "ieeeAddr": "0x00158d00000014",
+                    "lastSeen": 1790163386601,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 15484,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Fenster Büro Seite",
+                    "ieeeAddr": "0x00158d00000015",
+                    "lastSeen": 1790161154952,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 21464,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Fenster Büro Vorne",
+                    "ieeeAddr": "0x00158d00000016",
+                    "lastSeen": 1777104441740,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 6528,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Smart+ plug",
+                        "model": "AB3257001NJ",
+                        "supports": "switch (state), linkquality",
+                        "vendor": "OSRAM"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Steckdose Flur",
+                    "ieeeAddr": "0x7cb03e00000017",
+                    "lastSeen": 1781710437272,
+                    "manufacturerName": "OSRAM",
+                    "modelID": "Plug 01",
+                    "networkAddress": 44685,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Xiaomi temperature & humidity sensor with custom firmware",
+                        "model": "LYWSD03MMC",
+                        "supports": "battery, temperature, humidity, temperature_display_mode, show_smiley, enable_display, temperature_calibration, humidity_calibration, comfort_temperature_min, comfort_temperature_max, comfort_humidity_min, comfort_humidity_max, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "friendlyName": "Klima Küche",
+                    "ieeeAddr": "0xa4c13800000018",
+                    "lastSeen": 1790164655750,
+                    "manufacturerName": "Xiaomi",
+                    "modelID": "LYWSD03MMC",
+                    "networkAddress": 23908,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white A60 bulb E27 bluetooth",
+                        "model": "8718699673147",
+                        "supports": "light (state, brightness), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [],
+                    "friendlyName": "Lampe Wohnzimmer",
+                    "ieeeAddr": "0x00178800000019",
+                    "lastSeen": 1790161690457,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LWA001",
+                    "networkAddress": 51870,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+                        "model": "LED1924G9",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, level_config), effect, power_on_behavior, color_options, identify, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Stehlampe Wohnzimmer",
+                    "ieeeAddr": "0x94deb80000001a",
+                    "lastSeen": 1764430114220,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI bulb E27 CWS 806lm",
+                    "networkAddress": 64616,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white A60 bulb E27 bluetooth",
+                        "model": "8718699673147",
+                        "supports": "light (state, brightness), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Licht Bad",
+                    "ieeeAddr": "0x0017880000001b",
+                    "lastSeen": 1741494467428,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LWA001",
+                    "networkAddress": 53096,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white and color ambiance E26/E27",
+                        "model": "9290022166",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, color_hs), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [],
+                    "friendlyName": "Licht Kinderzimmer",
+                    "ieeeAddr": "0x0017880000001c",
+                    "lastSeen": 1790160526520,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LCA001",
+                    "networkAddress": 25026,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white and color ambiance E26/E27",
+                        "model": "9290022166",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, color_hs), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Licht Schlafzimmer",
+                    "ieeeAddr": "0x0017880000001d",
+                    "lastSeen": 1784227429173,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LCA001",
+                    "networkAddress": 19454,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue dimmer switch gen 1",
+                        "model": "324131092621",
+                        "supports": "battery, action_duration, action, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "friendlyName": "Dimmer Büro",
+                    "ieeeAddr": "0x0017880000001e",
+                    "lastSeen": 1790161805481,
+                    "manufacturerName": "Philips",
+                    "modelID": "RWL021",
+                    "networkAddress": 34220,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Hue dimmer switch gen 1",
+                        "model": "324131092621",
+                        "supports": "battery, action_duration, action, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "friendlyName": "Dimmer Garage",
+                    "ieeeAddr": "0x0017880000001f",
+                    "lastSeen": 1790161878479,
+                    "manufacturerName": "Philips",
+                    "modelID": "RWL021",
+                    "networkAddress": 11251,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Xiaomi temperature & humidity sensor with custom firmware",
+                        "model": "LYWSD03MMC",
+                        "supports": "battery, temperature, humidity, temperature_display_mode, show_smiley, enable_display, temperature_calibration, humidity_calibration, comfort_temperature_min, comfort_temperature_max, comfort_humidity_min, comfort_humidity_max, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "friendlyName": "Klima Büro",
+                    "ieeeAddr": "0xa4c13800000020",
+                    "lastSeen": 1790164601857,
+                    "manufacturerName": "Xiaomi",
+                    "modelID": "LYWSD03MMC",
+                    "networkAddress": 33885,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Xiaomi temperature & humidity sensor with custom firmware",
+                        "model": "LYWSD03MMC",
+                        "supports": "battery, temperature, humidity, temperature_display_mode, show_smiley, enable_display, temperature_calibration, humidity_calibration, comfort_temperature_min, comfort_temperature_max, comfort_humidity_min, comfort_humidity_max, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "friendlyName": "Klima Flur",
+                    "ieeeAddr": "0xa4c13800000021",
+                    "lastSeen": 1741390840068,
+                    "manufacturerName": "Xiaomi",
+                    "modelID": "LYWSD03MMC",
+                    "networkAddress": 62571,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Xiaomi temperature & humidity sensor with custom firmware",
+                        "model": "LYWSD03MMC",
+                        "supports": "battery, temperature, humidity, temperature_display_mode, show_smiley, enable_display, temperature_calibration, humidity_calibration, comfort_temperature_min, comfort_temperature_max, comfort_humidity_min, comfort_humidity_max, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "friendlyName": "Klima Kinderzimmer",
+                    "ieeeAddr": "0xa4c13800000022",
+                    "lastSeen": 1790164611176,
+                    "manufacturerName": "Xiaomi",
+                    "modelID": "LYWSD03MMC",
+                    "networkAddress": 29472,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Livarno Lux smart LED mood light",
+                        "model": "14156506L",
+                        "supports": "light (state, brightness, color_temp, color_xy), effect, do_not_disturb, color_power_on_behavior, linkquality",
+                        "vendor": "Lidl"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Stimmungslicht Wohnzimmer",
+                    "ieeeAddr": "0x9035ea00000023",
+                    "lastSeen": 1754731589898,
+                    "manufacturerName": "_TZ3210_r0xgkft5",
+                    "modelID": "TS0505B",
+                    "networkAddress": 11991,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Sensor Schlafzimmer",
+                    "ieeeAddr": "0x00158d00000024",
+                    "lastSeen": 1753114844790,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 30494,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white A60 bulb E27 bluetooth",
+                        "model": "8718699673147",
+                        "supports": "light (state, brightness), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Deko Flur unten",
+                    "ieeeAddr": "0x00178800000025",
+                    "lastSeen": 1782614681885,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LWA001",
+                    "networkAddress": 60017,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white A60 bulb E27 bluetooth",
+                        "model": "8718699673147",
+                        "supports": "light (state, brightness), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Deko Flur oben",
+                    "ieeeAddr": "0x00178800000026",
+                    "lastSeen": 1786390230199,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LWA001",
+                    "networkAddress": 42482,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "JETSTROM ceiling light panel, color/white spectrum, 30x30 cm",
+                        "model": "L2206",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, level_config), effect, power_on_behavior, color_options, identify, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Deckenlicht Küche",
+                    "ieeeAddr": "0x94b21600000027",
+                    "lastSeen": 1790140256243,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "JETSTROM 3030 ceiling",
+                    "networkAddress": 27531,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Hue white A60 bulb E27 bluetooth",
+                        "model": "8718699673147",
+                        "supports": "light (state, brightness), power_on_behavior, effect, effect_speed, effect_color, identify, linkquality",
+                        "vendor": "Philips"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Licht Ankleide",
+                    "ieeeAddr": "0x00178800000028",
+                    "lastSeen": 1790140980649,
+                    "manufacturerName": "Signify Netherlands B.V.",
+                    "modelID": "LWA001",
+                    "networkAddress": 49628,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI bulb E26/E27, color/white spectrum, globe, opal, 800/806/810 lm",
+                        "model": "LED2109G6",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, color_hs, level_config), effect, power_on_behavior, color_options, identify, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Licht Bad RGB",
+                    "ieeeAddr": "0xd4486700000029",
+                    "lastSeen": 1790138719541,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI bulb E27 CWS globe 806lm",
+                    "networkAddress": 29506,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "4 gang switch, with USB",
+                        "model": "SM-0306E-2W",
+                        "supports": "switch (state), power_outage_memory, child_lock, linkquality",
+                        "vendor": "UseeLink"
+                    },
+                    "failed": [],
+                    "friendlyName": "Steckdosenleiste Büro",
+                    "ieeeAddr": "0xa4c1380000002a",
+                    "lastSeen": 1790164680275,
+                    "manufacturerName": "_TZ3000_cfnprab5",
+                    "modelID": "TS011F",
+                    "networkAddress": 12194,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "TRADFRI LED driver, 30 w",
+                        "model": "ICPSHC24-30EU-IL-1/ICPSHC24-10EU-IL-2",
+                        "supports": "light (state, brightness, level_config), effect, power_on_behavior, identify, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [],
+                    "friendlyName": "Schranklicht Wohnzimmer",
+                    "ieeeAddr": "0xec1bbd0000002b",
+                    "lastSeen": 1790140057114,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "TRADFRI Driver 30W",
+                    "networkAddress": 46963,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "JETSTROM ceiling light panel, color/white spectrum, 30x30 cm",
+                        "model": "L2206",
+                        "supports": "light (state, brightness, color_temp, color_temp_startup, color_xy, level_config), effect, power_on_behavior, color_options, identify, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Deckenlicht Esszimmer",
+                    "ieeeAddr": "0x7cc6b60000002c",
+                    "lastSeen": 1790137543629,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "JETSTROM 3030 ceiling",
+                    "networkAddress": 21439,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "Xiaomi temperature & humidity sensor with custom firmware",
+                        "model": "LYWSD03MMC",
+                        "supports": "battery, temperature, humidity, temperature_display_mode, show_smiley, enable_display, temperature_calibration, humidity_calibration, comfort_temperature_min, comfort_temperature_max, comfort_humidity_min, comfort_humidity_max, linkquality",
+                        "vendor": "Custom devices (DiY)"
+                    },
+                    "friendlyName": "Klima Wohnzimmer",
+                    "ieeeAddr": "0xa4c1380000002d",
+                    "lastSeen": 1789525340937,
+                    "manufacturerName": "Xiaomi",
+                    "modelID": "LYWSD03MMC",
+                    "networkAddress": 31953,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "Mi door and window sensor",
+                        "model": "MCCGQ01LM",
+                        "supports": "battery, contact, voltage, power_outage_count, linkquality",
+                        "vendor": "Xiaomi"
+                    },
+                    "friendlyName": "Tor Garage",
+                    "ieeeAddr": "0x00158d0000002e",
+                    "lastSeen": 1790159977418,
+                    "manufacturerName": "LUMI",
+                    "modelID": "lumi.sensor_magnet",
+                    "networkAddress": 53037,
+                    "type": "EndDevice"
+                },
+                {
+                    "definition": {
+                        "description": "INSPELNING smart plug",
+                        "model": "E22xx",
+                        "supports": "switch (state), power_on_behavior, child_lock, led_enable, identify, power, voltage, current, energy, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [],
+                    "friendlyName": "Steckdose Küche",
+                    "ieeeAddr": "0xf0fd450000002f",
+                    "lastSeen": 1790162200523,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "INSPELNING Smart plug",
+                    "networkAddress": 14814,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "INSPELNING smart plug",
+                        "model": "E22xx",
+                        "supports": "switch (state), power_on_behavior, child_lock, led_enable, identify, power, voltage, current, energy, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [
+                        "lqi"
+                    ],
+                    "friendlyName": "Steckdose Hauswirtschaft",
+                    "ieeeAddr": "0xf0fd4500000030",
+                    "lastSeen": 1781915341128,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "INSPELNING Smart plug",
+                    "networkAddress": 12308,
+                    "type": "Router"
+                },
+                {
+                    "definition": {
+                        "description": "INSPELNING smart plug",
+                        "model": "E22xx",
+                        "supports": "switch (state), power_on_behavior, child_lock, led_enable, identify, power, voltage, current, energy, linkquality",
+                        "vendor": "IKEA"
+                    },
+                    "failed": [],
+                    "friendlyName": "Steckdose Wohnzimmer Fernseher",
+                    "ieeeAddr": "0x348d1300000031",
+                    "lastSeen": 1790163189221,
+                    "manufacturerName": "IKEA of Sweden",
+                    "modelID": "INSPELNING Smart plug",
+                    "networkAddress": 1219,
+                    "type": "Router"
+                }
+            ]
+        }
+    },
+    "status": "ok",
+    "transaction": "mcu6c-1"
+}

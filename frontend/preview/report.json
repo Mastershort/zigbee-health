@@ -1,0 +1,3060 @@
+{
+ "ready": true,
+ "generated_at": "2026-09-23T12:20:00.284000+00:00",
+ "last_scan": "2026-09-23T12:04:00.284000+00:00",
+ "score": 82,
+ "level": "stable",
+ "counts": {
+  "devices": 48,
+  "routers": 21,
+  "end_devices": 27,
+  "routers_always_on": 7,
+  "routers_part_time": 4,
+  "offline": 2,
+  "dead": 16,
+  "battery_critical": 0,
+  "weak_links": 1,
+  "findings_critical": 16,
+  "findings_warning": 10,
+  "findings_info": 1,
+  "findings_open": 27
+ },
+ "actions": [
+  {
+   "key": "remove_dead",
+   "count": 16,
+   "items": [
+    "Klima Gäste-WC",
+    "Bewegung Bad",
+    "Haustür Flur",
+    "Fenster Büro Vorne",
+    "Sensor Schlafzimmer",
+    "Licht Bad",
+    "Licht Schlafzimmer",
+    "Deko Flur unten",
+    "Deko Flur oben",
+    "Steckdose Wohnzimmer TV",
+    "Steckdose Kinderzimmer TV",
+    "Steckdose Flur",
+    "Stimmungslicht Wohnzimmer",
+    "Stehlampe Wohnzimmer",
+    "Klima Flur",
+    "Steckdose Hauswirtschaft"
+   ],
+   "finding_type": "dead_device",
+   "ieees": [
+    "0x00124b0000000e",
+    "0x00158d00000002",
+    "0x00158d0000000b",
+    "0x00158d00000016",
+    "0x00158d00000024",
+    "0x0017880000001b",
+    "0x0017880000001d",
+    "0x00178800000025",
+    "0x00178800000026",
+    "0x7cb03e00000007",
+    "0x7cb03e0000000a",
+    "0x7cb03e00000017",
+    "0x9035ea00000023",
+    "0x94deb80000001a",
+    "0xa4c13800000021",
+    "0xf0fd4500000030"
+   ],
+   "area_ids": []
+  },
+  {
+   "key": "add_router_rooms",
+   "count": 3,
+   "items": [
+    "Ankleide",
+    "Garage",
+    "Hauswirtschaft"
+   ],
+   "finding_type": "room_without_router",
+   "ieees": [],
+   "area_ids": [
+    "ankleide",
+    "garage",
+    "hauswirtschaft"
+   ]
+  },
+  {
+   "key": "power_part_time_routers",
+   "count": 4,
+   "items": [
+    "Licht Ankleide",
+    "Deckenlicht Esszimmer",
+    "Deckenlicht Küche",
+    "Licht Bad RGB"
+   ],
+   "finding_type": "part_time_router",
+   "ieees": [
+    "0x00178800000028",
+    "0x7cc6b60000002c",
+    "0x94b21600000027",
+    "0xd4486700000029"
+   ],
+   "area_ids": []
+  }
+ ],
+ "findings": [
+  {
+   "id": "dead_device:0x00124b0000000e",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00124b0000000e",
+   "device": "Klima Gäste-WC",
+   "area_id": "gäste-wc",
+   "placeholders": {
+    "name": "Klima Gäste-WC",
+    "room": "Gäste-WC",
+    "days": "537",
+    "date": "04.04.2025 07:28",
+    "last_seen": "2025-04-04T05:28:04.529000+00:00",
+    "hours": "12894"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00158d00000002",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00158d00000002",
+   "device": "Bewegung Bad",
+   "area_id": "bad",
+   "placeholders": {
+    "name": "Bewegung Bad",
+    "room": "Bad",
+    "days": "451",
+    "date": "29.06.2025 12:48",
+    "last_seen": "2025-06-29T10:48:52.721000+00:00",
+    "hours": "10825"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00158d0000000b",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00158d0000000b",
+   "device": "Haustür Flur",
+   "area_id": "flur",
+   "placeholders": {
+    "name": "Haustür Flur",
+    "room": "Flur",
+    "days": "87",
+    "date": "28.06.2026 05:22",
+    "last_seen": "2026-06-28T03:22:58.753000+00:00",
+    "hours": "2096"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00158d00000016",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00158d00000016",
+   "device": "Fenster Büro Vorne",
+   "area_id": "büro",
+   "placeholders": {
+    "name": "Fenster Büro Vorne",
+    "room": "Büro",
+    "days": "151",
+    "date": "25.04.2026 10:07",
+    "last_seen": "2026-04-25T08:07:21.740000+00:00",
+    "hours": "3628"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00158d00000024",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00158d00000024",
+   "device": "Sensor Schlafzimmer",
+   "area_id": "schlafzimmer",
+   "placeholders": {
+    "name": "Sensor Schlafzimmer",
+    "room": "Schlafzimmer",
+    "days": "428",
+    "date": "21.07.2025 18:20",
+    "last_seen": "2025-07-21T16:20:44.790000+00:00",
+    "hours": "10291"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x0017880000001b",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x0017880000001b",
+   "device": "Licht Bad",
+   "area_id": "bad",
+   "placeholders": {
+    "name": "Licht Bad",
+    "room": "Bad",
+    "days": "563",
+    "date": "09.03.2025 05:27",
+    "last_seen": "2025-03-09T04:27:47.428000+00:00",
+    "hours": "13519"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x0017880000001d",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x0017880000001d",
+   "device": "Licht Schlafzimmer",
+   "area_id": "schlafzimmer",
+   "placeholders": {
+    "name": "Licht Schlafzimmer",
+    "room": "Schlafzimmer",
+    "days": "68",
+    "date": "16.07.2026 20:43",
+    "last_seen": "2026-07-16T18:43:49.173000+00:00",
+    "hours": "1649"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00178800000025",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00178800000025",
+   "device": "Deko Flur unten",
+   "area_id": "flur",
+   "placeholders": {
+    "name": "Deko Flur unten",
+    "room": "Flur",
+    "days": "87",
+    "date": "28.06.2026 04:44",
+    "last_seen": "2026-06-28T02:44:41.885000+00:00",
+    "hours": "2097"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x00178800000026",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x00178800000026",
+   "device": "Deko Flur oben",
+   "area_id": "flur",
+   "placeholders": {
+    "name": "Deko Flur oben",
+    "room": "Flur",
+    "days": "43",
+    "date": "10.08.2026 21:30",
+    "last_seen": "2026-08-10T19:30:30.199000+00:00",
+    "hours": "1048"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x7cb03e00000007",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x7cb03e00000007",
+   "device": "Steckdose Wohnzimmer TV",
+   "area_id": "wohnzimmer",
+   "placeholders": {
+    "name": "Steckdose Wohnzimmer TV",
+    "room": "Wohnzimmer",
+    "days": "40",
+    "date": "13.08.2026 18:35",
+    "last_seen": "2026-08-13T16:35:10.742000+00:00",
+    "hours": "979"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x7cb03e0000000a",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x7cb03e0000000a",
+   "device": "Steckdose Kinderzimmer TV",
+   "area_id": "kinderzimmer",
+   "placeholders": {
+    "name": "Steckdose Kinderzimmer TV",
+    "room": "Kinderzimmer",
+    "days": "40",
+    "date": "13.08.2026 18:35",
+    "last_seen": "2026-08-13T16:35:11.894000+00:00",
+    "hours": "979"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x7cb03e00000017",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x7cb03e00000017",
+   "device": "Steckdose Flur",
+   "area_id": "flur",
+   "placeholders": {
+    "name": "Steckdose Flur",
+    "room": "Flur",
+    "days": "97",
+    "date": "17.06.2026 17:33",
+    "last_seen": "2026-06-17T15:33:57.272000+00:00",
+    "hours": "2348"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x9035ea00000023",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x9035ea00000023",
+   "device": "Stimmungslicht Wohnzimmer",
+   "area_id": "wohnzimmer",
+   "placeholders": {
+    "name": "Stimmungslicht Wohnzimmer",
+    "room": "Wohnzimmer",
+    "days": "410",
+    "date": "09.08.2025 11:26",
+    "last_seen": "2025-08-09T09:26:29.898000+00:00",
+    "hours": "9842"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0x94deb80000001a",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0x94deb80000001a",
+   "device": "Stehlampe Wohnzimmer",
+   "area_id": "wohnzimmer",
+   "placeholders": {
+    "name": "Stehlampe Wohnzimmer",
+    "room": "Wohnzimmer",
+    "days": "297",
+    "date": "29.11.2025 16:28",
+    "last_seen": "2025-11-29T15:28:34.220000+00:00",
+    "hours": "7148"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0xa4c13800000021",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0xa4c13800000021",
+   "device": "Klima Flur",
+   "area_id": "flur",
+   "placeholders": {
+    "name": "Klima Flur",
+    "room": "Flur",
+    "days": "564",
+    "date": "08.03.2025 00:40",
+    "last_seen": "2025-03-07T23:40:40.068000+00:00",
+    "hours": "13548"
+   },
+   "related": []
+  },
+  {
+   "id": "dead_device:0xf0fd4500000030",
+   "type": "dead_device",
+   "severity": "critical",
+   "ieee": "0xf0fd4500000030",
+   "device": "Steckdose Hauswirtschaft",
+   "area_id": "hauswirtschaft",
+   "placeholders": {
+    "name": "Steckdose Hauswirtschaft",
+    "room": "Hauswirtschaft",
+    "days": "95",
+    "date": "20.06.2026 02:29",
+    "last_seen": "2026-06-20T00:29:01.128000+00:00",
+    "hours": "2291"
+   },
+   "related": []
+  },
+  {
+   "id": "disappeared:0x84ba2000000004",
+   "type": "disappeared",
+   "severity": "warning",
+   "ieee": "0x84ba2000000004",
+   "device": "Fernbedienung Wohnzimmer",
+   "area_id": "wohnzimmer",
+   "placeholders": {
+    "name": "Fernbedienung Wohnzimmer",
+    "room": "Wohnzimmer",
+    "days": "18",
+    "date": "05.09.2026 13:16",
+    "last_seen": "2026-09-05T11:16:38.856000+00:00",
+    "hours": "433"
+   },
+   "related": []
+  },
+  {
+   "id": "disappeared:0xa4c1380000002d",
+   "type": "disappeared",
+   "severity": "warning",
+   "ieee": "0xa4c1380000002d",
+   "device": "Klima Wohnzimmer",
+   "area_id": "wohnzimmer",
+   "placeholders": {
+    "name": "Klima Wohnzimmer",
+    "room": "Wohnzimmer",
+    "days": "7",
+    "date": "16.09.2026 04:22",
+    "last_seen": "2026-09-16T02:22:20.937000+00:00",
+    "hours": "177"
+   },
+   "related": []
+  },
+  {
+   "id": "part_time_router:0x00178800000028",
+   "type": "part_time_router",
+   "severity": "warning",
+   "ieee": "0x00178800000028",
+   "device": "Licht Ankleide",
+   "area_id": "ankleide",
+   "placeholders": {
+    "name": "Licht Ankleide",
+    "room": "Ankleide",
+    "days": "0",
+    "date": "23.09.2026 07:23",
+    "last_seen": "2026-09-23T05:23:00.649000+00:00",
+    "hours": "6"
+   },
+   "related": []
+  },
+  {
+   "id": "part_time_router:0x7cc6b60000002c",
+   "type": "part_time_router",
+   "severity": "warning",
+   "ieee": "0x7cc6b60000002c",
+   "device": "Deckenlicht Esszimmer",
+   "area_id": "esszimmer",
+   "placeholders": {
+    "name": "Deckenlicht Esszimmer",
+    "room": "Esszimmer",
+    "days": "0",
+    "date": "23.09.2026 06:25",
+    "last_seen": "2026-09-23T04:25:43.629000+00:00",
+    "hours": "7"
+   },
+   "related": []
+  },
+  {
+   "id": "part_time_router:0x94b21600000027",
+   "type": "part_time_router",
+   "severity": "warning",
+   "ieee": "0x94b21600000027",
+   "device": "Deckenlicht Küche",
+   "area_id": "küche",
+   "placeholders": {
+    "name": "Deckenlicht Küche",
+    "room": "Küche",
+    "days": "0",
+    "date": "23.09.2026 07:10",
+    "last_seen": "2026-09-23T05:10:56.243000+00:00",
+    "hours": "7"
+   },
+   "related": []
+  },
+  {
+   "id": "part_time_router:0xd4486700000029",
+   "type": "part_time_router",
+   "severity": "warning",
+   "ieee": "0xd4486700000029",
+   "device": "Licht Bad RGB",
+   "area_id": "bad",
+   "placeholders": {
+    "name": "Licht Bad RGB",
+    "room": "Bad",
+    "days": "0",
+    "date": "23.09.2026 06:45",
+    "last_seen": "2026-09-23T04:45:19.541000+00:00",
+    "hours": "7"
+   },
+   "related": []
+  },
+  {
+   "id": "prerequisite_missing:availability",
+   "type": "prerequisite_missing",
+   "severity": "info",
+   "ieee": null,
+   "device": null,
+   "area_id": null,
+   "placeholders": {
+    "name": "",
+    "room": "-",
+    "days": "?",
+    "date": "?",
+    "option": "availability"
+   },
+   "related": []
+  },
+  {
+   "id": "room_without_router:ankleide",
+   "type": "room_without_router",
+   "severity": "warning",
+   "ieee": null,
+   "device": null,
+   "area_id": "ankleide",
+   "placeholders": {
+    "name": "",
+    "room": "Ankleide",
+    "days": "?",
+    "date": "?",
+    "count": "2"
+   },
+   "related": [
+    "0x00158d00000013",
+    "0x00158d00000014"
+   ]
+  },
+  {
+   "id": "room_without_router:garage",
+   "type": "room_without_router",
+   "severity": "warning",
+   "ieee": null,
+   "device": null,
+   "area_id": "garage",
+   "placeholders": {
+    "name": "",
+    "room": "Garage",
+    "days": "?",
+    "date": "?",
+    "count": "2"
+   },
+   "related": [
+    "0x00158d0000002e",
+    "0x0017880000001f"
+   ]
+  },
+  {
+   "id": "room_without_router:hauswirtschaft",
+   "type": "room_without_router",
+   "severity": "warning",
+   "ieee": null,
+   "device": null,
+   "area_id": "hauswirtschaft",
+   "placeholders": {
+    "name": "",
+    "room": "Hauswirtschaft",
+    "days": "?",
+    "date": "?",
+    "count": "3"
+   },
+   "related": [
+    "0x00158d00000006",
+    "0x00158d0000000c",
+    "0x0c431400000008"
+   ]
+  },
+  {
+   "id": "weak_link:0xa4c13800000018",
+   "type": "weak_link",
+   "severity": "warning",
+   "ieee": "0xa4c13800000018",
+   "device": "Klima Küche",
+   "area_id": "küche",
+   "placeholders": {
+    "name": "Klima Küche",
+    "room": "Küche",
+    "days": "0",
+    "date": "23.09.2026 14:02",
+    "last_seen": "2026-09-23T12:02:35.700000+00:00",
+    "hours": "0",
+    "lqi": "60",
+    "parent": "Coordinator",
+    "parent_ieee": "0x00124b00000001"
+   },
+   "related": [
+    "0x00124b00000001"
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "area_id": "ankleide",
+   "area_name": "Ankleide",
+   "score": 73,
+   "end_devices": 2,
+   "always_on_routers": 0,
+   "part_time_routers": 1,
+   "weakest_lqi": 170,
+   "open_findings": 2,
+   "recommendation": "add_router"
+  },
+  {
+   "area_id": "bad",
+   "area_name": "Bad",
+   "score": 67,
+   "end_devices": 0,
+   "always_on_routers": 0,
+   "part_time_routers": 1,
+   "weakest_lqi": null,
+   "open_findings": 3,
+   "recommendation": null
+  },
+  {
+   "area_id": "büro",
+   "area_name": "Büro",
+   "score": 92,
+   "end_devices": 3,
+   "always_on_routers": 1,
+   "part_time_routers": 0,
+   "weakest_lqi": 121,
+   "open_findings": 1,
+   "recommendation": null
+  },
+  {
+   "area_id": "dachboden",
+   "area_name": "Dachboden",
+   "score": 100,
+   "end_devices": 1,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": null,
+   "open_findings": 0,
+   "recommendation": null
+  },
+  {
+   "area_id": "esszimmer",
+   "area_name": "Esszimmer",
+   "score": 80,
+   "end_devices": 0,
+   "always_on_routers": 0,
+   "part_time_routers": 1,
+   "weakest_lqi": null,
+   "open_findings": 1,
+   "recommendation": null
+  },
+  {
+   "area_id": "flur",
+   "area_name": "Flur",
+   "score": 67,
+   "end_devices": 0,
+   "always_on_routers": 1,
+   "part_time_routers": 0,
+   "weakest_lqi": null,
+   "open_findings": 5,
+   "recommendation": null
+  },
+  {
+   "area_id": "garage",
+   "area_name": "Garage",
+   "score": 80,
+   "end_devices": 2,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": 111,
+   "open_findings": 1,
+   "recommendation": "add_router"
+  },
+  {
+   "area_id": "gäste-wc",
+   "area_name": "Gäste-WC",
+   "score": 60,
+   "end_devices": 0,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": null,
+   "open_findings": 1,
+   "recommendation": null
+  },
+  {
+   "area_id": "hauswirtschaft",
+   "area_name": "Hauswirtschaft",
+   "score": 70,
+   "end_devices": 3,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": 168,
+   "open_findings": 2,
+   "recommendation": "add_router"
+  },
+  {
+   "area_id": "kinderzimmer",
+   "area_name": "Kinderzimmer",
+   "score": 90,
+   "end_devices": 2,
+   "always_on_routers": 1,
+   "part_time_routers": 0,
+   "weakest_lqi": 206,
+   "open_findings": 1,
+   "recommendation": null
+  },
+  {
+   "area_id": "küche",
+   "area_name": "Küche",
+   "score": 92,
+   "end_devices": 3,
+   "always_on_routers": 1,
+   "part_time_routers": 1,
+   "weakest_lqi": 62,
+   "open_findings": 2,
+   "recommendation": null
+  },
+  {
+   "area_id": "schlafzimmer",
+   "area_name": "Schlafzimmer",
+   "score": 60,
+   "end_devices": 0,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": null,
+   "open_findings": 2,
+   "recommendation": null
+  },
+  {
+   "area_id": "terrasse",
+   "area_name": "Terrasse",
+   "score": 100,
+   "end_devices": 1,
+   "always_on_routers": 0,
+   "part_time_routers": 0,
+   "weakest_lqi": 233,
+   "open_findings": 0,
+   "recommendation": null
+  },
+  {
+   "area_id": "wohnzimmer",
+   "area_name": "Wohnzimmer",
+   "score": 84,
+   "end_devices": 4,
+   "always_on_routers": 3,
+   "part_time_routers": 0,
+   "weakest_lqi": 146,
+   "open_findings": 5,
+   "recommendation": null
+  }
+ ],
+ "devices": {
+  "Router Flur": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Gäste-WC": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Bewegung Bad": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Bewegung Terrasse": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Schranklicht Wohnzimmer",
+   "parent_lqi": 233,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Hauswirtschaft": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Coordinator",
+   "parent_lqi": 208,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Haustür Flur": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Tür Hauswirtschaft": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Dachboden": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Kinderzimmer": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Licht Kinderzimmer",
+   "parent_lqi": 253,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Küche": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Ankleide": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Router Flur",
+   "parent_lqi": 170,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Tür Ankleide": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Licht Kinderzimmer",
+   "parent_lqi": 227,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Büro Seite": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Steckdosenleiste Büro",
+   "parent_lqi": 127,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fenster Büro Vorne": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Sensor Schlafzimmer": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Tor Garage": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Lampe Wohnzimmer": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Licht Bad": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Licht Kinderzimmer": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Licht Schlafzimmer": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Dimmer Büro": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Steckdosenleiste Büro",
+   "parent_lqi": 121,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Dimmer Garage": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Licht Kinderzimmer",
+   "parent_lqi": 111,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Deko Flur unten": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Deko Flur oben": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Licht Ankleide": {
+   "state": "part_time_router",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Bewegung Hauswirtschaft": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Coordinator",
+   "parent_lqi": 168,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Wohnzimmer Fernseher": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fernbedienung Wohnzimmer 2": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Coordinator",
+   "parent_lqi": 146,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Wohnzimmer TV": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Kinderzimmer TV": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Flur": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Deckenlicht Esszimmer": {
+   "state": "part_time_router",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fernbedienung Wohnzimmer 3": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Lampe Wohnzimmer",
+   "parent_lqi": 181,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Fernbedienung Wohnzimmer": {
+   "state": "offline",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Stimmungslicht Wohnzimmer": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Deckenlicht Küche": {
+   "state": "part_time_router",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Stehlampe Wohnzimmer": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Küche": {
+   "state": "weak",
+   "score": 80,
+   "parent": "Coordinator",
+   "parent_lqi": 62,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Büro": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Flur": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Kinderzimmer": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Licht Kinderzimmer",
+   "parent_lqi": 206,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdosenleiste Büro": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Klima Wohnzimmer": {
+   "state": "offline",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Schalter Küche": {
+   "state": "ok",
+   "score": 100,
+   "parent": "Coordinator",
+   "parent_lqi": 172,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Licht Bad RGB": {
+   "state": "part_time_router",
+   "score": 80,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Schranklicht Wohnzimmer": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Küche": {
+   "state": "ok",
+   "score": 100,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  },
+  "Steckdose Hauswirtschaft": {
+   "state": "dead",
+   "score": 60,
+   "parent": null,
+   "parent_lqi": null,
+   "battery": null,
+   "battery_empty": null
+  }
+ },
+ "topology": {
+  "coordinator": {
+   "ieee": "0x00124b00000001",
+   "name": "Coordinator"
+  },
+  "nodes": [
+   {
+    "ieee": "0x00124b00000005",
+    "name": "Router Flur",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [
+     "0x00158d00000013"
+    ],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-01-19T17:40:37.950000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00124b0000000e",
+    "name": "Klima Gäste-WC",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Gäste-WC",
+    "area_id": "gäste-wc",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-04-04T05:28:04.529000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000002",
+    "name": "Bewegung Bad",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Bad",
+    "area_id": "bad",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-06-29T10:48:52.721000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000003",
+    "name": "Bewegung Terrasse",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0xec1bbd0000002b",
+    "parent_lqi": 233,
+    "children": [],
+    "area": "Terrasse",
+    "area_id": "terrasse",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:17:21.815000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000006",
+    "name": "Fenster Hauswirtschaft",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00124b00000001",
+    "parent_lqi": 208,
+    "children": [],
+    "area": "Hauswirtschaft",
+    "area_id": "hauswirtschaft",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:17:24.977000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d0000000b",
+    "name": "Haustür Flur",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-06-28T03:22:58.753000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d0000000c",
+    "name": "Tür Hauswirtschaft",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Hauswirtschaft",
+    "area_id": "hauswirtschaft",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:43:23.938000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000010",
+    "name": "Fenster Dachboden",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Dachboden",
+    "area_id": "dachboden",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T10:34:19.361000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000011",
+    "name": "Fenster Kinderzimmer",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x0017880000001c",
+    "parent_lqi": 253,
+    "children": [],
+    "area": "Kinderzimmer",
+    "area_id": "kinderzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:22:02.210000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000012",
+    "name": "Fenster Küche",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Küche",
+    "area_id": "küche",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T10:21:33.950000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000013",
+    "name": "Fenster Ankleide",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00124b00000005",
+    "parent_lqi": 170,
+    "children": [],
+    "area": "Ankleide",
+    "area_id": "ankleide",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T10:27:05.906000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000014",
+    "name": "Tür Ankleide",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x0017880000001c",
+    "parent_lqi": 227,
+    "children": [],
+    "area": "Ankleide",
+    "area_id": "ankleide",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:36:26.601000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000015",
+    "name": "Fenster Büro Seite",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0xa4c1380000002a",
+    "parent_lqi": 127,
+    "children": [],
+    "area": "Büro",
+    "area_id": "büro",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:59:40.173000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000016",
+    "name": "Fenster Büro Vorne",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Büro",
+    "area_id": "büro",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-04-25T08:07:21.740000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d00000024",
+    "name": "Sensor Schlafzimmer",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Schlafzimmer",
+    "area_id": "schlafzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-07-21T16:20:44.790000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00158d0000002e",
+    "name": "Tor Garage",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Garage",
+    "area_id": "garage",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:01:40.289000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00178800000019",
+    "name": "Lampe Wohnzimmer",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [
+     "0x842e140000000f"
+    ],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:08:10.457000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0017880000001b",
+    "name": "Licht Bad",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Bad",
+    "area_id": "bad",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-03-09T04:27:47.428000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0017880000001c",
+    "name": "Licht Kinderzimmer",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [
+     "0x00158d00000011",
+     "0x00158d00000014",
+     "0x0017880000001f",
+     "0xa4c13800000022"
+    ],
+    "area": "Kinderzimmer",
+    "area_id": "kinderzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T10:48:46.520000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0017880000001d",
+    "name": "Licht Schlafzimmer",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Schlafzimmer",
+    "area_id": "schlafzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-07-16T18:43:49.173000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0017880000001e",
+    "name": "Dimmer Büro",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0xa4c1380000002a",
+    "parent_lqi": 121,
+    "children": [],
+    "area": "Büro",
+    "area_id": "büro",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:10:05.481000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0017880000001f",
+    "name": "Dimmer Garage",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x0017880000001c",
+    "parent_lqi": 111,
+    "children": [],
+    "area": "Garage",
+    "area_id": "garage",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:11:18.479000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00178800000025",
+    "name": "Deko Flur unten",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-06-28T02:44:41.885000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00178800000026",
+    "name": "Deko Flur oben",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-08-10T19:30:30.199000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x00178800000028",
+    "name": "Licht Ankleide",
+    "type": "router",
+    "kind": "part_time",
+    "state": "part_time_router",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Ankleide",
+    "area_id": "ankleide",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T05:23:00.649000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x0c431400000008",
+    "name": "Bewegung Hauswirtschaft",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00124b00000001",
+    "parent_lqi": 168,
+    "children": [],
+    "area": "Hauswirtschaft",
+    "area_id": "hauswirtschaft",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:43:21.411000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x348d1300000031",
+    "name": "Steckdose Wohnzimmer Fernseher",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:33:09.221000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x680ae200000009",
+    "name": "Fernbedienung Wohnzimmer 2",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00124b00000001",
+    "parent_lqi": 146,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T10:30:38.790000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x7cb03e00000007",
+    "name": "Steckdose Wohnzimmer TV",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-08-13T16:35:10.742000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x7cb03e0000000a",
+    "name": "Steckdose Kinderzimmer TV",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Kinderzimmer",
+    "area_id": "kinderzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-08-13T16:35:11.894000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x7cb03e00000017",
+    "name": "Steckdose Flur",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-06-17T15:33:57.272000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x7cc6b60000002c",
+    "name": "Deckenlicht Esszimmer",
+    "type": "router",
+    "kind": "part_time",
+    "state": "part_time_router",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Esszimmer",
+    "area_id": "esszimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T04:25:43.629000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x842e140000000f",
+    "name": "Fernbedienung Wohnzimmer 3",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00178800000019",
+    "parent_lqi": 181,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T04:56:18.641000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x84ba2000000004",
+    "name": "Fernbedienung Wohnzimmer",
+    "type": "end_device",
+    "kind": null,
+    "state": "offline",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-05T11:16:38.856000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x9035ea00000023",
+    "name": "Stimmungslicht Wohnzimmer",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-08-09T09:26:29.898000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x94b21600000027",
+    "name": "Deckenlicht Küche",
+    "type": "router",
+    "kind": "part_time",
+    "state": "part_time_router",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Küche",
+    "area_id": "küche",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T05:10:56.243000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0x94deb80000001a",
+    "name": "Stehlampe Wohnzimmer",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-11-29T15:28:34.220000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c13800000018",
+    "name": "Klima Küche",
+    "type": "end_device",
+    "kind": null,
+    "state": "weak",
+    "score": 80,
+    "parent": "0x00124b00000001",
+    "parent_lqi": 62,
+    "children": [],
+    "area": "Küche",
+    "area_id": "küche",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:02:35.700000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c13800000020",
+    "name": "Klima Büro",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Büro",
+    "area_id": "büro",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:03:03.469000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c13800000021",
+    "name": "Klima Flur",
+    "type": "end_device",
+    "kind": null,
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Flur",
+    "area_id": "flur",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2025-03-07T23:40:40.068000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c13800000022",
+    "name": "Klima Kinderzimmer",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x0017880000001c",
+    "parent_lqi": 206,
+    "children": [],
+    "area": "Kinderzimmer",
+    "area_id": "kinderzimmer",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:03:20.901000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c1380000002a",
+    "name": "Steckdosenleiste Büro",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [
+     "0x00158d00000015",
+     "0x0017880000001e"
+    ],
+    "area": "Büro",
+    "area_id": "büro",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:04:00.284000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xa4c1380000002d",
+    "name": "Klima Wohnzimmer",
+    "type": "end_device",
+    "kind": null,
+    "state": "offline",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-16T02:22:20.937000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xbc33ac0000000d",
+    "name": "Schalter Küche",
+    "type": "end_device",
+    "kind": null,
+    "state": "ok",
+    "score": 100,
+    "parent": "0x00124b00000001",
+    "parent_lqi": 172,
+    "children": [],
+    "area": "Küche",
+    "area_id": "küche",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T11:17:46.231000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xd4486700000029",
+    "name": "Licht Bad RGB",
+    "type": "router",
+    "kind": "part_time",
+    "state": "part_time_router",
+    "score": 80,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Bad",
+    "area_id": "bad",
+    "floor_id": "og",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T04:45:19.541000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xec1bbd0000002b",
+    "name": "Schranklicht Wohnzimmer",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [
+     "0x00158d00000003"
+    ],
+    "area": "Wohnzimmer",
+    "area_id": "wohnzimmer",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T05:07:37.114000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xf0fd450000002f",
+    "name": "Steckdose Küche",
+    "type": "router",
+    "kind": "always_on",
+    "state": "ok",
+    "score": 100,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Küche",
+    "area_id": "küche",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-09-23T12:03:02.715000+00:00",
+    "device_id": null
+   },
+   {
+    "ieee": "0xf0fd4500000030",
+    "name": "Steckdose Hauswirtschaft",
+    "type": "router",
+    "kind": "part_time",
+    "state": "dead",
+    "score": 60,
+    "parent": null,
+    "parent_lqi": null,
+    "children": [],
+    "area": "Hauswirtschaft",
+    "area_id": "hauswirtschaft",
+    "floor_id": "eg",
+    "battery": null,
+    "battery_empty": null,
+    "last_seen": "2026-06-20T00:29:01.128000+00:00",
+    "device_id": null
+   }
+  ],
+  "links": [
+   {
+    "a": "0x00124b00000001",
+    "b": "0x00124b00000005",
+    "lqi": 101
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0x00178800000019",
+    "lqi": 200
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0x0017880000001c",
+    "lqi": 97
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0x348d1300000031",
+    "lqi": 255
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0xa4c1380000002a",
+    "lqi": 63
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0xec1bbd0000002b",
+    "lqi": 255
+   },
+   {
+    "a": "0x00124b00000001",
+    "b": "0xf0fd450000002f",
+    "lqi": 159
+   },
+   {
+    "a": "0x00124b00000005",
+    "b": "0x00178800000019",
+    "lqi": 49
+   },
+   {
+    "a": "0x00124b00000005",
+    "b": "0x0017880000001c",
+    "lqi": 156
+   },
+   {
+    "a": "0x00124b00000005",
+    "b": "0x348d1300000031",
+    "lqi": 81
+   },
+   {
+    "a": "0x00124b00000005",
+    "b": "0xa4c1380000002a",
+    "lqi": 33
+   },
+   {
+    "a": "0x00124b00000005",
+    "b": "0xf0fd450000002f",
+    "lqi": 42
+   },
+   {
+    "a": "0x00178800000019",
+    "b": "0x0017880000001c",
+    "lqi": 89
+   },
+   {
+    "a": "0x00178800000019",
+    "b": "0x348d1300000031",
+    "lqi": 192
+   },
+   {
+    "a": "0x00178800000019",
+    "b": "0xa4c1380000002a",
+    "lqi": 82
+   },
+   {
+    "a": "0x00178800000019",
+    "b": "0xec1bbd0000002b",
+    "lqi": 196
+   },
+   {
+    "a": "0x00178800000019",
+    "b": "0xf0fd450000002f",
+    "lqi": 175
+   },
+   {
+    "a": "0x0017880000001c",
+    "b": "0x348d1300000031",
+    "lqi": 48
+   },
+   {
+    "a": "0x0017880000001c",
+    "b": "0xa4c1380000002a",
+    "lqi": 68
+   },
+   {
+    "a": "0x0017880000001c",
+    "b": "0xec1bbd0000002b",
+    "lqi": 90
+   },
+   {
+    "a": "0x0017880000001c",
+    "b": "0xf0fd450000002f",
+    "lqi": 133
+   },
+   {
+    "a": "0x348d1300000031",
+    "b": "0xa4c1380000002a",
+    "lqi": 80
+   },
+   {
+    "a": "0x348d1300000031",
+    "b": "0xec1bbd0000002b",
+    "lqi": 239
+   },
+   {
+    "a": "0x348d1300000031",
+    "b": "0xf0fd450000002f",
+    "lqi": 105
+   },
+   {
+    "a": "0xa4c1380000002a",
+    "b": "0xec1bbd0000002b",
+    "lqi": 91
+   },
+   {
+    "a": "0xa4c1380000002a",
+    "b": "0xf0fd450000002f",
+    "lqi": 135
+   },
+   {
+    "a": "0xec1bbd0000002b",
+    "b": "0xf0fd450000002f",
+    "lqi": 120
+   }
+  ],
+  "unknown_parent": [
+   "0x00158d0000000c",
+   "0x00158d00000010",
+   "0x00158d00000012",
+   "0x00158d0000002e",
+   "0xa4c13800000020"
+  ],
+  "unknown_neighbors": [
+   "0x001788010b25b9f6"
+  ],
+  "floors": [
+   {
+    "floor_id": "eg",
+    "name": "Erdgeschoss",
+    "level": 0
+   },
+   {
+    "floor_id": "og",
+    "name": "Obergeschoss",
+    "level": 1
+   }
+  ],
+  "areas": [
+   {
+    "area_id": "ankleide",
+    "name": "Ankleide",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "bad",
+    "name": "Bad",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "büro",
+    "name": "Büro",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "dachboden",
+    "name": "Dachboden",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "esszimmer",
+    "name": "Esszimmer",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "flur",
+    "name": "Flur",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "garage",
+    "name": "Garage",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "gäste-wc",
+    "name": "Gäste-WC",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "hauswirtschaft",
+    "name": "Hauswirtschaft",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "kinderzimmer",
+    "name": "Kinderzimmer",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "küche",
+    "name": "Küche",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "schlafzimmer",
+    "name": "Schlafzimmer",
+    "floor_id": "og"
+   },
+   {
+    "area_id": "terrasse",
+    "name": "Terrasse",
+    "floor_id": "eg"
+   },
+   {
+    "area_id": "wohnzimmer",
+    "name": "Wohnzimmer",
+    "floor_id": "eg"
+   }
+  ]
+ },
+ "_demo": {
+  "rates": {
+   "0xa4c1380000002a": 0.07833346388910647,
+   "0x0017880000001c": 0.0,
+   "0xa4c13800000018": 0.010000016666694445,
+   "0xa4c13800000022": 0.01666669444449074,
+   "0x00158d00000003": 0.0,
+   "0x00158d00000013": 0.0,
+   "0xa4c13800000020": 0.00833334722224537,
+   "0x00158d00000006": 0.001666669444449074,
+   "0x00158d0000000c": 0.0,
+   "0x0c431400000008": 0.0,
+   "0x0017880000001f": 0.0,
+   "0x0017880000001e": 0.0,
+   "0x00178800000019": 0.0,
+   "0x348d1300000031": 0.0,
+   "0xbc33ac0000000d": 0.0,
+   "0x00158d00000014": 0.0,
+   "0x00158d0000002e": 0.001666669444449074,
+   "0xf0fd450000002f": 0.003333338888898148,
+   "0x00158d00000011": 0.0,
+   "0x00158d00000015": 0.001666669444449074,
+   "0x00158d00000010": 0.0,
+   "0x680ae200000009": 0.0,
+   "0x00158d00000012": 0.0,
+   "0x842e140000000f": 0.0,
+   "0xd4486700000029": 0.0,
+   "0xec1bbd0000002b": 0.0,
+   "0x94b21600000027": 0.0,
+   "0x7cc6b60000002c": 0.0,
+   "0x00178800000028": 0.0
+  },
+  "alert_router": "0x00178800000019",
+  "floorplans": [
+   {
+    "plan_id": "eg",
+    "name": "Erdgeschoss",
+    "floor_id": "eg",
+    "level": 0,
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9Ijc2MCIgdmlld0JveD0iMCAwIDE2MDAgNzYwIj48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI3NjAiIGZpbGw9IiNmYmZhZjciLz48cmVjdCB4PSI0MCIgeT0iNDAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM1NTU4NWMiIHN0cm9rZS13aWR0aD0iNyIvPjx0ZXh0IHg9IjU2IiB5PSI3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5Hw6RzdGUtV0M8L3RleHQ+PHJlY3QgeD0iMjQwIiB5PSI0MCIgd2lkdGg9IjEzMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM1NTU4NWMiIHN0cm9rZS13aWR0aD0iNyIvPjx0ZXh0IHg9IjI1NiIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+Rmx1cjwvdGV4dD48cmVjdCB4PSI0MCIgeT0iMTYwIiB3aWR0aD0iNDEwIiBoZWlnaHQ9IjQ0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI1NiIgeT0iMTk0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPkvDvGNoZTwvdGV4dD48cmVjdCB4PSI0NTAiIHk9IjE2MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0NDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDY2IiB5PSIxOTQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+RXNzemltbWVyPC90ZXh0PjxyZWN0IHg9Ijc1MCIgeT0iMTYwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQ0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI3NjYiIHk9IjE5NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5Xb2huemltbWVyPC90ZXh0PjxyZWN0IHg9IjEyNTAiIHk9IjE2MCIgd2lkdGg9IjMxMCIgaGVpZ2h0PSIyMjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iMTI2NiIgeT0iMTk0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPkhhdXN3aXJ0c2NoYWZ0PC90ZXh0PjxyZWN0IHg9IjEyNTAiIHk9IjM4MCIgd2lkdGg9IjMxMCIgaGVpZ2h0PSIyMjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iMTI2NiIgeT0iNDE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPkdhcmFnZTwvdGV4dD48cmVjdCB4PSI3NTAiIHk9IjYyMCIgd2lkdGg9IjUwMCIgaGVpZ2h0PSIxMTAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTAiIHN0cm9rZS13aWR0aD0iNCIvPjx0ZXh0IHg9Ijc2NiIgeT0iNjU0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPlRlcnJhc3NlPC90ZXh0Pjwvc3ZnPg==",
+    "positions": {
+     "coordinator": [
+      0.5,
+      0.13157894736842105
+     ],
+     "0x00158d00000003": [
+      0.6121,
+      0.8592
+     ],
+     "0x84ba2000000004": [
+      0.576,
+      0.4263
+     ],
+     "0x00124b00000005": [
+      0.7789,
+      0.174
+     ],
+     "0x00158d00000006": [
+      0.8584,
+      0.3961
+     ],
+     "0x7cb03e00000007": [
+      0.7234,
+      0.6976
+     ],
+     "0x0c431400000008": [
+      0.8677,
+      0.4179
+     ],
+     "0x680ae200000009": [
+      0.623,
+      0.5462
+     ],
+     "0x00158d0000000b": [
+      0.6174,
+      0.1043
+     ],
+     "0x00158d0000000c": [
+      0.9299,
+      0.4528
+     ],
+     "0xbc33ac0000000d": [
+      0.2165,
+      0.4817
+     ],
+     "0x00124b0000000e": [
+      0.0522,
+      0.1718
+     ],
+     "0x842e140000000f": [
+      0.5979,
+      0.6133
+     ],
+     "0x00158d00000012": [
+      0.2043,
+      0.4619
+     ],
+     "0xa4c13800000018": [
+      0.0776,
+      0.4764
+     ],
+     "0x00178800000019": [
+      0.6764,
+      0.7121
+     ],
+     "0x94deb80000001a": [
+      0.5642,
+      0.4659
+     ],
+     "0x0017880000001f": [
+      0.8356,
+      0.6395
+     ],
+     "0xa4c13800000021": [
+      0.4704,
+      0.1474
+     ],
+     "0x9035ea00000023": [
+      0.5893,
+      0.5607
+     ],
+     "0x00178800000025": [
+      0.6857,
+      0.1198
+     ],
+     "0x00178800000026": [
+      0.6753,
+      0.1564
+     ],
+     "0x94b21600000027": [
+      0.1071,
+      0.6239
+     ],
+     "0xec1bbd0000002b": [
+      0.5658,
+      0.4369
+     ],
+     "0x7cc6b60000002c": [
+      0.3291,
+      0.4487
+     ],
+     "0xa4c1380000002d": [
+      0.5964,
+      0.5067
+     ],
+     "0x00158d0000002e": [
+      0.9348,
+      0.6013
+     ],
+     "0xf0fd450000002f": [
+      0.1206,
+      0.591
+     ],
+     "0xf0fd4500000030": [
+      0.819,
+      0.3652
+     ],
+     "0x348d1300000031": [
+      0.5681,
+      0.5225
+     ]
+    }
+   },
+   {
+    "plan_id": "og",
+    "name": "Obergeschoss",
+    "floor_id": "og",
+    "level": 1,
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjU2MCIgdmlld0JveD0iMCAwIDE2MDAgNTYwIj48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI1NjAiIGZpbGw9IiNmYmZhZjciLz48cmVjdCB4PSI0MCIgeT0iNDAiIHdpZHRoPSIzNjAiIGhlaWdodD0iMzQwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM1NTU4NWMiIHN0cm9rZS13aWR0aD0iNyIvPjx0ZXh0IHg9IjU2IiB5PSI3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5TY2hsYWZ6aW1tZXI8L3RleHQ+PHJlY3QgeD0iNDAwIiB5PSI0MCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIzNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iNDE2IiB5PSI3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjOGE4Zjk1Ij5BbmtsZWlkZTwvdGV4dD48cmVjdCB4PSI2MDAiIHk9IjQwIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI2MTYiIHk9Ijc0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPkJhZDwvdGV4dD48cmVjdCB4PSI4NTAiIHk9IjQwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTU1ODVjIiBzdHJva2Utd2lkdGg9IjciLz48dGV4dCB4PSI4NjYiIHk9Ijc0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiM4YThmOTUiPktpbmRlcnppbW1lcjwvdGV4dD48cmVjdCB4PSIxMjAwIiB5PSI0MCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIzNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLXdpZHRoPSI3Ii8+PHRleHQgeD0iMTIxNiIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+QsO8cm88L3RleHQ+PHJlY3QgeD0iNDAiIHk9IjQwMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzU1NTg1YyIgc3Ryb2tlLWRhc2hhcnJheT0iMTQgMTAiIHN0cm9rZS13aWR0aD0iNCIvPjx0ZXh0IHg9IjU2IiB5PSI0MzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzhhOGY5NSI+RGFjaGJvZGVuPC90ZXh0Pjwvc3ZnPg==",
+    "positions": {
+     "0x00158d00000002": [
+      0.4059,
+      0.4013
+     ],
+     "0x7cb03e0000000a": [
+      0.7018,
+      0.3696
+     ],
+     "0x00158d00000011": [
+      0.7068,
+      0.3958
+     ],
+     "0x00158d00000013": [
+      0.286,
+      0.3157
+     ],
+     "0x00158d00000014": [
+      0.3287,
+      0.5781
+     ],
+     "0x00158d00000015": [
+      0.8645,
+      0.4621
+     ],
+     "0x00158d00000016": [
+      0.9029,
+      0.5229
+     ],
+     "0x0017880000001b": [
+      0.4816,
+      0.4096
+     ],
+     "0x0017880000001c": [
+      0.5811,
+      0.4234
+     ],
+     "0x0017880000001d": [
+      0.0926,
+      0.5408
+     ],
+     "0x0017880000001e": [
+      0.8504,
+      0.2757
+     ],
+     "0xa4c13800000022": [
+      0.6607,
+      0.3447
+     ],
+     "0x00158d00000024": [
+      0.1519,
+      0.255
+     ],
+     "0x00178800000028": [
+      0.3506,
+      0.3323
+     ],
+     "0xd4486700000029": [
+      0.5004,
+      0.2922
+     ],
+     "0xa4c1380000002a": [
+      0.8255,
+      0.4303
+     ]
+    }
+   }
+  ],
+  "building": {
+   "floors": [
+    {
+     "id": "eg",
+     "name": "Erdgeschoss",
+     "floor_id": "eg",
+     "elevation": 0.0,
+     "height": 2.6,
+     "rooms": [
+      {
+       "id": "r_eg_0",
+       "name": "Gäste-WC",
+       "area_id": "gäste-wc",
+       "points": [
+        [
+         0.4,
+         0.4
+        ],
+        [
+         2.4,
+         0.4
+        ],
+        [
+         2.4,
+         1.6
+        ],
+        [
+         0.4,
+         1.6
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_1",
+       "name": "Flur",
+       "area_id": "flur",
+       "points": [
+        [
+         2.4,
+         0.4
+        ],
+        [
+         15.6,
+         0.4
+        ],
+        [
+         15.6,
+         1.6
+        ],
+        [
+         2.4,
+         1.6
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_2",
+       "name": "Küche",
+       "area_id": "küche",
+       "points": [
+        [
+         0.4,
+         1.6
+        ],
+        [
+         4.5,
+         1.6
+        ],
+        [
+         4.5,
+         6.0
+        ],
+        [
+         0.4,
+         6.0
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_3",
+       "name": "Esszimmer",
+       "area_id": "esszimmer",
+       "points": [
+        [
+         4.5,
+         1.6
+        ],
+        [
+         7.5,
+         1.6
+        ],
+        [
+         7.5,
+         6.0
+        ],
+        [
+         4.5,
+         6.0
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_4",
+       "name": "Wohnzimmer",
+       "area_id": "wohnzimmer",
+       "points": [
+        [
+         7.5,
+         1.6
+        ],
+        [
+         12.5,
+         1.6
+        ],
+        [
+         12.5,
+         6.0
+        ],
+        [
+         7.5,
+         6.0
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_5",
+       "name": "Hauswirtschaft",
+       "area_id": "hauswirtschaft",
+       "points": [
+        [
+         12.5,
+         1.6
+        ],
+        [
+         15.6,
+         1.6
+        ],
+        [
+         15.6,
+         3.8
+        ],
+        [
+         12.5,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_6",
+       "name": "Garage",
+       "area_id": "garage",
+       "points": [
+        [
+         12.5,
+         3.8
+        ],
+        [
+         15.6,
+         3.8
+        ],
+        [
+         15.6,
+         6.0
+        ],
+        [
+         12.5,
+         6.0
+        ]
+       ]
+      },
+      {
+       "id": "r_eg_7",
+       "name": "Terrasse",
+       "area_id": "terrasse",
+       "points": [
+        [
+         7.5,
+         6.2
+        ],
+        [
+         12.5,
+         6.2
+        ],
+        [
+         12.5,
+         7.3
+        ],
+        [
+         7.5,
+         7.3
+        ]
+       ]
+      }
+     ],
+     "background": null
+    },
+    {
+     "id": "og",
+     "name": "Obergeschoss",
+     "floor_id": "og",
+     "elevation": 2.7,
+     "height": 2.6,
+     "rooms": [
+      {
+       "id": "r_og_0",
+       "name": "Schlafzimmer",
+       "area_id": "schlafzimmer",
+       "points": [
+        [
+         0.4,
+         0.4
+        ],
+        [
+         4.0,
+         0.4
+        ],
+        [
+         4.0,
+         3.8
+        ],
+        [
+         0.4,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_og_1",
+       "name": "Ankleide",
+       "area_id": "ankleide",
+       "points": [
+        [
+         4.0,
+         0.4
+        ],
+        [
+         6.0,
+         0.4
+        ],
+        [
+         6.0,
+         3.8
+        ],
+        [
+         4.0,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_og_2",
+       "name": "Bad",
+       "area_id": "bad",
+       "points": [
+        [
+         6.0,
+         0.4
+        ],
+        [
+         8.5,
+         0.4
+        ],
+        [
+         8.5,
+         3.8
+        ],
+        [
+         6.0,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_og_3",
+       "name": "Kinderzimmer",
+       "area_id": "kinderzimmer",
+       "points": [
+        [
+         8.5,
+         0.4
+        ],
+        [
+         12.0,
+         0.4
+        ],
+        [
+         12.0,
+         3.8
+        ],
+        [
+         8.5,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_og_4",
+       "name": "Büro",
+       "area_id": "büro",
+       "points": [
+        [
+         12.0,
+         0.4
+        ],
+        [
+         15.6,
+         0.4
+        ],
+        [
+         15.6,
+         3.8
+        ],
+        [
+         12.0,
+         3.8
+        ]
+       ]
+      },
+      {
+       "id": "r_og_5",
+       "name": "Dachboden",
+       "area_id": "dachboden",
+       "points": [
+        [
+         0.4,
+         4.0
+        ],
+        [
+         4.0,
+         4.0
+        ],
+        [
+         4.0,
+         5.2
+        ],
+        [
+         0.4,
+         5.2
+        ]
+       ]
+      }
+     ],
+     "background": null
+    }
+   ],
+   "positions": {
+    "coordinator": {
+     "floor": "eg",
+     "x": 7.0,
+     "y": 1.0
+    }
+   }
+  },
+  "plans": [
+   {
+    "area_id": "hauswirtschaft",
+    "area_name": "Hauswirtschaft",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 70,
+    "room_score_after": 92,
+    "impact": 11,
+    "improved": [
+     {
+      "ieee": "0x0c431400000008",
+      "name": "Bewegung Hauswirtschaft",
+      "reason": "far_parent",
+      "before_parent": "Coordinator",
+      "before_lqi": 168
+     },
+     {
+      "ieee": "0x00158d00000006",
+      "name": "Fenster Hauswirtschaft",
+      "reason": "far_parent",
+      "before_parent": "Coordinator",
+      "before_lqi": 208
+     },
+     {
+      "ieee": "0x00158d0000000c",
+      "name": "Tür Hauswirtschaft",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     }
+    ],
+    "resolved": {
+     "room_without_router": 1
+    }
+   },
+   {
+    "area_id": "küche",
+    "area_name": "Küche",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 92,
+    "room_score_after": 97,
+    "impact": 11,
+    "improved": [
+     {
+      "ieee": "0x00158d00000012",
+      "name": "Fenster Küche",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     },
+     {
+      "ieee": "0xa4c13800000018",
+      "name": "Klima Küche",
+      "reason": "weak_link",
+      "before_parent": "Coordinator",
+      "before_lqi": 62
+     },
+     {
+      "ieee": "0xbc33ac0000000d",
+      "name": "Schalter Küche",
+      "reason": "far_parent",
+      "before_parent": "Coordinator",
+      "before_lqi": 172
+     }
+    ],
+    "resolved": {
+     "weak_link": 1
+    }
+   },
+   {
+    "area_id": "wohnzimmer",
+    "area_name": "Wohnzimmer",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 84,
+    "room_score_after": 85,
+    "impact": 9,
+    "improved": [
+     {
+      "ieee": "0x84ba2000000004",
+      "name": "Fernbedienung Wohnzimmer",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     },
+     {
+      "ieee": "0x680ae200000009",
+      "name": "Fernbedienung Wohnzimmer 2",
+      "reason": "far_parent",
+      "before_parent": "Coordinator",
+      "before_lqi": 146
+     },
+     {
+      "ieee": "0xa4c1380000002d",
+      "name": "Klima Wohnzimmer",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     }
+    ],
+    "resolved": {}
+   },
+   {
+    "area_id": "ankleide",
+    "area_name": "Ankleide",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 73,
+    "room_score_after": 95,
+    "impact": 8,
+    "improved": [
+     {
+      "ieee": "0x00158d00000013",
+      "name": "Fenster Ankleide",
+      "reason": "far_parent",
+      "before_parent": "Router Flur",
+      "before_lqi": 170
+     },
+     {
+      "ieee": "0x00158d00000014",
+      "name": "Tür Ankleide",
+      "reason": "far_parent",
+      "before_parent": "Licht Kinderzimmer",
+      "before_lqi": 227
+     }
+    ],
+    "resolved": {
+     "room_without_router": 1
+    }
+   },
+   {
+    "area_id": "garage",
+    "area_name": "Garage",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 80,
+    "room_score_after": 100,
+    "impact": 8,
+    "improved": [
+     {
+      "ieee": "0x0017880000001f",
+      "name": "Dimmer Garage",
+      "reason": "far_parent",
+      "before_parent": "Licht Kinderzimmer",
+      "before_lqi": 111
+     },
+     {
+      "ieee": "0x00158d0000002e",
+      "name": "Tor Garage",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     }
+    ],
+    "resolved": {
+     "room_without_router": 1
+    }
+   },
+   {
+    "area_id": "büro",
+    "area_name": "Büro",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 92,
+    "room_score_after": 93,
+    "impact": 3,
+    "improved": [
+     {
+      "ieee": "0xa4c13800000020",
+      "name": "Klima Büro",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     }
+    ],
+    "resolved": {}
+   },
+   {
+    "area_id": "dachboden",
+    "area_name": "Dachboden",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 100,
+    "room_score_after": 100,
+    "impact": 3,
+    "improved": [
+     {
+      "ieee": "0x00158d00000010",
+      "name": "Fenster Dachboden",
+      "reason": "no_parent",
+      "before_parent": null,
+      "before_lqi": null
+     }
+    ],
+    "resolved": {}
+   },
+   {
+    "area_id": "terrasse",
+    "area_name": "Terrasse",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 100,
+    "room_score_after": 100,
+    "impact": 3,
+    "improved": [
+     {
+      "ieee": "0x00158d00000003",
+      "name": "Bewegung Terrasse",
+      "reason": "far_parent",
+      "before_parent": "Schranklicht Wohnzimmer",
+      "before_lqi": 233
+     }
+    ],
+    "resolved": {}
+   },
+   {
+    "area_id": "kinderzimmer",
+    "area_name": "Kinderzimmer",
+    "score_before": 82,
+    "score_after": 82,
+    "gain": 0,
+    "room_score_before": 90,
+    "room_score_after": 92,
+    "impact": 0,
+    "improved": [],
+    "resolved": {}
+   }
+  ]
+ }
+}

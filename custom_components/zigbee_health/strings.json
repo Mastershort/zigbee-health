@@ -1,0 +1,1315 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Zigbee2MQTT",
+        "description": "Zigbee Health reads the data Zigbee2MQTT already publishes via MQTT and analyses it. Nothing in your Zigbee network is changed.",
+        "data": {
+          "base_topic": "MQTT base topic",
+          "name": "Name"
+        },
+        "data_description": {
+          "base_topic": "Base topic of your Zigbee2MQTT instance (default: zigbee2mqtt).",
+          "name": "Shown in the device name, e.g. \"Zigbee Health (Zigbee2MQTT)\"."
+        }
+      },
+      "prerequisites": {
+        "title": "Recommended Zigbee2MQTT settings",
+        "description": "The following Zigbee2MQTT options are disabled: **{missing}**.\n\nWithout `last_seen`, Zigbee Health can only use the time it last received a message. Without `availability`, offline routers are only detected by the nightly network scan.\n\nYou can continue now; Zigbee Health will offer to enable the options in the repairs dashboard."
+      },
+      "reconfigure": {
+        "title": "Change MQTT base topic",
+        "data": {
+          "base_topic": "MQTT base topic"
+        }
+      }
+    },
+    "error": {
+      "no_response": "No Zigbee2MQTT instance answered on this base topic. Check the topic.",
+      "z2m_offline": "Zigbee2MQTT is offline. Start it and try again.",
+      "version_too_old": "Zigbee2MQTT 2.0 or newer is required."
+    },
+    "abort": {
+      "already_configured": "This Zigbee network is already set up.",
+      "mqtt_not_connected": "The MQTT integration is not set up or not connected.",
+      "reconfigure_successful": "The base topic was changed.",
+      "wrong_network": "This base topic belongs to a different Zigbee network."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zigbee Health options",
+        "menu_options": {
+          "scan": "Network scan",
+          "thresholds": "Thresholds",
+          "notifications": "Notifications",
+          "entities": "Entities",
+          "ignore": "Ignore list",
+          "help": "Help links"
+        }
+      },
+      "scan": {
+        "title": "Network scan",
+        "description": "The network map loads the network for a few minutes, so by default it runs once at night.",
+        "data": {
+          "scan_auto": "Scan automatically",
+          "scan_time": "Time",
+          "scan_timeout": "Timeout (minutes)",
+          "scan_only_away": "Only scan when these persons are not at home"
+        }
+      },
+      "thresholds": {
+        "title": "Thresholds",
+        "data": {
+          "dead_days": "Dead after (days without message)",
+          "disappeared_chatty_hours": "Gone quiet after – measuring devices (hours)",
+          "disappeared_silent_days": "Gone quiet after – door/window sensors, buttons (days)",
+          "weak_lqi": "Weak connection below (LQI)",
+          "battery_percent": "Battery warning level (%)",
+          "forecast_days": "Battery forecast: warn when empty within (days)",
+          "flood_per_minute": "Message flood from (per minute)",
+          "max_children": "Max. battery devices per router"
+        }
+      },
+      "notifications": {
+        "title": "Notifications",
+        "data": {
+          "wall_switch_alert": "Notify immediately when a router with dependent devices goes off",
+          "repairs_include_info": "Also show info findings in the repairs dashboard",
+          "bundle_threshold": "Bundle findings of the same kind from",
+          "hysteresis_minutes": "Report a finding after (minutes)"
+        }
+      },
+      "entities": {
+        "title": "Entities",
+        "data": {
+          "device_entities": "Create sensors on the Zigbee devices",
+          "room_sensors": "Create a \"Zigbee health\" sensor per room",
+          "sidebar_panel": "Show \"Zigbee Health\" in the sidebar"
+        }
+      },
+      "ignore": {
+        "title": "Ignore list",
+        "description": "No findings are created for these devices.",
+        "data": {
+          "ignored_devices": "Ignored devices"
+        }
+      },
+      "help": {
+        "title": "Help links",
+        "data": {
+          "learn_more_url": "Base URL for \"Learn more\" (empty = no link)"
+        }
+      }
+    },
+    "abort": {
+      "not_loaded": "The integration has to be loaded."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "problems": {
+        "name": "Problems"
+      }
+    },
+    "button": {
+      "scan_network": {
+        "name": "Scan network now"
+      },
+      "analyze": {
+        "name": "Analyse now"
+      }
+    },
+    "sensor": {
+      "network_health": {
+        "name": "Network health"
+      },
+      "status": {
+        "name": "Status",
+        "state": {
+          "stable": "Stable",
+          "degraded": "Expect dropouts",
+          "fragile": "Fragile",
+          "paused": "Paused"
+        }
+      },
+      "devices": {
+        "name": "Devices",
+        "unit_of_measurement": "devices"
+      },
+      "routers": {
+        "name": "Routers",
+        "unit_of_measurement": "devices"
+      },
+      "end_devices": {
+        "name": "End devices",
+        "unit_of_measurement": "devices"
+      },
+      "routers_always_on": {
+        "name": "Always-on routers",
+        "unit_of_measurement": "devices"
+      },
+      "routers_part_time": {
+        "name": "Part-time routers",
+        "unit_of_measurement": "devices"
+      },
+      "offline": {
+        "name": "Offline",
+        "unit_of_measurement": "devices"
+      },
+      "dead": {
+        "name": "Dead",
+        "unit_of_measurement": "devices"
+      },
+      "battery_critical": {
+        "name": "Battery critical",
+        "unit_of_measurement": "devices"
+      },
+      "weak_links": {
+        "name": "Weak links",
+        "unit_of_measurement": "devices"
+      },
+      "open_findings": {
+        "name": "Open findings",
+        "state_attributes": {
+          "critical": {
+            "name": "Critical"
+          },
+          "warning": {
+            "name": "Warning"
+          },
+          "info": {
+            "name": "Info"
+          }
+        }
+      },
+      "messages_per_second": {
+        "name": "Messages/s total",
+        "unit_of_measurement": "msg/s"
+      },
+      "last_scan": {
+        "name": "Last network scan"
+      },
+      "scan_duration": {
+        "name": "Scan duration"
+      },
+      "zigbee_state": {
+        "name": "Zigbee state",
+        "state": {
+          "ok": "OK",
+          "weak": "Weak connection",
+          "battery": "Battery",
+          "offline": "Offline",
+          "dead": "Dead",
+          "part_time_router": "Part-time router",
+          "ignored": "Ignored"
+        }
+      },
+      "device_health": {
+        "name": "Zigbee health"
+      },
+      "parent": {
+        "name": "Parent router"
+      },
+      "parent_lqi": {
+        "name": "LQI to parent"
+      },
+      "battery_empty": {
+        "name": "Battery empty (forecast)"
+      },
+      "children": {
+        "name": "Children",
+        "unit_of_measurement": "devices"
+      },
+      "room_health": {
+        "name": "Zigbee health {room}"
+      }
+    }
+  },
+  "issues": {
+    "dead_device": {
+      "title": "Zigbee: {name} unreachable for {days} days",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) last reported on {date}.\n\nIf you still need the device: check the battery or power supply and trigger it once. Otherwise remove it in Zigbee2MQTT – dead devices slow down the network map.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "disappeared": {
+      "title": "Zigbee: {name} has gone quiet",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) last reported on {date}, longer than usual for this device.\n\nCheck the battery or power supply. Automations that use this device may not work at the moment.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "battery_low": {
+      "title": "Zigbee: battery of {name} probably empty",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}): reading {value}, battery type {battery_type}. The device will soon stop reporting if the battery is not replaced.\n\nReplace the battery. The forecast resets automatically afterwards.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "battery_forecast": {
+      "title": "Zigbee: battery of {name} empty soon",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Based on its history, the battery of {name} ({room}) will probably be empty on {date} (battery type {battery_type}).\n\nReplace the battery in the coming weeks.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "part_time_router": {
+      "title": "Zigbee: {name} is regularly switched off",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) is a router – a mains-powered device that forwards radio messages for others. It is regularly unreachable, probably because it is switched off at the wall.\n\nEach time, devices connected through it lose their connection. Keep it powered permanently (e.g. replace the wall switch with a Zigbee button) or add an always-on router such as a Zigbee plug in the same room.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "children_on_part_time_router": {
+      "title": "Zigbee: {count} devices depend on {name}",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{children} are connected through {name} ({room}). {name} is regularly switched off – these devices then lose their connection.\n\nKeep {name} powered permanently or add an always-on router (e.g. a Zigbee plug) nearby.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "weak_link": {
+      "title": "Zigbee: weak connection of {name}",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) reaches {parent} with a link quality of only {lqi} (good: 80 or more). Messages get lost more easily.\n\nPlace a router closer to the device or add one in the room. Afterwards, re-pair the device or wait until it picks the better route.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "weak_backbone": {
+      "title": "Zigbee: {name} is poorly connected to the network",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "The best link of router {name} ({room}) to the coordinator or another router ({peer}) has a link quality of only {lqi}. Everything routed through {name} is unreliable.\n\nAdd a router in between or place the coordinator more centrally (USB extension cable, away from USB 3 ports and metal cases).\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "degradation": {
+      "title": "Zigbee: connection of {name} getting worse",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "The link quality of {name} ({room}) dropped from {before} to {after} over the last two weeks (−{percent} %).\n\nCheck the surroundings: a new source of interference, moved furniture, a new Wi-Fi network or a router nearby that is switched off?\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "unstable_device": {
+      "title": "Zigbee: {name} is unstable",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) reconnected several times in the last 24 hours ({events} address changes/leaves, {announces} announcements).\n\nIts parent is unstable or {name} is at the edge of the range. Check the routers nearby and look for a firmware update for the device.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "message_flood": {
+      "title": "Zigbee: {name} sends very many messages",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{name} ({room}) permanently sends about {per_minute} messages per minute. This loads the whole network.\n\nReduce the reporting interval in Zigbee2MQTT (typical for some Tuya devices and energy meters).\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "network_message_flood": {
+      "title": "Zigbee: very high radio traffic",
+      "description": "The Zigbee network currently carries about {per_second} messages per second. Commands get lost or arrive late.\n\nLook for devices that report very often and reduce their reporting."
+    },
+    "overloaded_parent": {
+      "title": "Zigbee: {name} serves many devices",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "{count} battery devices are directly connected to {name} ({room}); at most {limit} are recommended.\n\nAdd a second router nearby so the devices spread out.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "room_without_router": {
+      "title": "Zigbee: no always-on router in {room}",
+      "description": "{room} has {count} battery devices but no router that is permanently on. Their radio messages have to travel far.\n\nA Zigbee plug or another always-on router in this room makes the connection much more reliable."
+    },
+    "too_few_routers": {
+      "title": "Zigbee: too few routers",
+      "description": "{end_devices} battery devices share {routers} always-on routers. At most 8 devices per router and at least one router per floor are recommended.\n\nAdd about {recommended} more always-on routers (e.g. Zigbee plugs), spread over the rooms with the most battery devices."
+    },
+    "prerequisite_missing": {
+      "title": "Zigbee2MQTT: option \"{option}\" is disabled",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Enable option \"{option}\" in Zigbee2MQTT",
+            "description": "Zigbee Health analyses the network more precisely when the Zigbee2MQTT option **{option}** is enabled.\n\nUse \"Fix\" to let Zigbee Health enable it after your confirmation.\n\nZigbee Health sends this change to Zigbee2MQTT:\n\n{change}\n\nThe setting is saved in the Zigbee2MQTT configuration. {error}"
+          }
+        },
+        "error": {
+          "option_failed": "Zigbee2MQTT rejected the change."
+        },
+        "abort": {
+          "restart_required": "Saved. Restart Zigbee2MQTT for the option to take effect.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "outdated_firmware": {
+      "title": "Zigbee: coordinator firmware outdated",
+      "description": "The coordinator ({adapter}) runs firmware {current}. At least {minimum} is recommended; newer versions fix known stability issues.\n\nUpdate the firmware following the adapter manufacturer's guide."
+    },
+    "interview_incomplete": {
+      "title": "Zigbee: {name} was not paired completely",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "The pairing (interview) of {name} ({room}) did not finish. Some features are missing.\n\nRe-pair the device or restart the interview in Zigbee2MQTT.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "unsupported_device": {
+      "title": "Zigbee: {name} is not supported",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Zigbee Health",
+            "description": "Zigbee2MQTT does not know {name} ({room}). Values and commands only work partially.\n\nLook for an external converter or update Zigbee2MQTT.\n\nWhat do you want to do?",
+            "menu_options": {
+              "remove": "Remove from Zigbee2MQTT",
+              "ignore_finding": "Ignore this finding for {name}",
+              "ignore_device": "Ignore {name} completely"
+            }
+          },
+          "remove": {
+            "title": "Remove {name} from Zigbee2MQTT",
+            "description": "The device is removed from the Zigbee network and has to be paired again if needed.\n\n\"Force\" also removes it from the database when it does not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          },
+          "ignore_device": {
+            "title": "Ignore {name}",
+            "description": "No more findings are created for {name}. Undo in the integration options → ignore list."
+          },
+          "ignore_finding": {
+            "title": "Ignore finding",
+            "description": "This finding is no longer shown for {name}. Other findings for {name} stay active."
+          }
+        },
+        "error": {
+          "remove_failed": "Removing failed."
+        },
+        "abort": {
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "devices_without_area": {
+      "title": "Zigbee: {count} devices have no area",
+      "description": "{count} Zigbee devices have no area in Home Assistant, so room recommendations are inaccurate.\n\nAssign an area to these devices under Settings → Devices."
+    },
+    "dead_device_bundle": {
+      "title": "Zigbee: {count} devices unreachable for a long time",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These devices have not reported for a long time:\n\n{devices}\n\nIf you still need them: check battery or power supply and trigger them once. Otherwise remove them in Zigbee2MQTT – dead devices slow down the network map. Use \"Fix\" to remove them in one go.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "disappeared_bundle": {
+      "title": "Zigbee: {count} devices have gone quiet",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These devices have been quiet for longer than usual:\n\n{devices}\n\nCheck batteries or power supply. Automations that use these devices may not work at the moment.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "battery_low_bundle": {
+      "title": "Zigbee: {count} batteries probably empty",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "The battery of these devices is probably empty:\n\n{devices}\n\nReplace the batteries.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "battery_forecast_bundle": {
+      "title": "Zigbee: {count} batteries empty soon",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These batteries will probably be empty soon:\n\n{devices}\n\nReplace them in the coming weeks.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "part_time_router_bundle": {
+      "title": "Zigbee: {count} routers are regularly switched off",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "Routers are mains-powered devices that forward radio messages for others. These routers are regularly unreachable, probably because they are switched off at the wall:\n\n{devices}\n\nKeep them powered permanently or add always-on routers (e.g. Zigbee plugs) in these rooms.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "children_on_part_time_router_bundle": {
+      "title": "Zigbee: devices depend on {count} switched-off routers",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "End devices are connected through routers that are regularly switched off:\n\n{devices}\n\nKeep these routers powered permanently or add always-on routers nearby.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "weak_link_bundle": {
+      "title": "Zigbee: {count} weak connections",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These devices have a weak connection (good: link quality 80 or more):\n\n{devices}\n\nPlace routers closer to these devices or add routers in these rooms.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "weak_backbone_bundle": {
+      "title": "Zigbee: {count} routers poorly connected",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These routers have only weak links to the coordinator or other routers:\n\n{devices}\n\nAdd routers in between or place the coordinator more centrally.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "degradation_bundle": {
+      "title": "Zigbee: {count} connections getting worse",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "The link quality of these devices dropped clearly within two weeks:\n\n{devices}\n\nCheck the surroundings (interference, furniture, Wi-Fi, switched-off routers).\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "unstable_device_bundle": {
+      "title": "Zigbee: {count} devices are unstable",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These devices reconnected several times within 24 hours:\n\n{devices}\n\nCheck the routers nearby and look for firmware updates.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "message_flood_bundle": {
+      "title": "Zigbee: {count} devices send very many messages",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "These devices permanently send very many messages:\n\n{devices}\n\nReduce their reporting in Zigbee2MQTT.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "overloaded_parent_bundle": {
+      "title": "Zigbee: {count} routers serve many devices",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "Very many battery devices depend on these routers:\n\n{devices}\n\nAdd more routers nearby.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "room_without_router_bundle": {
+      "title": "Zigbee: {count} rooms without an always-on router",
+      "description": "These rooms have several battery devices but no permanently powered router:\n\n{devices}\n\nA Zigbee plug or another always-on router in each room makes the connection much more reliable."
+    },
+    "interview_incomplete_bundle": {
+      "title": "Zigbee: {count} devices not paired completely",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "{devices}\n\nRe-pair these devices in Zigbee2MQTT.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    },
+    "unsupported_device_bundle": {
+      "title": "Zigbee: {count} devices not supported",
+      "fix_flow": {
+        "step": {
+          "init": {
+            "title": "Select devices",
+            "description": "{devices}\n\nLook for external converters or update Zigbee2MQTT.\n\nSelect the devices ({count} affected) and what should happen to them.",
+            "data": {
+              "devices": "Devices",
+              "action": "Action"
+            }
+          },
+          "remove": {
+            "title": "Remove {count} devices from Zigbee2MQTT",
+            "description": "The devices are removed from the Zigbee network and have to be paired again if needed.\n\n\"Force\" also removes them from the database when they do not answer – usually needed for dead devices. {error}",
+            "data": {
+              "force": "Force"
+            }
+          }
+        },
+        "error": {
+          "remove_failed": "Removing partly failed."
+        },
+        "abort": {
+          "nothing_selected": "No devices selected.",
+          "not_available": "The integration is not loaded at the moment."
+        }
+      }
+    }
+  },
+  "services": {
+    "scan_network": {
+      "name": "Scan network",
+      "description": "Requests the network map. The result arrives as an event.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Zigbee network",
+          "description": "Only this instance (empty = all)"
+        }
+      }
+    },
+    "get_report": {
+      "name": "Get report",
+      "description": "Returns score, top-3 measures, findings and rooms as response.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Zigbee network",
+          "description": "Only this instance (empty = all)"
+        },
+        "format": {
+          "name": "Format",
+          "description": "Summary or full"
+        }
+      }
+    },
+    "ignore": {
+      "name": "Ignore",
+      "description": "Suppresses findings for a device.",
+      "fields": {
+        "device": {
+          "name": "Device",
+          "description": "Zigbee device (Home Assistant device or IEEE address)"
+        },
+        "finding_type": {
+          "name": "Finding type",
+          "description": "Only this finding (empty = all findings of the device)"
+        },
+        "until": {
+          "name": "Until",
+          "description": "Empty = permanently"
+        }
+      }
+    },
+    "unignore": {
+      "name": "Stop ignoring",
+      "description": "Removes an ignore.",
+      "fields": {
+        "device": {
+          "name": "Device",
+          "description": "Zigbee device (Home Assistant device or IEEE address)"
+        },
+        "finding_type": {
+          "name": "Finding type",
+          "description": "Only this finding (empty = all findings of the device)"
+        }
+      }
+    },
+    "reset_history": {
+      "name": "Reset history",
+      "description": "Deletes the collected history, e.g. after a battery change.",
+      "fields": {
+        "device": {
+          "name": "Device",
+          "description": "Empty = all devices"
+        }
+      }
+    }
+  },
+  "selector": {
+    "report_format": {
+      "options": {
+        "summary": "Summary",
+        "full": "Full"
+      }
+    },
+    "finding_type": {
+      "options": {
+        "dead_device": "Dead device",
+        "disappeared": "Gone quiet",
+        "battery_low": "Battery empty",
+        "battery_forecast": "Battery forecast",
+        "part_time_router": "Part-time router",
+        "children_on_part_time_router": "End devices on part-time router",
+        "weak_link": "Weak connection",
+        "weak_backbone": "Weak router backbone",
+        "degradation": "Degradation",
+        "unstable_device": "Unstable device",
+        "message_flood": "Message flood",
+        "overloaded_parent": "Overloaded router",
+        "interview_incomplete": "Pairing incomplete",
+        "unsupported_device": "Not supported"
+      }
+    },
+    "bundle_action": {
+      "options": {
+        "remove": "Remove from Zigbee2MQTT",
+        "ignore_finding": "Ignore this finding only",
+        "ignore_device": "Ignore the devices completely"
+      }
+    }
+  },
+  "device_automation": {
+    "trigger_type": {
+      "critical_finding": "New critical finding",
+      "new_finding": "New finding",
+      "status_changed": "Network status changed",
+      "router_offline": "Router with dependent devices went offline"
+    }
+  },
+  "exceptions": {
+    "no_config_entry": {
+      "message": "No loaded Zigbee Health instance found."
+    },
+    "unknown_device": {
+      "message": "Unknown Zigbee device: {device}"
+    }
+  }
+}

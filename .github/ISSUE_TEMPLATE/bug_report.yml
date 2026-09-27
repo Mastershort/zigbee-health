@@ -1,0 +1,45 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time! Please check that you run the latest release first.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead? Screenshots help.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Zigbee Health version
+      placeholder: "0.10.0"
+    validations:
+      required: true
+  - type: input
+    id: ha
+    attributes:
+      label: Home Assistant version
+      placeholder: "2026.9.2"
+    validations:
+      required: true
+  - type: input
+    id: z2m
+    attributes:
+      label: Zigbee2MQTT version and adapter
+      placeholder: "2.6.1, Sonoff ZBDongle-E"
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Settings → Devices & services → Zigbee Health → ⋮ → Download diagnostics. Drag the file in here.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: Lines containing `zigbee_health` from Settings → System → Logs.
+      render: text

@@ -1,0 +1,11 @@
+name: Feature request
+description: An idea to make Zigbee Health better
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the problem you want to solve and how you imagine it.
+    validations:
+      required: true

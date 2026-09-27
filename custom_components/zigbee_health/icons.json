@@ -1,0 +1,117 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "problems": {
+        "default": "mdi:zigbee"
+      }
+    },
+    "button": {
+      "scan_network": {
+        "default": "mdi:radar"
+      },
+      "analyze": {
+        "default": "mdi:refresh"
+      }
+    },
+    "sensor": {
+      "network_health": {
+        "default": "mdi:heart-pulse"
+      },
+      "status": {
+        "default": "mdi:zigbee",
+        "state": {
+          "stable": "mdi:check-network",
+          "degraded": "mdi:network-strength-2-alert",
+          "fragile": "mdi:network-off",
+          "paused": "mdi:pause-circle"
+        }
+      },
+      "devices": {
+        "default": "mdi:devices"
+      },
+      "routers": {
+        "default": "mdi:router-wireless"
+      },
+      "end_devices": {
+        "default": "mdi:battery-bluetooth"
+      },
+      "routers_always_on": {
+        "default": "mdi:power-plug"
+      },
+      "routers_part_time": {
+        "default": "mdi:power-plug-off"
+      },
+      "offline": {
+        "default": "mdi:lan-disconnect"
+      },
+      "dead": {
+        "default": "mdi:skull-outline"
+      },
+      "weak_links": {
+        "default": "mdi:signal-cellular-1"
+      },
+      "open_findings": {
+        "default": "mdi:clipboard-alert-outline"
+      },
+      "last_scan": {
+        "default": "mdi:radar"
+      },
+      "scan_duration": {
+        "default": "mdi:timer-outline"
+      },
+      "battery_critical": {
+        "default": "mdi:battery-alert-variant-outline"
+      },
+      "messages_per_second": {
+        "default": "mdi:message-flash-outline"
+      },
+      "zigbee_state": {
+        "default": "mdi:zigbee",
+        "state": {
+          "ok": "mdi:check-circle-outline",
+          "weak": "mdi:signal-cellular-1",
+          "battery": "mdi:battery-alert",
+          "offline": "mdi:lan-disconnect",
+          "dead": "mdi:skull-outline",
+          "part_time_router": "mdi:power-plug-off",
+          "ignored": "mdi:eye-off-outline"
+        }
+      },
+      "device_health": {
+        "default": "mdi:heart-pulse"
+      },
+      "parent": {
+        "default": "mdi:family-tree"
+      },
+      "parent_lqi": {
+        "default": "mdi:signal"
+      },
+      "battery_empty": {
+        "default": "mdi:battery-clock-outline"
+      },
+      "children": {
+        "default": "mdi:sitemap-outline"
+      },
+      "room_health": {
+        "default": "mdi:home-heart"
+      }
+    }
+  },
+  "services": {
+    "scan_network": {
+      "service": "mdi:radar"
+    },
+    "get_report": {
+      "service": "mdi:file-chart-outline"
+    },
+    "ignore": {
+      "service": "mdi:eye-off-outline"
+    },
+    "unignore": {
+      "service": "mdi:eye-outline"
+    },
+    "reset_history": {
+      "service": "mdi:history"
+    }
+  }
+}

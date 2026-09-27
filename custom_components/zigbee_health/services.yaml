@@ -1,0 +1,71 @@
+scan_network:
+  fields:
+    config_entry_id:
+      selector:
+        config_entry:
+          integration: zigbee_health
+
+get_report:
+  fields:
+    config_entry_id:
+      selector:
+        config_entry:
+          integration: zigbee_health
+    format:
+      default: summary
+      selector:
+        select:
+          translation_key: report_format
+          options:
+            - summary
+            - full
+
+ignore:
+  fields:
+    device:
+      required: true
+      selector:
+        device:
+          integration: mqtt
+    finding_type:
+      selector:
+        select:
+          translation_key: finding_type
+          options: &finding_types
+            - dead_device
+            - disappeared
+            - battery_low
+            - battery_forecast
+            - part_time_router
+            - children_on_part_time_router
+            - weak_link
+            - weak_backbone
+            - degradation
+            - unstable_device
+            - message_flood
+            - overloaded_parent
+            - interview_incomplete
+            - unsupported_device
+    until:
+      selector:
+        datetime:
+
+unignore:
+  fields:
+    device:
+      required: true
+      selector:
+        device:
+          integration: mqtt
+    finding_type:
+      selector:
+        select:
+          translation_key: finding_type
+          options: *finding_types
+
+reset_history:
+  fields:
+    device:
+      selector:
+        device:
+          integration: mqtt

@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  analyzer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements_test.txt
+      - run: ruff check custom_components tests
+      - run: ruff format --check custom_components tests
+      - run: MYPYPATH=custom_components/zigbee_health:tests/analyzer mypy tests/analyzer
+      - run: pytest tests/analyzer --cov --cov-report=term-missing -p no:homeassistant
+
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements_integration.txt mypy==2.3.1
+      - run: mypy -p custom_components.zigbee_health
+      - run: pytest tests/integration -v --no-cov -p no:cacheprovider --timeout=60 -o faulthandler_timeout=50
