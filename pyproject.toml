@@ -1,6 +1,6 @@
 [project]
 name = "zigbee-health"
-version = "0.10.3"
+version = "0.10.4"
 description = "Home Assistant custom integration that analyses the health of a Zigbee2MQTT network."
 requires-python = ">=3.13"
 license = "MIT"

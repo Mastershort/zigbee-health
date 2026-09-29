@@ -1,3 +1,5 @@
+<img src="custom_components/zigbee_health/brand/icon.png" alt="" width="96" align="right">
+
 # Zigbee Health
 
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/)

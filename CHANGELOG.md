@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.4
+
+- Own icon and logo (shown in Home Assistant 2026.3 and newer instead of "icon not available")
+
 ## 0.10.3
 
 - Repairs for missing Zigbee2MQTT options (`last_seen`, `availability`, `health`) now appear with the first analysis instead of after the 30-minute flap protection
