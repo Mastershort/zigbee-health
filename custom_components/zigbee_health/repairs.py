@@ -40,8 +40,9 @@ def _submitted(user_input: dict[str, Any] | None) -> dict[str, Any] | None:
 
     The repairs flow manager starts the first step with ``{"issue_id": ...}``. That is not
     a user submission: treating it as one skipped the confirmation (or crashed the form).
+    An empty dict, on the other hand, is a confirmed form without fields.
     """
-    if user_input is None or set(user_input) <= {"issue_id"}:
+    if user_input is None or "issue_id" in user_input:
         return None
     return user_input
 
