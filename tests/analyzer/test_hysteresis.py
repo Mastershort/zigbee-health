@@ -37,6 +37,19 @@ def test_reported_only_after_min_duration() -> None:
     assert tracker.update([DEAD], at(35)).raised == ()
 
 
+def test_missing_z2m_option_is_reported_right_away() -> None:
+    """A setting does not flap: the repairs hint appears with the first analysis."""
+    option = Finding(
+        id="prerequisite_missing:health",
+        type=FindingType.PREREQUISITE_MISSING,
+        severity=Severity.INFO,
+        data={"option": "health"},
+    )
+    first = FindingTracker(CONFIG).update([option], at(0))
+    assert first.raised == (option,)
+    assert first.active == (option,)
+
+
 def test_pending_finding_restarts_when_condition_vanishes() -> None:
     tracker = FindingTracker(CONFIG)
     tracker.update([DEAD], at(0))

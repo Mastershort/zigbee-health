@@ -198,6 +198,19 @@ export function roomHue(room: BRoom): number {
   return PALETTE[hash % PALETTE.length];
 }
 
+/**
+ * Stack storeys without gaps: each one starts where the one below ends (lowest at 0).
+ * Keeps the order; fixes gaps after deleting a storey or changing a height.
+ */
+export function restack(floors: BFloor[]): BFloor[] {
+  let elevation = 0;
+  for (const floor of [...floors].sort((a, b) => a.elevation - b.elevation)) {
+    floor.elevation = round(elevation);
+    elevation += floor.height;
+  }
+  return floors;
+}
+
 export function clone<T>(value: T): T {
   return JSON.parse(JSON.stringify(value)) as T;
 }

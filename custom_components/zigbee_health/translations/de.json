@@ -15,7 +15,7 @@
       },
       "prerequisites": {
         "title": "Empfohlene Zigbee2MQTT-Einstellungen",
-        "description": "Diese Zigbee2MQTT-Optionen sind ausgeschaltet: **{missing}**.\n\nOhne `last_seen` kennt Zigbee Health nur den Zeitpunkt der letzten empfangenen Nachricht. Ohne `availability` werden ausgeschaltete Router nur beim nächtlichen Netzwerk-Scan erkannt.\n\nDu kannst jetzt fortfahren; Zigbee Health bietet dir danach im Reparaturen-Center an, die Optionen einzuschalten."
+        "description": "Diese Zigbee2MQTT-Optionen sind ausgeschaltet: **{missing}**.\n\nOhne `last_seen` kennt Zigbee Health nur den Zeitpunkt der letzten empfangenen Nachricht. Ohne `availability` werden ausgeschaltete Router nur beim nächtlichen Netzwerk-Scan erkannt. Ohne `health` fehlen die Nachrichten-Zähler für Live-Verkehr und Nachrichten-Flut.\n\n**Am einfachsten:** fortfahren. Nach der ersten Auswertung (ca. 10 Minuten, oder sofort mit „Neu auswerten“) erscheint im Reparaturen-Center je Option ein Hinweis; „Absenden“ schaltet sie in Zigbee2MQTT ein.\n\n**Von Hand** im Zigbee2MQTT-Frontend unter Einstellungen:\n- `last_seen`: Reiter *Erweitert* → *Last seen* → **ISO_8601**\n- `availability`: Reiter *Verfügbarkeit* → **aktivieren**\n- `health`: Reiter *Health* → Intervall z. B. **10** Minuten"
       },
       "reconfigure": {
         "title": "MQTT-Basis-Topic ändern",

@@ -431,7 +431,7 @@ CONFIG = {
             },
             "prerequisites": {
                 "title": "Empfohlene Zigbee2MQTT-Einstellungen",
-                "description": "Diese Zigbee2MQTT-Optionen sind ausgeschaltet: **{missing}**.\n\nOhne `last_seen` kennt Zigbee Health nur den Zeitpunkt der letzten empfangenen Nachricht. Ohne `availability` werden ausgeschaltete Router nur beim nächtlichen Netzwerk-Scan erkannt.\n\nDu kannst jetzt fortfahren; Zigbee Health bietet dir danach im Reparaturen-Center an, die Optionen einzuschalten.",
+                "description": "Diese Zigbee2MQTT-Optionen sind ausgeschaltet: **{missing}**.\n\nOhne `last_seen` kennt Zigbee Health nur den Zeitpunkt der letzten empfangenen Nachricht. Ohne `availability` werden ausgeschaltete Router nur beim nächtlichen Netzwerk-Scan erkannt. Ohne `health` fehlen die Nachrichten-Zähler für Live-Verkehr und Nachrichten-Flut.\n\n**Am einfachsten:** fortfahren. Nach der ersten Auswertung (ca. 10 Minuten, oder sofort mit „Neu auswerten“) erscheint im Reparaturen-Center je Option ein Hinweis; „Absenden“ schaltet sie in Zigbee2MQTT ein.\n\n**Von Hand** im Zigbee2MQTT-Frontend unter Einstellungen:\n- `last_seen`: Reiter *Erweitert* → *Last seen* → **ISO_8601**\n- `availability`: Reiter *Verfügbarkeit* → **aktivieren**\n- `health`: Reiter *Health* → Intervall z. B. **10** Minuten",
             },
             "reconfigure": {
                 "title": "MQTT-Basis-Topic ändern",
@@ -463,7 +463,7 @@ CONFIG = {
             },
             "prerequisites": {
                 "title": "Recommended Zigbee2MQTT settings",
-                "description": "The following Zigbee2MQTT options are disabled: **{missing}**.\n\nWithout `last_seen`, Zigbee Health can only use the time it last received a message. Without `availability`, offline routers are only detected by the nightly network scan.\n\nYou can continue now; Zigbee Health will offer to enable the options in the repairs dashboard.",
+                "description": "The following Zigbee2MQTT options are disabled: **{missing}**.\n\nWithout `last_seen`, Zigbee Health can only use the time it last received a message. Without `availability`, offline routers are only detected by the nightly network scan. Without `health`, the message counters for live traffic and message floods are missing.\n\n**Easiest:** continue. After the first analysis (about 10 minutes, or right away with \"Analyse now\") the repairs dashboard shows one issue per option; \"Submit\" enables it in Zigbee2MQTT.\n\n**Manually** in the Zigbee2MQTT frontend under Settings:\n- `last_seen`: tab *Advanced* → *Last seen* → **ISO_8601**\n- `availability`: tab *Availability* → **enable**\n- `health`: tab *Health* → interval e.g. **10** minutes",
             },
             "reconfigure": {
                 "title": "Change MQTT base topic",

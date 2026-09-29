@@ -13,6 +13,9 @@ from typing import TYPE_CHECKING, Any
 
 from .models import Finding, FindingType, Severity
 
+# Settings, not flapping conditions: shown right away instead of after min_duration.
+REPORT_IMMEDIATELY = frozenset({FindingType.PREREQUISITE_MISSING})
+
 if TYPE_CHECKING:
     from collections.abc import Iterable
 
@@ -59,7 +62,10 @@ class FindingTracker:
             tracked.finding = finding
             tracked.last_seen = now
             tracked.misses = 0
-            if not tracked.reported and now - tracked.first_seen >= self.config.min_duration:
+            if not tracked.reported and (
+                finding.type in REPORT_IMMEDIATELY
+                or now - tracked.first_seen >= self.config.min_duration
+            ):
                 tracked.reported = True
                 raised.append(finding)
         for finding_id in [fid for fid in self.tracked if fid not in present]:

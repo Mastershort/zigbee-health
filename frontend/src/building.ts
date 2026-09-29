@@ -18,6 +18,7 @@ import {
   bounds,
   centroid,
   clone,
+  restack,
   distance,
   placeDevices,
   rectOf,
@@ -500,6 +501,7 @@ export class ZigbeeHealthBuilding extends LitElement {
         images?: Record<string, string>;
       }>(this._msg("get"));
       const building = result.building;
+      if (building) restack(building.floors);
       this._images = result.images ?? {};
       for (const floor of building?.floors ?? []) await this._measureBackground(floor);
       this._b = building;
@@ -573,6 +575,7 @@ export class ZigbeeHealthBuilding extends LitElement {
     if (this._undo.length > MAX_UNDO) this._undo.shift();
     const next = clone(this._b);
     mutate(next);
+    restack(next.floors);
     this._b = next;
     this._scheduleSave();
   }

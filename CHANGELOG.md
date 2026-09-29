@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.3
+
+- Repairs for missing Zigbee2MQTT options (`last_seen`, `availability`, `health`) now appear with the first analysis instead of after the 30-minute flap protection
+- Setup dialog lists all three options and explains where to switch them on in the Zigbee2MQTT frontend (`last_seen`: ISO_8601)
+- Floor plan / 3D: storeys stack without gaps; deleting a storey or changing a ceiling height no longer leaves a gap (existing gaps are fixed on load)
+
 ## 0.10.2
 
 - Fix: opening a bundled repair (e.g. "16 devices unreachable for a long time") failed with "500 Internal Server Error"

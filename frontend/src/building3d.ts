@@ -6,7 +6,7 @@
 import { LitElement, type PropertyValues, css, html, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 
-import { type Building, COORDINATOR_KEY, type Placed, placeDevices } from "./building-geo";
+import { type Building, COORDINATOR_KEY, type Placed, placeDevices, restack } from "./building-geo";
 import { type Layout, routeToCoordinator } from "./layout";
 import type { Translate } from "./i18n";
 import type { SceneData, SceneHandle } from "./scene3d";
@@ -145,6 +145,8 @@ export class ZigbeeHealth3d extends LitElement {
       if (this.configEntryId) message.config_entry_id = this.configEntryId;
       const result = await this.hass.callWS<{ building: Building | null }>(message);
       this._building = result.building;
+      // older saves may have gaps between storeys (e.g. after deleting one)
+      if (this._building) restack(this._building.floors);
     } catch {
       this._building = null;
     }

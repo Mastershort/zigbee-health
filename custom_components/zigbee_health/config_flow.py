@@ -133,7 +133,11 @@ class ZigbeeHealthConfigFlow(ConfigFlow, domain=DOMAIN):
                 self._data = {CONF_BASE_TOPIC: base}
                 self._title = user_input[CONF_NAME].strip() or DEFAULT_NAME
                 self._info = result.info
-                if not result.info.last_seen_enabled or not result.info.availability_enabled:
+                if (
+                    not result.info.last_seen_enabled
+                    or not result.info.availability_enabled
+                    or result.info.health_interval is None
+                ):
                     return await self.async_step_prerequisites()
                 return self.async_create_entry(title=self._title, data=self._data)
             default_base = base
@@ -161,6 +165,8 @@ class ZigbeeHealthConfigFlow(ConfigFlow, domain=DOMAIN):
             missing.append("advanced.last_seen")
         if not self._info.availability_enabled:
             missing.append("availability")
+        if self._info.health_interval is None:
+            missing.append("health")
         return self.async_show_form(
             step_id="prerequisites",
             description_placeholders={"missing": ", ".join(missing)},
