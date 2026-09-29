@@ -17,6 +17,7 @@ from homeassistant.helpers import area_registry as ar
 from homeassistant.helpers import device_registry as dr
 from homeassistant.helpers import entity_registry as er
 from homeassistant.helpers import issue_registry as ir
+from homeassistant.setup import async_setup_component
 from pytest_homeassistant_custom_component.common import (
     MockConfigEntry,
     async_capture_events,
@@ -248,6 +249,7 @@ async def test_prerequisite_fix_flow_publishes_option(
     assert result["type"] is FlowResultType.FORM
 
     mqtt_mock.async_publish.reset_mock()
+    # An empty form ({}) is the confirmation.
     task = hass.async_create_task(flow.async_step_init({}))
     await _spin()
     topic, payload = mqtt_mock.async_publish.call_args[0][:2]
@@ -615,3 +617,54 @@ async def test_remove_entry_deletes_stored_data(
     await hass.config_entries.async_remove(loaded.entry_id)
     await hass.async_block_till_done()
     assert not [key for key in hass_storage if key.startswith(f"{DOMAIN}.{loaded.entry_id}")]
+
+
+async def _repairs_manager(hass: HomeAssistant) -> Any:
+    """The real repairs flow manager, as used by the repairs dashboard."""
+    assert await async_setup_component(hass, "repairs", {})
+    return hass.data["repairs"]["flow_manager"]
+
+
+async def test_bundle_fix_flow_through_repairs_dashboard(
+    hass: HomeAssistant, loaded: MockConfigEntry
+) -> None:
+    """Opening the dead-device bundle shows the form (was a 500 error)."""
+    manager = await _repairs_manager(hass)
+    issue_id = f"{loaded.entry_id}_dead_device_bundle"
+    result: Any = await manager.async_init(DOMAIN, data={"issue_id": issue_id})
+    assert result["type"] is FlowResultType.FORM
+    assert result["step_id"] == "init"
+
+    result = await manager.async_configure(
+        result["flow_id"], {"devices": ["0x00158d0000000002"], "action": "ignore_device"}
+    )
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert "0x00158d0000000002" in loaded.runtime_data.ignored_devices
+
+
+async def test_prerequisite_fix_flow_asks_before_changing(
+    hass: HomeAssistant, loaded: MockConfigEntry, mqtt_mock: MqttMockHAClient
+) -> None:
+    """Opening the dialog must not change Zigbee2MQTT; only the confirmation does."""
+    manager = await _repairs_manager(hass)
+    mqtt_mock.async_publish.reset_mock()
+    issue_id = f"{loaded.entry_id}_prerequisite_missing:availability"
+    result: Any = await manager.async_init(DOMAIN, data={"issue_id": issue_id})
+    await _spin()
+    assert result["type"] is FlowResultType.FORM
+    assert not [
+        c for c in mqtt_mock.async_publish.call_args_list if "bridge/request/options" in c[0][0]
+    ]
+
+
+async def test_single_finding_fix_flow_through_repairs_dashboard(
+    hass: HomeAssistant, loaded: MockConfigEntry
+) -> None:
+    manager = await _repairs_manager(hass)
+    issue_id = next(
+        issue_id
+        for (domain, issue_id) in ir.async_get(hass).issues
+        if domain == DOMAIN and ":" in issue_id and "prerequisite" not in issue_id
+    )
+    result: Any = await manager.async_init(DOMAIN, data={"issue_id": issue_id})
+    assert result["type"] is FlowResultType.MENU

@@ -35,6 +35,17 @@ PREREQUISITE_OPTIONS: dict[str, dict[str, Any]] = {
 }
 
 
+def _submitted(user_input: dict[str, Any] | None) -> dict[str, Any] | None:
+    """The form the user submitted, or None.
+
+    The repairs flow manager starts the first step with ``{"issue_id": ...}``. That is not
+    a user submission: treating it as one skipped the confirmation (or crashed the form).
+    """
+    if user_input is None or set(user_input) <= {"issue_id"}:
+        return None
+    return user_input
+
+
 def _coordinator(hass: HomeAssistant, entry_id: str) -> ZigbeeHealthCoordinator | None:
     entry = hass.config_entries.async_get_entry(entry_id)
     if entry is None or not hasattr(entry, "runtime_data"):
@@ -143,6 +154,7 @@ class BundleFixFlow(ZigbeeHealthRepairsFlow):
         actions = [ACTION_IGNORE_FINDING, ACTION_IGNORE_DEVICE]
         if self._type is FindingType.DEAD_DEVICE:
             actions.insert(0, ACTION_REMOVE)
+        user_input = _submitted(user_input)
         if user_input is not None:
             self._selected = user_input[CONF_DEVICES]
             if not self._selected:
@@ -212,7 +224,7 @@ class PrerequisiteFixFlow(ZigbeeHealthRepairsFlow):
             "error": "",
         }
         errors: dict[str, str] = {}
-        if user_input is not None:
+        if _submitted(user_input) is not None:
             result = await self._coordinator.source.async_set_options(change)
             if result.ok:
                 if result.data and result.data.get("restart_required"):

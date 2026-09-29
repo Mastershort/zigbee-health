@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.10.2
+
+- Fix: opening a bundled repair (e.g. "16 devices unreachable for a long time") failed with "500 Internal Server Error"
+- Fix: opening the repair "enable Zigbee2MQTT option" changed the option right away instead of asking first
+
 ## 0.10.1
 
 - Removing the integration now also deletes its stored history and ignore list (previously a file stayed in `.storage`)
